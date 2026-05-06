@@ -49,13 +49,13 @@ function createImageBlock(item, lang){
 /**
  * Creates the HTML for a project card (the "Molecule")
  */
-export function createProjectCard(data, slug, lang) {
+export function createProjectCard(data, slug, lang, basePath) {
     // Ensure we are using the correct property for the video source
     const videoSrc = data.preview; 
 
     return `
         <div class="project-card" data-slug="${slug}">
-            <a href="/work/${slug}">
+            <a href="/${basePath}/${slug}">
                 <div class="media-container">
                     <img src="${data.thumbnail}" alt="${data.title[lang]}" loading="lazy">
                     ${videoSrc ? `
@@ -92,6 +92,8 @@ export function renderGrid(container, list, filter, lang) {
 
     if (!target) return;
 
+    const basePath = window.location.pathname.includes('digital-art') ? 'digital-art' : 'work';
+
     // 1. Ensure the target element ITSELF has the grid class
     target.className = 'projects-grid'; 
     target.innerHTML = ''; 
@@ -107,7 +109,7 @@ export function renderGrid(container, list, filter, lang) {
         target.innerHTML = `<p class="no-results">No projects found.</p>`;
     } else {
         target.innerHTML = filteredEntries
-            .map(([slug, data]) => createProjectCard(data, slug, lang))
+            .map(([slug, data]) => createProjectCard(data, slug, lang, basePath))
             .join('');
     }
 }
@@ -212,7 +214,7 @@ export function renderProjectPage(container, project, lang) {
             </section>
 
             <footer class="project-footer">
-                <a href="/work" class="back-link">← Back to Work</a>
+                <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
             </footer>
         </article>
     `;

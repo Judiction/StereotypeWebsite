@@ -2,30 +2,32 @@
 import * as Renderer from './renderer.js'; 
 import { works, digitalArt } from '../data/projects.js'; // You'll need the data too!
 
+// js/router.js
+
 export function parseRoute() {
     const path = window.location.pathname;
-    
-    // Clean segments: remove empty strings and index.html
     const segments = path.split('/')
         .filter(seg => seg !== "" && seg !== "index.html");
 
-    console.log("Segments found:", segments); // Debugging
+    if (segments.length === 0) return { type: 'home' };
 
-    // IF NO SEGMENTS, IT IS THE HOME PAGE
-    if (segments.length === 0) {
-        return { type: 'home' };
-    }
-
+    // Handle WORK path
     if (segments[0] === 'work') {
         return segments[1] 
             ? { type: 'project', slug: segments[1], collection: 'works' }
             : { type: 'work-list' };
     }
 
-    if (segments[0] === 'about') return { type: 'about' };
-    if (segments[0] === 'digital-art') return { type: 'art-list' };
+    // Handle DIGITAL-ART path
+    if (segments[0] === 'digital-art') {
+        // If there is a second segment, it's a project; otherwise, it's the list
+        return segments[1] 
+            ? { type: 'project', slug: segments[1], collection: 'digitalArt' } // Match the export name from projects.js
+            : { type: 'art-list' };
+    }
 
-    // ONLY return 404 if it didn't match anything above
+    if (segments[0] === 'about') return { type: 'about' };
+
     return { type: '404' };
 }
 
