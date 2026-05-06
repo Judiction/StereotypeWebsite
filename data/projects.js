@@ -98,9 +98,9 @@ export const works = {
         thumbnail: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800,so_0/v1770662860/HAIRSPRAY_PREVIEW_s5kud2.jpg", // colocar
         preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800/v1770662860/HAIRSPRAY_PREVIEW_s5kud2.mp4", // colocar
         title: {
-            en: "Project Title",
-            pt: "Título do Projeto",
-            fr: "Titre du Projet"
+            en: "Project Title 3",
+            pt: "Título do Projeto 3",
+            fr: "Titre du Projet 3"
         },
         credits: {
             agency: "NOO",
@@ -139,9 +139,9 @@ export const works = {
         thumbnail: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800,so_0/v1770769166/KIMURA_PREVIEW_hcy3wk.jpg", // colocar
         preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800/v1770769166/KIMURA_PREVIEW_hcy3wk.mp4", // colocar
         title: {
-            en: "Project Title 2",
-            pt: "Título do Projeto 2",
-            fr: "Titre du Projet 2"
+            en: "Project Title 4",
+            pt: "Título do Projeto 4",
+            fr: "Titre du Projet 4"
         },
         credits: {
             agency: "NOO",
@@ -226,13 +226,13 @@ export const digitalArt = {
     },
     "collection-02":{
         year: 2025,
-        categories: ["interactive", "animation"],
+        categories: ["animation"],
         thumbnail: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800,so_0/v1770339433/Preview_Google_x0igus.jpg", // colocar
         preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800/v1770339433/Preview_Google_x0igus.mp4", // colocar
         title: {
-            en: "Collection Title",
-            pt: "Título da Coleção",
-            fr: "Titre du Collection"
+            en: "Collection 2 Title",
+            pt: "Título da Coleção 2",
+            fr: "Titre du Collection 2"
         },
         credits: {
             agency: "NOO",
@@ -278,9 +278,9 @@ export const digitalArt = {
         thumbnail: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800,so_0/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.jpg", // colocar
         preview: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4", // colocar
         title: {
-            en: "Collection Title",
-            pt: "Título da Coleção",
-            fr: "Titre du Collection"
+            en: "Collection 3 Title",
+            pt: "Título da Coleção 3",
+            fr: "Titre du Collection 3"
         },
         credits: {
             agency: "NOO",

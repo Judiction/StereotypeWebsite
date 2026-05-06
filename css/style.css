@@ -105,6 +105,9 @@ button { font-family: inherit; }
     font-weight: 400;
 }
 
+
+.nav-links a:hover{ opacity: 0.5; }
+
 .nav-links a.active { font-weight: 800; }
 
 .lang-toggle button {
@@ -116,6 +119,8 @@ button { font-family: inherit; }
     color: var(--accent-color);
     margin-left: 12px;
 }
+
+.lang-toggle button:hover { color: var(--text-color); }
 
 .lang-toggle button.active {
     color: var(--text-color);
@@ -237,6 +242,11 @@ button { font-family: inherit; }
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.btn-primary {
+    display: inline;
+    border: #000000 solid 1px;
 }
 
 .home-hero h1 {

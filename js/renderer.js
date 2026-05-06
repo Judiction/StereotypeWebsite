@@ -2,8 +2,7 @@
 
 import { dictionary } from '../data/dictionary.js'; // You'll need the data too!
 import { getUniqueCategories } from './utils.js';
-import { buildFilterMenu } from './ui.js';
-import { currentFilter } from './ui.js'; // Import the state
+import { buildFilterMenu, currentFilter } from './filter.js';
 
 /**
  * Creates the individual content blocks based on its type

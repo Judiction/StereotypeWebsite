@@ -1,8 +1,6 @@
-// js/router.js
 import * as Renderer from './renderer.js'; 
 import { works, digitalArt } from '../data/projects.js'; // You'll need the data too!
-import { resetFilterState } from './ui.js';
-// js/router.js
+import { resetFilterState } from './filter.js';
 
 export function parseRoute() {
     const path = window.location.pathname;
