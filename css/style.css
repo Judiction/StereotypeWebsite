@@ -1,17 +1,3 @@
-/* BEASTEREOTYPE | CORE DESIGN SYSTEM 2.0
-    
-    Structure:
-    1. Variables & Root (The Engine)
-    2. Reset & Base
-    3. Layout & Shell
-    4. Navigation
-    5. Components (Cards, Buttons, Media)
-    6. Filter System
-    7. Page Specifics (Home, About, Detail)
-    8. Transitions & Motion
-    9. Responsive
-*/
-
 /* --- 1. VARIABLES & ROOT --- */
 :root {
     /* Color Palette */

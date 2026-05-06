@@ -1,11 +1,10 @@
-// NAV LOGO ANIMATION
-
+// ANIMACAO DISPLACEMENT TEMPORARIA, APENAS TESTANDO
+// TER OS "EFEITOS" EM UM ARQUIVO SEPARADO
 export function animateNavbarLogo(){
     const logo = document.querySelector('#logo');
     const turb = document.querySelector('#turbulence');
     const disp = document.querySelector('#displacement');
 
-    // Add this to js/app.js or a dedicated effects file
     document.addEventListener('mousemove', (e) => {
         const logo = e.target.closest('.logo');
         if (!logo) return;
