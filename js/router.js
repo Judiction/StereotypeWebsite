@@ -63,6 +63,7 @@ export function handleRouting() {
             updateMeta("Portfolio of Judd Buchannan, Motion Designer and Art Director.");
             break;
         case 'about':
+            document.title = dictionary.ui["about"][lang].toUpperCase();
             Renderer.renderAbout(appContainer, lang);
             break;
         case 'work-list':
