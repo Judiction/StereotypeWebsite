@@ -1,4 +1,4 @@
-// ./js/ui.js
+// ./js/filter.js
 import { renderGrid } from './renderer.js';
 import { dictionary } from '../data/dictionary.js';
 

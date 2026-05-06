@@ -150,11 +150,9 @@ export function renderHome(container, lang) {
                 <h1>Judd Buchannan</h1>
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
                 <p class="intro-phrase">${dictionary.ui.intro[lang]}</p>
-                <div class="home-cta">
-                    <a href="/work" class="btn-primary">
-                        ${dictionary.ui.work[lang]} →
-                    </a>
-                </div>
+                <a href="/work" class="home-cta">
+                    ${dictionary.ui.work[lang]} →
+                </a>
             </div>
         </section>
     `;

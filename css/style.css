@@ -244,9 +244,15 @@ button { font-family: inherit; }
     justify-content: center;
 }
 
-.btn-primary {
-    display: inline;
-    border: #000000 solid 1px;
+.home-cta {
+    display: inline-block;
+    border: solid 1px var(--text-color);
+    line-height: 1;
+    padding: 10px;
+}
+
+.home-cta:hover {
+    background-color: var(--ui-border);
 }
 
 .home-hero h1 {
