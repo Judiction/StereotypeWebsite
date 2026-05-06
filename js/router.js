@@ -1,6 +1,7 @@
 import * as Renderer from './renderer.js'; 
 import { works, digitalArt } from '../data/projects.js'; // You'll need the data too!
 import { resetFilterState } from './filter.js';
+import { dictionary } from '../data/dictionary.js';
 
 export function parseRoute() {
     const path = window.location.pathname;
@@ -58,16 +59,19 @@ export function handleRouting() {
     switch (route.type) {
         case 'home':
             Renderer.renderHome(appContainer, lang);
+            document.title = "BE A STEREOTYPE"; // nome da aba
             updateMeta("Portfolio of Judd Buchannan, Motion Designer and Art Director.");
             break;
         case 'about':
             Renderer.renderAbout(appContainer, lang);
             break;
         case 'work-list':
+            document.title = dictionary.ui["work"][lang].toUpperCase();
             // resetFilterState();
             Renderer.renderFilterableGrid(appContainer, works, lang);
             break;
         case 'art-list':
+            document.title = dictionary.ui["digital-art"][lang].toUpperCase();
             // resetFilterState();
             Renderer.renderFilterableGrid(appContainer, digitalArt, lang);
             break;
@@ -79,7 +83,7 @@ export function handleRouting() {
             if (projectData) {
                 Renderer.renderProjectPage(appContainer, projectData, lang);
                 // Bonus: Update the Browser Tab Title
-                document.title = `${projectData.title[lang]} | Judd Buchannan`;
+                document.title = `${projectData.title[lang]} | BE A STEREOTYPE`;
             } else {
                 // If the slug doesn't exist in our JS, show 404
                 appContainer.innerHTML = `<h1>Project Not Found</h1>`;

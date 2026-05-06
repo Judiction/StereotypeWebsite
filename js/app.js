@@ -1,6 +1,7 @@
 // js/app.js
 import { handleRouting, navigate } from './router.js';
 import { renderNav } from './renderer.js';
+import { animateNavbarLogo } from './effects.js';
 
 // js/app.js
 
@@ -51,3 +52,7 @@ window.changeLang = (lang) => {
     localStorage.setItem('lang', lang);
     updateApp();
 };
+
+
+// EFFECTS
+animateNavbarLogo();

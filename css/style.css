@@ -94,6 +94,21 @@ button { font-family: inherit; }
     text-transform: uppercase;
     letter-spacing: -0.03em;
     font-size: 1.2rem;
+    
+    /* CRITICAL: Must be block or inline-block for filters to track correctly */
+    display: inline-block; 
+    filter: url(#glitch-filter);
+    
+    /* Prevent the glitch from moving the actual layout of the nav */
+    vertical-align: middle; 
+}
+
+/* Better way to hide the SVG without killing the filter */
+.glitch-svg-defs {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
 }
 
 .nav-links a {

@@ -231,6 +231,14 @@ export function renderNav(lang) {
     // 1. If the nav is totally empty (first load), build the structure
     if (nav.innerHTML.trim() === "") {
         nav.innerHTML = `
+            <svg class="glitch-svg-defs">
+                <defs>
+                    <filter id="glitch-filter" x="-20%" y="-20%" width="140%" height="140%">
+                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="noise" id="turbulence"/>
+                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" id="displacement" />
+                    </filter>
+                </defs>
+            </svg>
             <div class="nav-container">
                 <a href="/" class="logo">beastereotype</a>
                 <div class="nav-links">
