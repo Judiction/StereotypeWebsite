@@ -3,6 +3,7 @@
 import { dictionary } from '../data/dictionary.js'; // You'll need the data too!
 import { getUniqueCategories } from './utils.js';
 import { buildFilterMenu } from './ui.js';
+import { currentFilter } from './ui.js'; // Import the state
 
 /**
  * Creates the individual content blocks based on its type
@@ -128,9 +129,9 @@ export function renderFilterableGrid(container, list, lang) {
 
     const categories = getUniqueCategories(list);
     buildFilterMenu(document.getElementById('filter-menu-target'), categories, lang, list);
-
+    const activeFilter = currentFilter === 'all' ? null : currentFilter;
     // Initial render targets the div we just created
-    renderGrid(document.getElementById('grid-results-target'), list, null, lang);
+    renderGrid(document.getElementById('grid-results-target'), list, activeFilter, lang);
 }
 
 export function renderHome(container, lang) {

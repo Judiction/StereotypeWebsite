@@ -8,17 +8,14 @@ async function updateApp() {
     const app = document.getElementById('app');
     const lang = localStorage.getItem('lang') || 'en';
 
-    // 1. Start the fade out
-    app.classList.add('loading');
+
 
     // 2. Wait a tiny bit for the CSS transition to start (optional but smoother)
-    setTimeout(() => {
-        renderNav(lang);
-        handleRouting();
-        
-        // 3. Fade back in
-        app.classList.remove('loading');
-    }, 50); 
+
+    renderNav(lang);
+    handleRouting();
+    
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
