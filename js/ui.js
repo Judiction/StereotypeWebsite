@@ -24,7 +24,9 @@ export function buildFilterMenu(container, categories, lang, list) {
     container.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const category = btn.getAttribute('data-cat');
+            if (currentFilter === category) return;
             setActiveFilter(btn, category, lang, list); 
+            console.log(`Button clicked: ${category}, currentFilter state: ${currentFilter}`);
         });
     });
 }
@@ -40,6 +42,8 @@ function setActiveFilter(activeBtn, category, lang, list) {
     // 3. Render the grid
     const gridTarget = document.getElementById('grid-results-target');
     const filter = category === 'all' ? null : category;
+
+    console.log(`Filtering by: ${filter}`);
     
     renderGrid(gridTarget, list, filter, lang);
 }

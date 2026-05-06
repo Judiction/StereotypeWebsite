@@ -129,8 +129,14 @@ export function renderFilterableGrid(container, list, lang) {
 
     const categories = getUniqueCategories(list);
     buildFilterMenu(document.getElementById('filter-menu-target'), categories, lang, list);
+
+    console.log("Current filter state on render:", currentFilter);
+
     const activeFilter = currentFilter === 'all' ? null : currentFilter;
     // Initial render targets the div we just created
+
+    console.log(`Initial render with filter: ${activeFilter}`);
+
     renderGrid(document.getElementById('grid-results-target'), list, activeFilter, lang);
 }
 

@@ -41,11 +41,19 @@ function updateMeta(description) {
     meta.setAttribute('content', description);
 }
 
+let previousRoute = null;
+
 export function handleRouting() {
     const route = parseRoute();
     const lang = localStorage.getItem('lang') || 'en'; // Default to English
     
     console.log("Routing to:", route);
+
+    if (previousRoute && previousRoute.type !== route.type) {
+        resetFilterState();
+    }
+    
+    previousRoute = route; // Update for next time
 
     const appContainer = document.getElementById('app');
 
@@ -58,11 +66,11 @@ export function handleRouting() {
             Renderer.renderAbout(appContainer, lang);
             break;
         case 'work-list':
-            resetFilterState();
+            // resetFilterState();
             Renderer.renderFilterableGrid(appContainer, works, lang);
             break;
         case 'art-list':
-            resetFilterState();
+            // resetFilterState();
             Renderer.renderFilterableGrid(appContainer, digitalArt, lang);
             break;
         case 'project':
