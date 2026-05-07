@@ -184,15 +184,15 @@ export const works = {
 }
 
 export const digitalArt = {
-    "collection-01":{
+    "digital-soup":{
         year: 2026,
         categories: ["3d", "interactive"],
-        thumbnail: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800,so_0/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.jpg", // colocar
-        preview: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4", // colocar
+        thumbnail: "https://cache.teia.rocks/ipfs/QmdGstLkW8qNTs8vMqtntLGPi7o7bqzWYvfgAyQiZDzgyJ", // colocar
+        preview: "https://cache.teia.rocks/ipfs/QmWLZzso37zsvpRZ1ZvCKFxM6MwyUJMycqmYMHDhkGqERU", // colocar
         title: {
-            en: "Collection Title",
-            pt: "Título da Coleção",
-            fr: "Titre du Collection"
+            en: "Digital Soup",
+            pt: "Digital Soup",
+            fr: "Digital Soup"
         },
         credits: {
             agency: "NOO",
@@ -224,15 +224,15 @@ export const digitalArt = {
             }
             ]
     },
-    "collection-02":{
+    "unsafe":{
         year: 2025,
         categories: ["animation"],
-        thumbnail: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800,so_0/v1770339433/Preview_Google_x0igus.jpg", // colocar
-        preview: "https://res.cloudinary.com/dobmgp6ug/video/upload/f_auto,q_auto,w_800/v1770339433/Preview_Google_x0igus.mp4", // colocar
+        thumbnail: "https://imgproxy.teia.rocks/befi2r1M5Zq2eoZ38-dtSS6OX7LQG2K4Y7p4rW05pnc/rs:fit:640:0:false/format:webp/plain/http://168.119.141.125:8080/ipfs/QmZwrseRCaAG1oQCiW7M22SZgXuA6YGdZRMZVmdCGgeahR", // colocar
+        preview: "https://cache.teia.rocks/ipfs/QmeLLBHAx4Ztv3j2CLA1Nwq2hRmobwzFzHuHK9wk67fiyg", // colocar
         title: {
-            en: "Collection 2 Title",
-            pt: "Título da Coleção 2",
-            fr: "Titre du Collection 2"
+            en: "Reported as Unsafe",
+            pt: "Reported as Unsafe",
+            fr: "Reported as Unsafe"
         },
         credits: {
             agency: "NOO",
@@ -272,15 +272,15 @@ export const digitalArt = {
             },
             ]
     },
-    "collection-03":{
+    "light-n-time":{
         year: 2026,
         categories: ["3d", "interactive"],
-        thumbnail: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800,so_0/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.jpg", // colocar
-        preview: "https://res.cloudinary.com/dr5dbkh91/video/upload/f_auto,q_auto,w_800/v1770302765/projects/tap-to-pay-zoop/y1droueioptnwkagby0j.mp4", // colocar
+        thumbnail: "https://cache.teia.rocks/ipfs/Qmd2LSE6Lf2bjq6GoYrudUBXjxXaP7fksM4oi4UwcjrCyr", // colocar
+        preview: "https://cache.teia.rocks/ipfs/Qmd2LSE6Lf2bjq6GoYrudUBXjxXaP7fksM4oi4UwcjrCyr", // colocar
         title: {
-            en: "Collection 3 Title",
-            pt: "Título da Coleção 3",
-            fr: "Titre du Collection 3"
+            en: "Light and Time",
+            pt: "Light and Time",
+            fr: "Light and Time"
         },
         credits: {
             agency: "NOO",

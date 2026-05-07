@@ -56,7 +56,7 @@ export function createProjectCard(data, slug, lang, basePath) {
     return `
         <div class="project-card" data-slug="${slug}">
             <a href="/${basePath}/${slug}">
-                <div class="media-container">
+                <div class="media-container ${basePath}">
                     <img src="${data.thumbnail}" alt="${data.title[lang]}" loading="lazy">
                     ${videoSrc ? `
                         <video 

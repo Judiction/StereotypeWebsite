@@ -135,7 +135,7 @@ button { font-family: inherit; }
 /* Grid System */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: var(--grid-gap);
     width: 100%;
 }
@@ -149,10 +149,18 @@ button { font-family: inherit; }
 .media-container {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
     background: var(--ui-soft-bg);
     overflow: hidden;
     margin-bottom: var(--card-info-gap);
+}
+
+/* No space between classes means "an element with BOTH classes" */
+.media-container.work {
+    aspect-ratio: 16 / 9;
+}
+
+.media-container.digital-art {
+    aspect-ratio: 1 / 1;
 }
 
 .media-container img, 
@@ -272,6 +280,11 @@ button { font-family: inherit; }
     margin-top: 60px;
 }
 
+.bio img{
+    aspect-ratio: 16 / 9;
+    object-fit:cover;
+    width: 100%;
+}
 .bio h2 {
     font-size: 3rem;
     text-transform: uppercase;
