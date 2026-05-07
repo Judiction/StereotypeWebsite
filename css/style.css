@@ -287,6 +287,18 @@ button { font-family: inherit; }
 .project-card {
     display: block;
     cursor: pointer;
+    /* 1. Set initial state to invisible so it doesn't "pop" before animating */
+    opacity: 0; 
+    
+    /* 2. Apply the animation */
+    /* fadeInUp: the name we defined above */
+    /* 0.6s: duration */
+    /* var(--ease-out-expo): your existing smooth easing variable */
+    /* forwards: CRITICAL - keeps the card visible after the animation finishes */
+    animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
+    
+    /* 3. Performance boost */
+    will-change: transform, opacity;
 }
 
 .media-container {
@@ -466,4 +478,16 @@ button { font-family: inherit; }
     .projects-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
     .home-hero h1 { font-size: 4.5rem; }
+}
+
+/* ANIMATION */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Adjust pixels for more/less slide */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
