@@ -130,6 +130,149 @@ button { font-family: inherit; }
     text-underline-offset: 4px;
 }
 
+/* --- HAMBURGER BUTTON --- */
+.hamburger {
+    display: none; /* Escondido no desktop */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--text-color);
+    transition: transform var(--transition-speed) var(--ease-out-expo),
+                opacity var(--transition-speed);
+    transform-origin: center;
+}
+
+/* Animação X quando aberto */
+.hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.is-open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* --- MOBILE MENU DRAWER --- */
+.mobile-menu {
+    display: block; 
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 40px var(--container-padding);
+    z-index: 999;
+    border-top: 1px solid var(--ui-border);
+
+    /* Use visibility + opacity for cleaner interaction */
+    opacity: 0;
+    visibility: hidden; 
+    transform: translateY(-8px);
+    transition: 
+        opacity var(--transition-speed) var(--ease-out-expo),
+        transform var(--transition-speed) var(--ease-out-expo),
+        visibility var(--transition-speed); /* Syncs with opacity */
+    
+    /* Hardware acceleration to prevent lag */
+    will-change: opacity, transform;
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*hwn i uncomment this block, i have a little lag in the hover-in animation of the ".mobile-nav-links a ".... why would that be?*/
+/* .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+} */
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+    /* FIX: Prevents the container from re-calculating during child hovers */
+    contain: layout; 
+}
+
+.mobile-nav-links a {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-tight);
+    display: inline-block; /* Better hit area than 'inline' */
+    width: fit-content;
+    
+    /* Specificity: Only transition opacity on hover */
+    transition: opacity 0.2s ease; 
+    will-change: opacity;
+}
+
+.mobile-nav-links a:hover { opacity: 0.4; }
+/* .mobile-nav-links a.active { text-decoration: underline; text-underline-offset: 6px; } */
+    
+.mobile-nav-links a.active { font-weight: 800;}
+
+.mobile-lang-toggle {
+    display: flex;
+    gap: 12px;
+}
+
+.mobile-lang-toggle button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    letter-spacing: var(--ls-meta);
+    text-transform: uppercase;
+}
+
+.mobile-lang-toggle button:hover { color: var(--text-color); }
+.mobile-lang-toggle button.active {
+    color: var(--text-color);
+    font-weight: 800;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* --- RESPONSIVE BREAKPOINT --- */
+@media (max-width: 768px) {
+    /* Esconder versão desktop */
+    .nav-links,
+    .lang-toggle {
+        display: none;
+    }
+
+    /* Mostrar hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    /* Mobile menu: display:none por padrão, JS ativa */
+    .mobile-menu {
+        /* display: block; JS controla visibilidade via opacity/transform + is-open */
+        pointer-events: none; /* Não clicável quando fechado */
+    }
+
+    .mobile-menu.is-open {
+        pointer-events: all;
+    }
+}
+
 /* --- 5. COMPONENTS --- */
 
 /* Grid System */

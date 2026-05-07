@@ -251,22 +251,55 @@ export function renderNav(lang) {
                     <button onclick="changeLang('pt')" data-lang="pt">PT</button>
                     <button onclick="changeLang('fr')" data-lang="fr">FR</button>
                 </div>
+                <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="mobile-nav-links">
+                    <a href="/work" data-key="work"></a>
+                    <a href="/digital-art" data-key="digital-art"></a>
+                    <a href="/about" data-key="about"></a>
+                </div>
+                <div class="mobile-lang-toggle">
+                    <button onclick="changeLang('en')" data-lang="en">EN</button>
+                    <button onclick="changeLang('pt')" data-lang="pt">PT</button>
+                    <button onclick="changeLang('fr')" data-lang="fr">FR</button>
+                </div>
             </div>
         `;
+
+        // Hamburger listeners — só roda uma vez junto com a construção do HTML
+        const btn = document.getElementById('hamburger-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('is-open');
+            btn.classList.toggle('is-open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('is-open');
+                btn.classList.remove('is-open');
+                btn.setAttribute('aria-expanded', false);
+            });
+        });
     }
 
-    // 2. Update the TEXT based on the current language
-    nav.querySelectorAll('.nav-links a').forEach(a => {
+    // 2. Update TEXT and active state — roda sempre (troca de lang/página)
+    const allNavLinks = nav.querySelectorAll('.nav-links a, .mobile-nav-links a');
+    allNavLinks.forEach(a => {
         const key = a.getAttribute('data-key');
         const href = a.getAttribute('href');
         const path = window.location.pathname;
 
-        // Set the translated text
-        a.textContent = dictionary.ui[key][lang];
-        
-        // STRICT MATCHING: 
-        // Only add active if the path exactly matches the link
-        // This prevents / from activating /work
+        const newText = dictionary.ui[key][lang];
+        if (a.textContent !== newText) a.textContent = newText;
+
         if (path === href) {
             a.classList.add('active');
         } else {
@@ -274,9 +307,8 @@ export function renderNav(lang) {
         }
     });
 
-    // 3. Update active class for the language buttons
-    nav.querySelectorAll('.lang-toggle button').forEach(btn => {
+    // 3. Update active lang buttons — roda sempre
+    nav.querySelectorAll('.lang-toggle button, .mobile-lang-toggle button').forEach(btn => {
         btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
 }
-
