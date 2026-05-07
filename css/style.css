@@ -290,13 +290,7 @@ button { font-family: inherit; }
     /* 1. Set initial state to invisible so it doesn't "pop" before animating */
     opacity: 0; 
     
-    /* 2. Apply the animation */
-    /* fadeInUp: the name we defined above */
-    /* 0.6s: duration */
-    /* var(--ease-out-expo): your existing smooth easing variable */
-    /* forwards: CRITICAL - keeps the card visible after the animation finishes */
     animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
-    
     /* 3. Performance boost */
     will-change: transform, opacity;
 }
@@ -400,12 +394,145 @@ button { font-family: inherit; }
 
 /* --- 7. PAGE SPECIFICS --- */
 
+/* Project and Collection pages */
+.project-detail {
+    max-width: 1200px; /* Constrains the content for better readability */
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+/* Header Section */
+.project-header {
+    margin-bottom: 100px;
+}
+
+.project-header h1 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 0.9;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: var(--ls-tight);
+    margin-bottom: 24px;
+}
+
+.project-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+    color: var(--accent-color);
+}
+
+.project-meta span:not(:last-child)::after {
+    content: "•";
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+/* Block Layouts */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Vertical spacing between blocks */
+}
+
+.project-block {
+    width: 100%;
+    animation: fadeInUp 1s var(--ease-out-expo) forwards;
+}
+
+/* Text Block - Editorial Styling */
+.text-block {
+    max-width: 800px; /* Narrower for reading comfort */
+    margin-left: 0;
+}
+
+.text-block p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Media Blocks (Video & Image) */
+.video-block iframe,
+.image-block img {
+    width: 100%;
+    background: var(--ui-soft-bg);
+    border: none;
+    display: block;
+}
+
+.video-block iframe { aspect-ratio: 16 / 9; }
+
+.caption {
+    margin-top: 16px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+    color: var(--accent-color);
+}
+
+/* Footer Navigation */
+.project-footer {
+    margin-top: 120px;
+    padding-bottom: 80px;
+    border-top: 1px solid var(--ui-border);
+    padding-top: 40px;
+}
+
+.back-link {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: var(--ls-meta);
+    transition: opacity var(--transition-speed);
+}
+
+.back-link:hover {
+    opacity: 0.5;
+}
+
+/* Responsive adjustments for the Project Page */
+@media (max-width: 768px) {
+    .project-header {
+        margin-bottom: 60px;
+    }
+    
+    .project-header h1 {
+        font-size: 3rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .project-meta span:not(:last-child)::after {
+        display: none;
+    }
+
+    .project-content {
+        gap: 40px;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+    }
+}
+
+
 /* Home Hero */
 .home-hero {
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    opacity: 0; 
+    
+    animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
+    /* 3. Performance boost */
+    will-change: transform, opacity;
 }
 
 .home-cta {
@@ -439,6 +566,11 @@ button { font-family: inherit; }
     aspect-ratio: 16 / 9;
     object-fit:cover;
     width: 100%;
+    opacity: 0; 
+    
+    animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
+    /* 3. Performance boost */
+    will-change: transform, opacity;
 }
 .bio h2 {
     font-size: 3rem;
@@ -449,7 +581,7 @@ button { font-family: inherit; }
 }
 
 /* Forms */
-.contact-form {
+/* .contact-form {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -467,6 +599,105 @@ button { font-family: inherit; }
 
 .form-group input:focus, .form-group textarea:focus {
     border-bottom: 1px solid var(--text-color);
+} */
+
+/* --- 8. FORMS & BUTTONS --- */
+
+.about-contact h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: var(--text-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap for a cleaner look */
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1); /* Subtle start */
+    background: transparent;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    color: var(--text-color);
+    outline: none;
+    transition: border-color var(--transition-speed) var(--ease-custom);
+    border-radius: 0; /* Prevents iOS rounding */
+}
+
+/* Placeholder styling */
+.form-group input::placeholder, 
+.form-group textarea::placeholder {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+    color: var(--accent-color);
+    transition: opacity var(--transition-speed);
+}
+
+/* Hover & Focus States */
+.form-group input:hover, 
+.form-group textarea:hover {
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.form-group input:focus::placeholder {
+    opacity: 0.3;
+}
+
+/* Submit Button Style */
+.btn-primary {
+    align-self: flex-start;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 18px 40px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all var(--transition-speed) var(--ease-out-expo);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-primary:hover {
+    background: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Adjusting the About Grid for better form presentation */
+@media (min-width: 769px) {
+    .about-contact {
+        padding-left: 60px;
+        border-left: 1px solid var(--ui-border);
+    }
 }
 
 /* --- 9. RESPONSIVE --- */

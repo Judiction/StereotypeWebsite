@@ -189,7 +189,10 @@ export function renderAbout(container, lang) {
                             <textarea name="message" placeholder="${dictionary.ui.placeholder_message[lang]}" rows="5" required></textarea>
                         </div>
                         
-                        <button type="submit" class="btn-primary">${dictionary.ui.send[lang]}</button>
+                        <button type="submit" class="btn-primary">
+                            ${dictionary.ui.send[lang]}
+                            <span class="arrow">→</span>
+                        </button>
                     </form>
                 </div>
             </div>
