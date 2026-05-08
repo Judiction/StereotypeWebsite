@@ -274,9 +274,9 @@ export const digitalArt = {
     },
     "light-n-time":{
         year: 2026,
-        categories: ["3d", "interactive"],
-        thumbnail: "https://cache.teia.rocks/ipfs/Qmd2LSE6Lf2bjq6GoYrudUBXjxXaP7fksM4oi4UwcjrCyr", // colocar
-        preview: "https://cache.teia.rocks/ipfs/Qmd2LSE6Lf2bjq6GoYrudUBXjxXaP7fksM4oi4UwcjrCyr", // colocar
+        categories: ["3d", "interactive", "nft"],
+        thumbnail: "https://cache.teia.rocks/ipfs/QmdGstLkW8qNTs8vMqtntLGPi7o7bqzWYvfgAyQiZDzgyJ", // colocar
+        preview: "https://cache.teia.rocks/ipfs/QmWLZzso37zsvpRZ1ZvCKFxM6MwyUJMycqmYMHDhkGqERU", // colocar
         title: {
             en: "Light and Time",
             pt: "Light and Time",

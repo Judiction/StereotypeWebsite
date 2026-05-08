@@ -284,7 +284,17 @@ export function renderNav(lang) {
             btn.setAttribute('aria-expanded', isOpen);
         });
 
+        // close the hamburguer menu when click links
         menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('is-open');
+                btn.classList.remove('is-open');
+                btn.setAttribute('aria-expanded', false);
+            });
+        });
+
+        // close the hamburguer menu when click on lang
+        menu.querySelectorAll('button').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.remove('is-open');
                 btn.classList.remove('is-open');

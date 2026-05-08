@@ -52,6 +52,7 @@ export const dictionary = {
     "audiovisual": { "en": "Audiovisual", "pt": "Audiovisual", "fr": "Audiovisuel" },
     "animation": { "en": "Animation", "pt": "Animação", "fr": "Animation" },
     "interactive": { "en": "Interactive", "pt": "Interativo", "fr": "Interactif" },
-    "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art NumÃ©rique" }
+    "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art NumÃ©rique" },
+    "nft": { "en": "NFT", "pt": "NFT", "fr": "NFT" }
   }
 }
