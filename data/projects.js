@@ -3,7 +3,7 @@ export const works = {
   "paulistao-casas-bahia-2026": {
     year: 2024,
     categories: ["3d", "animation"],
-    thumbnail: "https://r2.yourdomain.com/tap-to-pay-zoop/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview: "https://r2.yourdomain.com/tap-to-pay-zoop/preview.mp4",
     title: {
       pt: "Paulistão Casas Bahia 2026",
@@ -44,7 +44,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
@@ -57,12 +57,12 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
     ],
@@ -71,8 +71,8 @@ export const works = {
   "ivai-gin-launch-film": {
     year: 2023,
     categories: ["3d", "animation"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Ivai Gin — Vídeo de Lançamento",
       en: "Ivai Gin — Launch Film",
@@ -91,7 +91,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Filme de lançamento do Ivai Gin",
           en: "Ivai Gin Launch Film",
@@ -108,7 +108,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -125,7 +125,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -142,7 +142,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -155,8 +155,8 @@ export const works = {
   "inova-sim-concept-video": {
     year: 2024,
     categories: ["3d", "animation"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Inova SIM — Vídeo Conceito",
       en: "Inova SIM — Concept Video",
@@ -175,7 +175,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Vídeo conceito da Inova SIM",
           en: "Inova SIM Concept Video",
@@ -192,7 +192,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -209,7 +209,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -226,7 +226,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: null,
           en: null,
@@ -239,7 +239,7 @@ export const works = {
   "ai-pharmaceuticals": {
     year: 2023,
     categories: ["3d", "animation", "art-direction"],
-    thumbnail: "https://r2.yourdomain.com/tap-to-pay-zoop/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview: "https://r2.yourdomain.com/tap-to-pay-zoop/preview.mp4",
     title: {
       pt: "AI Pharmaceuticals",
@@ -256,7 +256,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "https://youtube.com/watch?v=NOVLNrncpYw",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "AI Pharmaceuticals — Animação Conceitual",
           en: "AI Pharmaceuticals — Concept Animation",
@@ -273,7 +273,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
@@ -286,12 +286,12 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
     ],
@@ -300,7 +300,7 @@ export const works = {
   "carnaval-oscars": {
     year: 2025,
     categories: ["3d", "animation", "art-direction"],
-    thumbnail: "https://r2.yourdomain.com/tap-to-pay-zoop/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview: "https://r2.yourdomain.com/tap-to-pay-zoop/preview.mp4",
     title: {
       pt: "Carnaval - A Vida Presta",
@@ -316,7 +316,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "https://youtube.com/watch?v=NOVLNrncpYw",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Carnaval para Fernanda Torres — Making Of",
           en: "Carnival for Fernanda Torres — Making Of",
@@ -333,7 +333,7 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
@@ -346,12 +346,12 @@ export const works = {
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
       {
         type: "image",
-        url: "https://r2.yourdomain.com/tap-to-pay-zoop/cover.webp",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: { pt: null, en: null, fr: null },
       },
     ],
@@ -360,8 +360,8 @@ export const works = {
   "filtro-trident": {
     year: "2022",
     categories: ["3d", "interactive"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Filtro AR Trident X",
       en: "Trident AR Filter X",
@@ -375,7 +375,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Vídeo de lançamento",
           en: "Launch video",
@@ -396,8 +396,8 @@ export const works = {
   bisao: {
     year: "2022",
     categories: ["3d", "interactive"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Filtro AR Bisão",
       en: "Bisão AR Filter",
@@ -411,7 +411,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Vídeo de lançamento",
           en: "Launch video",
@@ -430,10 +430,10 @@ export const works = {
   },
 
   spoleto: {
-    year: "PLACEHOLDER",
+    year: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     categories: ["3d", "interactive"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Filtro AR Spoleto",
       en: "Spoleto AR Filter",
@@ -447,7 +447,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Vídeo principal",
           en: "Main video",
@@ -468,8 +468,8 @@ export const works = {
   "molico-gold": {
     year: "2023",
     categories: ["3d", "interactive"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Filtro Molico Gold",
       en: "Molico Gold Filter",
@@ -483,7 +483,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://youtube.com/embed/NOVLNrncpYw",
         caption: {
           pt: "Vídeo principal",
           en: "Main video",
@@ -504,8 +504,8 @@ export const works = {
   "tente-nao-rir": {
     year: "2022",
     categories: ["3d", "interactive"],
-    thumbnail: "PLACEHOLDER",
-    preview: "PLACEHOLDER",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
+    preview: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     title: {
       pt: "Filtro Tente Não Rir",
       en: "Try Not to Laugh Filter",
@@ -513,13 +513,13 @@ export const works = {
     },
     credits: {
       agency: "NOO",
-      client: "PLACEHOLDER",
+      client: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
       programming: "Judd Buchanan",
     },
     content: [
       {
         type: "video",
-        url: "PLACEHOLDER",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
         caption: {
           pt: "Vídeo principal",
           en: "Main video",
@@ -544,7 +544,7 @@ export const digitalArt = {
   "soul-gardening": {
     year: 2021,
     categories: ["Statue Series"],
-    thumbnail: "https://r2.yourdomain.com/coca-cola-ig-filter/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview: "https://r2.yourdomain.com/coca-cola-ig-filter/preview.mp4",
     title: {
       pt: "Soul Gardening",
@@ -575,7 +575,7 @@ export const digitalArt = {
   "fairest-goddess": {
     year: 2022,
     categories: ["Statue Series"],
-    thumbnail: "https://r2.yourdomain.com/coca-cola-ig-filter/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/diizbqlsj/video/upload/v1778457408/To_the_Fairest_Goddess_ddvkwe.mp4",
     title: {
@@ -607,7 +607,7 @@ export const digitalArt = {
   "seas-of-torment": {
     year: 2022,
     categories: ["Statue Series"],
-    thumbnail: "https://r2.yourdomain.com/seas-of-torment/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/seas_of_torment.mp4",
     title: {
@@ -639,7 +639,7 @@ export const digitalArt = {
   "the-nature-of-angels": {
     year: 2022,
     categories: ["Statue Series"],
-    thumbnail: "https://r2.yourdomain.com/the-nature-of-angels/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/the_nature_of_angels.mp4",
     title: {
@@ -671,7 +671,7 @@ export const digitalArt = {
   praeferratus: {
     year: 2022,
     categories: ["Statue Series"],
-    thumbnail: "https://r2.yourdomain.com/praeferratus/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/praeferratus.mp4",
     title: {
@@ -705,7 +705,7 @@ export const digitalArt = {
   "organized-mess": {
     year: 2022,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/organized-mess/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/organized_mess.mp4",
     title: {
@@ -737,7 +737,7 @@ export const digitalArt = {
   "program-files": {
     year: 2022,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/program-files/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/program_files.mp4",
     title: {
@@ -769,7 +769,7 @@ export const digitalArt = {
   "backup-from-the-dead": {
     year: 2022,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/backup-from-the-dead/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/backup_from_the_dead.mp4",
     title: {
@@ -800,7 +800,7 @@ export const digitalArt = {
   "exit-strategy": {
     year: 2023,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/exit-strategy/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/exit_strategy.mp4",
     title: {
@@ -831,7 +831,7 @@ export const digitalArt = {
   stranded: {
     year: 2023,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/stranded/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/stranded.mp4",
     title: {
@@ -862,7 +862,7 @@ export const digitalArt = {
   "silicon-age": {
     year: 2023,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/silicon-age/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/silicon_age.mp4",
     title: {
@@ -894,7 +894,7 @@ export const digitalArt = {
   "reported-as-unsafe": {
     year: 2024,
     categories: ["PC Series"],
-    thumbnail: "https://r2.yourdomain.com/reported-as-unsafe/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://res.cloudinary.com/yourcloud/video/upload/v1234567890/reported_as_unsafe.mp4",
     title: {
@@ -928,7 +928,7 @@ export const digitalArt = {
   "degen-headquarters": {
     year: 2022,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/degen-headquarters/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVoyZ2pqUHhndEJNOWFlaTd2VzEzMzRGYktxYTU4NmNKVWYzYnZvdlhNOVpwL2FuaW1hdGlvbi5tcDQ=",
     title: {
@@ -959,7 +959,7 @@ export const digitalArt = {
   "crypto-beggar": {
     year: 2022,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/crypto-beggar/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVlwUEF4OHJlZDFQTGtmcmhpTGZoYW1SOWo4RVd3TWlWSkpzeVhOZEY2Qk5aL2FuaW1hdGlvbi5tcDQ=",
     title: {
@@ -990,7 +990,7 @@ export const digitalArt = {
   "post-exodus": {
     year: 2021,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/post-exodus/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVFGeDVQRjRYSHZLWGpIejRQUlZlR1lTVlZjTmNnVVpDZHpGem5MS1RnS3NSL25mdC5tcDQ=",
     title: {
@@ -1022,7 +1022,7 @@ export const digitalArt = {
   "nova-solis": {
     year: 2022,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/nova-solis/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVJ1UjNnOE1XczI4Ym1DeTNDY2N3ejZKMlZMU2JLVnlCeUNZYVoxRktHdE5NL25mdC5tcDQ=",
     title: {
@@ -1054,7 +1054,7 @@ export const digitalArt = {
   "pluvia-lux": {
     year: 2022,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/pluvia-lux/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9hcndlYXZlLm5ldC93WkxMUkFjQ1h3ZGdjemZKQnRvUUQwYVFySlRTNENNR0xjMzhyUXFGcjkw",
     title: {
@@ -1086,7 +1086,7 @@ export const digitalArt = {
   "our-future-is-digital": {
     year: 2021,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/our-future-is-digital/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbWFGdGg0UFRyZkZhTjRqOVB5VFdQTWlHZFNYaWZub1U2aks0SllZMlIzMkpTL2FuaW1hdGlvbi5tcDQ=",
     title: {
@@ -1117,7 +1117,7 @@ export const digitalArt = {
   "physical-art-is-cancelled": {
     year: 2021,
     categories: ["Ethereum Series"],
-    thumbnail: "https://r2.yourdomain.com/physical-art-is-cancelled/thumb.webp",
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHqtyG-KySRkTkh0EC1JeUJ8219XKdsp-Ew&s",
     preview:
       "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVlSSzhKY0dQb1d6bTUzVXlaYVF6aXlrdUY5UlptRkFlbTVVVFJvNVdLWENjL2FuaW1hdGlvbi5tcDQ=",
     title: {

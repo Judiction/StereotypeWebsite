@@ -445,7 +445,7 @@ button { font-family: inherit; }
 /* Text Block - Editorial Styling */
 .text-block {
     max-width: 800px; /* Narrower for reading comfort */
-    margin-left: 0;
+    margin: 0px auto;
 }
 
 .text-block p {
