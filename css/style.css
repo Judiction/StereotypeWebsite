@@ -9,7 +9,7 @@
     --tag-opacity: 0.6;
     
     /* Typography */
-    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-main: Arial, Helvetica, sans-serif;
     --ls-tight: -0.04em;          /* Heavy Headlines */
     --ls-meta: 0.05em;           /* Tags & Nav */
     
@@ -29,7 +29,7 @@
 * { 
     box-sizing: border-box; 
     margin: 0; 
-    padding: 0; 
+    padding: 0;
 }
 
 html {
@@ -80,6 +80,7 @@ button { font-family: inherit; }
     text-transform: uppercase;
     letter-spacing: -0.03em;
     font-size: 1.2rem;
+    font-style: italic;
     
     /* CRITICAL: Must be block or inline-block for filters to track correctly */
     display: inline-block; 
@@ -328,6 +329,7 @@ button { font-family: inherit; }
 
 /* Editorial Category Tags */
 .project-info h3 {
+    font-style: italic;
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -445,7 +447,7 @@ button { font-family: inherit; }
 /* Text Block - Editorial Styling */
 .text-block {
     max-width: 800px; /* Narrower for reading comfort */
-    margin-left: 0;
+    margin: 0px auto;
 }
 
 .text-block p {
@@ -454,7 +456,6 @@ button { font-family: inherit; }
 }
 
 /* Media Blocks (Video & Image) */
-.video-block iframe,
 .image-block img {
     width: 100%;
     background: var(--ui-soft-bg);
@@ -462,9 +463,26 @@ button { font-family: inherit; }
     display: block;
 }
 
-.video-block iframe { aspect-ratio: 16 / 9; }
+.video-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-block video {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .video-block video {
+        max-height: 70vh;
+        max-width: 100%;
+    }
+}
 
 .caption {
+    text-align: center;
     margin-top: 16px;
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -474,11 +492,45 @@ button { font-family: inherit; }
 
 /* Footer Navigation */
 .project-footer {
-    margin-top: 120px;
+    margin-top: 40px;
     padding-bottom: 80px;
     border-top: 1px solid var(--ui-border);
     padding-top: 40px;
 }
+.project-credits {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.credit-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+}
+
+.credit-key {
+    color: var(--accent-color);
+}
+
+.credit-value {
+    opacity: 0.6;
+    text-align: right;
+}
+
+.credit-link {
+    opacity: 0.4;
+    transition: opacity var(--transition-speed);
+}
+
+.credit-link:hover {
+    opacity: 1;
+}
+
 
 .back-link {
     font-size: 0.75rem;
@@ -539,6 +591,7 @@ button { font-family: inherit; }
     display: inline-block;
     border: solid 1px var(--text-color);
     line-height: 1;
+    margin-top: 20px;
     padding: 10px;
 }
 
@@ -552,6 +605,8 @@ button { font-family: inherit; }
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: var(--ls-tight);
+    hyphens: auto;
+    word-break: break-word;
 }
 
 /* About Grid */
@@ -562,16 +617,17 @@ button { font-family: inherit; }
     margin-top: 60px;
 }
 
-.bio img{
-    aspect-ratio: 16 / 9;
+.bio video{
     object-fit:cover;
-    width: 100%;
+    width: 50%;
     opacity: 0; 
     
     animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
     /* 3. Performance boost */
     will-change: transform, opacity;
 }
+
+
 .bio h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -708,7 +764,8 @@ button { font-family: inherit; }
 @media (max-width: 768px) {
     .projects-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
-    .home-hero h1 { font-size: 4.5rem; }
+    .home-hero h1 { font-size: 4.0rem; }
+    .bio video {width: 100%;}
 }
 
 /* ANIMATION */
