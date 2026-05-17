@@ -151,7 +151,7 @@ export function renderHome(container, lang) {
     container.innerHTML = `
         <section class="home-hero">
             <div class="hero-content">
-                <h1>BE A STEREOTYPE</h1>
+                <h1 class="logo">BE A STEREOTYPE</h1>
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
                 <p class="intro-phrase">Judd Buchanan</p>
                 <a href="/work" class="home-cta">
@@ -169,7 +169,11 @@ export function renderAbout(container, lang) {
         <section class="about-page">
             <div class="about-grid">
                 <article class="bio">
-                    <img src=https://assets.objkt.media/file/assets-004/h/tz1bEybUvLkmSbHcCAqwQPZtf7sqj1JQwSHS/thumb400?cb=e02119e3" alt="Judd Buchannan, 3D Artist, Filmmaker, Creative Technologist">
+                    <video src="https://res.cloudinary.com/diizbqlsj/video/upload/v1779045075/profile-pic_ye3foc.mp4"
+                    autoplay
+                    muted
+                    loop
+                    playsinline></video>
                     <h2>${dictionary.ui.about[lang]}</h2>
                     <p class="bio">
                         ${dictionary.ui.bio[lang]}

@@ -29,9 +29,9 @@ export const dictionary = {
 
 
     "bio": {
-      "en": "Judd Buchannan is a 3D Artist & Creative Technologist...",
-      "pt": "Judd Buchannan é um Artista 3D & Técnogolista Criativo...",
-      "fr": "Créer des expériences visuelles à travers le temps et l'espace."
+      "en": "Hi, I'm Judd. I'm a 3D animator and creative technologist based in Rio de Janeiro, currently working at NOO Works. With a Bachelor’s degree in Film Production from Université de Montréal, my work blends cinematic storytelling with emerging technologies, interactive media, and experimental digital aesthetics. My practice throughout the past 10 years spans 3D animation, motion design, generative art, and creative coding, constantly exploring new visual languages and technological frontiers. Driven by curiosity and innovation, I create immersive experiences that merge art, design, and technology.",
+      "pt": "Olá, eu sou Judd. Sou animador 3D e creative technologist baseado no Rio de Janeiro, atualmente trabalhando na NOO Works. Formado em Cinema pela Université de Montréal, meu trabalho combina narrativa cinematográfica com tecnologias emergentes, mídia interativa e estéticas digitais experimentais. Ao longo dos últimos 10 anos, minha prática envolve animação 3D, motion design, arte generativa e creative coding, explorando constantemente novas linguagens visuais e fronteiras tecnológicas. Movido pela curiosidade e inovação, crio experiências imersivas que unem arte, design e tecnologia.",
+      "fr": "Salut, je m'appelle Judd. Je suis animateur 3D et creative technologist basé à Rio de Janeiro, et je travaille actuellement chez NOO Works. Diplômé d’un baccalauréat en production cinématographique de l’Université de Montréal, mon travail mélange narration cinématographique, technologies émergentes, médias interactifs et esthétiques numériques expérimentales. Depuis plus de 10 ans, ma pratique couvre l’animation 3D, le motion design, l’art génératif et le creative coding, explorant constamment de nouveaux langages visuels et de nouvelles frontières technologiques. Porté par la curiosité et l’innovation, je crée des expériences immersives qui fusionnent art, design et technologie."
     },
     "contact": { "en": "Contact", "pt": "Contato", "fr": "Contact" },
     "send": { "en": "Send Message", "pt": "Enviar Mensagem", "fr": "Envoyer" },

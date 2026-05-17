@@ -80,6 +80,7 @@ button { font-family: inherit; }
     text-transform: uppercase;
     letter-spacing: -0.03em;
     font-size: 1.2rem;
+    font-style: italic;
     
     /* CRITICAL: Must be block or inline-block for filters to track correctly */
     display: inline-block; 
@@ -328,6 +329,7 @@ button { font-family: inherit; }
 
 /* Editorial Category Tags */
 .project-info h3 {
+    font-style: italic;
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -615,16 +617,17 @@ button { font-family: inherit; }
     margin-top: 60px;
 }
 
-.bio img{
-    aspect-ratio: 16 / 9;
+.bio video{
     object-fit:cover;
-    width: 100%;
+    width: 50%;
     opacity: 0; 
     
     animation: fadeInUp 1.2s var(--ease-out-expo) forwards;
     /* 3. Performance boost */
     will-change: transform, opacity;
 }
+
+
 .bio h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -762,6 +765,7 @@ button { font-family: inherit; }
     .projects-grid { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
     .home-hero h1 { font-size: 4.0rem; }
+    .bio video {width: 100%;}
 }
 
 /* ANIMATION */

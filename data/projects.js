@@ -1,11 +1,12 @@
 // formato de exemplo para colocar os projetos
+// videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
   "paulistao-casas-bahia-2026": {
     year: 2024,
     categories: ["3d", "animation"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778981995/PaulistaoCover_b5ib7j.png",
-    preview: "hhttps://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
     title: {
       pt: "Paulistão Casas Bahia 2026",
       en: "Paulistão Casas Bahia 2026",
@@ -315,7 +316,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985852/remedios_chatgpt_by7g5e.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047215/remed_gpt_hppmo3.mp4",
       caption: {
         pt: "Pilulas ChatGPT - da série AI Pharmaceuticals",
         en: "ChatGPT Pills - from the AI Pharmaceuticals series",
@@ -324,7 +325,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985852/remedios_photoshop_csvihn.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
       caption: {
         pt: "Bandaid Photoshop Generative Fill - da série AI Pharmaceuticals",
         en: "Photoshop Generative Fill Bandaids - from the AI Pharmaceuticals series",
@@ -333,7 +334,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985853/remedios_midjourney_b2qd8y.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
       caption: {
         pt: "Pilulas Midjourney - da série AI Pharmaceuticals",
         en: "Midjourney Pills - from the AI Pharmaceuticals series",
@@ -363,7 +364,7 @@ export const works = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987295/carnaval_makingof_llrxyh.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779046876/carnaval_makingof_nosound_p8dv0v.mp4",
       caption: {
         pt: "Carnaval para Fernanda Torres — Making Of",
         en: "Carnival for Fernanda Torres — Making Of",
@@ -875,7 +876,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996081/cover_stranded_tkcu8e.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1234567890/stranded.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995880/Stranded_f6etd7.mp4",
   title: {
     pt: "Stranded",
     en: "Stranded",
@@ -1147,7 +1148,7 @@ export const digitalArt = {
 "physical-art-is-cancelled": {
   year: 2021,
   categories: ["Ethereum Series"],
-  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994365/cover_artcancelled_nb9kas.png.webp",
+  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994365/cover_artcancelled_nb9kas.png",
   preview: "https://media.raribleuserdata.com/cache/aHR0cHM6Ly9pcGZzLnJhcmlibGV1c2VyZGF0YS5jb20vaXBmcy9RbVlSSzhKY0dQb1d6bTUzVXlaYVF6aXlrdUY5UlptRkFlbTVVVFJvNVdLWENjL2FuaW1hdGlvbi5tcDQ=",
   title: {
     pt: "Physical Art is Cancelled",
