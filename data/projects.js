@@ -325,7 +325,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
       caption: {
         pt: "Bandaid Photoshop Generative Fill - da série AI Pharmaceuticals",
         en: "Photoshop Generative Fill Bandaids - from the AI Pharmaceuticals series",
@@ -334,7 +334,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
       caption: {
         pt: "Pilulas Midjourney - da série AI Pharmaceuticals",
         en: "Midjourney Pills - from the AI Pharmaceuticals series",
