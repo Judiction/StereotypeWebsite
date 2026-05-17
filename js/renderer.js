@@ -1,8 +1,7 @@
 //./js/renderer.js
 
 import { dictionary } from '../data/dictionary.js'; // You'll need the data too!
-import { getUniqueCategories } from './utils.js';
-import { buildFilterMenu, currentFilter } from './filter.js';
+import { buildFilterMenu, currentFilter, getUniqueCategories } from './filter.js';
 
 /**
  * Creates the individual content blocks based on its type

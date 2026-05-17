@@ -51,3 +51,11 @@ function setActiveFilter(activeBtn, category, lang, list) {
 export function resetFilterState() {
     currentFilter = 'all';
 }
+
+export function getUniqueCategories(collection) {
+    const categories = new Set();
+    Object.values(collection).forEach(project => {
+        project.categories.forEach(cat => categories.add(cat));
+    });
+    return Array.from(categories);
+}
