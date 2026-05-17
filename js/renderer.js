@@ -26,11 +26,15 @@ function createTextBlock(item, lang) {
     `;
 }
 
-function createVideoBlock(item, lang){
+function createVideoBlock(item, lang) {
     const caption = item.caption[lang] ? `<p class="caption">${item.caption[lang]}</p>` : '';
     return `
         <div class="project-block video-block">
-            <iframe src="${item.url}" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <video src="${item.url}"
+                autoplay
+                loop
+                controls
+                playsinline></video>
             ${caption}
         </div>
     `;
@@ -147,9 +151,9 @@ export function renderHome(container, lang) {
     container.innerHTML = `
         <section class="home-hero">
             <div class="hero-content">
-                <h1>Judd Buchannan</h1>
+                <h1>BE A STEREOTYPE</h1>
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
-                <p class="intro-phrase">${dictionary.ui.intro[lang]}</p>
+                <p class="intro-phrase">Judd Buchanan</p>
                 <a href="/work" class="home-cta">
                     ${dictionary.ui.work[lang]} →
                 </a>
@@ -175,10 +179,9 @@ export function renderAbout(container, lang) {
                 <div class="about-contact">
                     <h3>${dictionary.ui.contact[lang]}</h3>
                     
-                    <form action="https://formsubmit.co/miguelmddesign@gmail.com" method="POST" class="contact-form">
-                        <input type="hidden" name="_next" value="${window.location.href}">
-                        <input type="hidden" name="_subject" value="New Portfolio Message!">
-                        
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="901fd2cf-6e6d-4752-8e1d-126cef40fd8b">
+
                         <div class="form-group">
                             <input type="text" name="name" placeholder="${dictionary.ui.placeholder_name[lang]}" required>
                         </div>
@@ -206,25 +209,50 @@ export function renderAbout(container, lang) {
 export function renderProjectPage(container, project, lang) {
     if (!project) return;
 
+    const creditsEntries = Object.entries(project.credits || {});
+    const creditsHTML = creditsEntries.length ? `
+        <footer class="project-footer">
+            <div class="project-credits">
+                ${creditsEntries.map(([key, value]) => `
+                    <div class="credit-row">
+                        <span class="credit-key">${dictionary.roles?.[key]?.[lang] ?? formatCreditKey(key)}</span>
+                        ${key === 'link' 
+                            ? `<a class="credit-value credit-link" href="${value}" target="_blank" rel="noopener noreferrer">↗ ${value}</a>`
+                            : `<span class="credit-value">${value}</span>`
+                        }
+                    </div>
+                `).join('')}
+            </div>
+            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+        </footer>
+    ` : `
+        <footer class="project-footer">
+            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+        </footer>
+    `;
+
     container.innerHTML = `
         <article class="project-detail">
             <header class="project-header">
                 <h1>${project.title[lang]}</h1>
                 <div class="project-meta">
                     <span>${project.year}</span>
-                    <span>${project.credits.agency}</span>
+                    ${project.credits.agency ? `<span>${project.credits.agency}</span>`: ''}
                 </div>
             </header>
 
             <section class="project-content">
                 ${project.content.map(item => createMediaBlock(item, lang)).join('')}
             </section>
-
-            <footer class="project-footer">
-                <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
-            </footer>
+            ${creditsHTML}
         </article>
     `;
+}
+
+function formatCreditKey(key) {
+    return key
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, c => c.toUpperCase());
 }
 
 export function renderNav(lang) {
@@ -243,7 +271,7 @@ export function renderNav(lang) {
                 </defs>
             </svg>
             <div class="nav-container">
-                <a href="/" class="logo">beastereotype</a>
+                <a href="/" class="logo">be a stereotype</a>
                 <div class="nav-links">
                     <a href="/work" data-key="work"></a>
                     <a href="/digital-art" data-key="digital-art"></a>

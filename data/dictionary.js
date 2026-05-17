@@ -42,20 +42,34 @@ export const dictionary = {
   },
 
 "roles": {
-  "agency": { "en": "Agency", "pt": "Agência", "fr": "Agence" },
-  "client": { "en": "Client", "pt": "Cliente", "fr": "Client" },
-  "direction": { "en": "Direction", "pt": "Direção", "fr": "Direction" },
-  "3D animation": { "en": "3D Animation", "pt": "Animação 3D", "fr": "Animation 3D" },
-  "3d-modeling": { "en": "3D Modelling", "pt": "Modelagem 3D", "fr": "Modélisation 3D" },
-  "programming": { "en": "Programming", "pt": "Programação", "fr": "Programmation" },
-  "project-lead": { "en": "Project Lead", "pt": "Líder de Projeto", "fr": "Chef de projet" },
-  "operations-director": { "en": "Operations Director", "pt": "Diretora de Operações", "fr": "Directrice des opérations" },
-  "head-of-client-services": { "en": "Head of Client Services", "pt": "Head de Atendimento", "fr": "Responsable du service client" },
-  "project-management": { "en": "Project Management", "pt": "Gestão de Projeto", "fr": "Gestion de projet" },
-  "head-of-design": { "en": "Head of Design", "pt": "Head de Design", "fr": "Directeur du design" },
-  "head-of-animation": { "en": "Head of Animation", "pt": "Head de Animação", "fr": "Directeur de l’animation" },
-  "editing": { "en": "Editing", "pt": "Montagem", "fr": "Montage" },
-  "research": { "en": "Research", "pt": "Pesquisa", "fr": "Recherche" }
+    "agency": { "en": "Agency", "pt": "Agência", "fr": "Agence" },
+    "client": { "en": "Client", "pt": "Cliente", "fr": "Client" },
+    "direction": { "en": "Direction", "pt": "Direção", "fr": "Direction" },
+    "3D animation": { "en": "3D Animation", "pt": "Animação 3D", "fr": "Animation 3D" },
+    "3D animation and modeling": { "en": "3D Animation & Modeling", "pt": "Animação e Modelagem 3D", "fr": "Animation et modélisation 3D" },
+    "3d-modeling": { "en": "3D Modelling", "pt": "Modelagem 3D", "fr": "Modélisation 3D" },
+    "programming": { "en": "Programming", "pt": "Programação", "fr": "Programmation" },
+    "project-lead": { "en": "Project Lead", "pt": "Líder de Projeto", "fr": "Chef de projet" },
+    "operations-director": { "en": "Operations Director", "pt": "Diretora de Operações", "fr": "Directrice des opérations" },
+    "head-of-client-services": { "en": "Head of Client Services", "pt": "Head de Atendimento", "fr": "Responsable du service client" },
+    "project-management": { "en": "Project Management", "pt": "Gestão de Projeto", "fr": "Gestion de projet" },
+    "head-of-design": { "en": "Head of Design", "pt": "Head de Design", "fr": "Directeur du design" },
+    "head-of-animation": { "en": "Head of Animation", "pt": "Head de Animação", "fr": "Directeur de l'animation" },
+    "editing": { "en": "Editing", "pt": "Montagem", "fr": "Montage" },
+    "research": { "en": "Research", "pt": "Pesquisa", "fr": "Recherche" },
+    "client-services": { "en": "Client Services", "pt": "Atendimento", "fr": "Service client" },
+    "executive-production": { "en": "Executive Production", "pt": "Produção Executiva", "fr": "Production exécutive" },
+    "copywriting": { "en": "Copywriting", "pt": "Redação", "fr": "Rédaction" },
+    "art-direction": { "en": "Art Direction", "pt": "Direção de Arte", "fr": "Direction artistique" },
+    "animation": { "en": "Animation", "pt": "Animação", "fr": "Animation" },
+    "graphic-design": { "en": "Graphic Design", "pt": "Design Gráfico", "fr": "Design graphique" },
+    "concept": { "en": "Concept", "pt": "Conceito", "fr": "Concept" },
+    "design": { "en": "Design", "pt": "Design", "fr": "Design" },
+    "blockchain": { "en": "Blockchain", "pt": "Blockchain", "fr": "Blockchain" },
+    "editions": { "en": "Editions", "pt": "Edições", "fr": "Éditions" },
+    "properties": { "en": "Properties", "pt": "Propriedades", "fr": "Propriétés" },
+    "description": { "en": "Description", "pt": "Descrição", "fr": "Description" },
+    "link": { "en": "Link", "pt": "Link", "fr": "Lien" }
 },
   
   "categories": {
@@ -64,6 +78,7 @@ export const dictionary = {
     "audiovisual": { "en": "Audiovisual", "pt": "Audiovisual", "fr": "Audiovisuel" },
     "animation": { "en": "Animation", "pt": "Animação", "fr": "Animation" },
     "interactive": { "en": "Interactive", "pt": "Interativo", "fr": "Interactif" },
-    "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art Numérique" }
+    "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art Numérique" },
+    "art-direction": { "en": "Art Direction", "pt": "Direção de Arte", "fr": "Direction artistique" },
   }
 }
