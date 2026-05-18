@@ -1,12 +1,12 @@
 // formato de exemplo para colocar os projetos
-// videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
+// videos com url do cloudnary devem ter tag "q_auto/f_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/f_auto/v1778981865/)
 export const works = {
 
   "paulistao-casas-bahia-2026": {
     year: 2024,
     categories: ["3d", "animation"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778981995/PaulistaoCover_b5ib7j.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
     title: {
       pt: "Paulistão Casas Bahia 2026",
       en: "Paulistão Casas Bahia 2026",
@@ -29,7 +29,7 @@ export const works = {
     content: [
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
         caption: {
           pt: "Abertura de transmissão do Paulistão Casas Bahia 2026",
           en: "Paulistão Casas Bahia 2026 Broadcast Opener",
@@ -54,7 +54,7 @@ export const works = {
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981478/MakingOf_Paulistao_website_qqouel.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778981478/MakingOf_Paulistao_website_qqouel.mp4",
         caption: {
           pt: "Making-of da Abertura de transmissão do Paulistão Casas Bahia 2026",
           en: "Making of Paulistão Casas Bahia 2026 Broadcast Opener",
@@ -70,7 +70,7 @@ export const works = {
         "year": 2023,
             "categories": ["3d", "animation"],
                 "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778982630/IvaiCover_imbsn8.png",
-                    "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982797/Ivai_full_qockhs.mp4",
+                    "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982797/Ivai_full_qockhs.mp4",
                         "title": {
             "pt": "Ivai Gin — Vídeo de Lançamento",
                 "en": "Ivai Gin — Launch Film",
@@ -89,7 +89,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982797/Ivai_full_qockhs.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982797/Ivai_full_qockhs.mp4",
                 "caption": {
                     "pt": "Filme de lançamento do Ivai Gin",
                     "en": "Ivai Gin Launch Film",
@@ -106,7 +106,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982370/ivai_bottle_w4fpaf.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982370/ivai_bottle_w4fpaf.mp4",
                 "caption": {
                     "pt": "Filme de lançamento do Ivai Gin",
                     "en": "Ivai Gin Launch Film",
@@ -123,7 +123,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982372/ivai_island_jscscf.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982372/ivai_island_jscscf.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -132,7 +132,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982867/ivai_packshot_gt0gyd.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982867/ivai_packshot_gt0gyd.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -149,7 +149,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778983517/ivai_cover3_zvjcow.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778983517/ivai_cover3_zvjcow.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -158,7 +158,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982375/ivai_cover2_p2ocq1.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778982375/ivai_cover2_p2ocq1.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -172,7 +172,7 @@ export const works = {
         "year": 2024,
         "categories": ["3d", "animation"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778984203/inova_cover_ypm8vb.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984352/inova_anim_cover_ctc8od.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984352/inova_anim_cover_ctc8od.mp4",
         "title": {
             "pt": "Inova SIM — Vídeo Conceito",
             "en": "Inova SIM — Concept Video",
@@ -191,7 +191,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984157/Inova_full_vwkb0h.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984157/Inova_full_vwkb0h.mp4",
                 "caption": {
                     "pt": "Vídeo conceito da Inova SIM",
                     "en": "Inova SIM Concept Video",
@@ -208,7 +208,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984485/Inova_path_hsvjqu.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984485/Inova_path_hsvjqu.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -225,7 +225,7 @@ export const works = {
             },
              {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984721/inova_text_q6bune.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984721/inova_text_q6bune.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -242,7 +242,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984486/Montanha_ScreenCap_1_xouilh.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984486/Montanha_ScreenCap_1_xouilh.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -251,7 +251,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984486/Tunel_ScreenCap_1_vxswwq.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778984486/Tunel_ScreenCap_1_vxswwq.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -266,7 +266,7 @@ export const works = {
   year: 2023,
   categories: ["3d", "animation", "art-direction"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778986688/cover_remedios_vtzhfr.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985471/remedios_anim_cover_vitu6s.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778985471/remedios_anim_cover_vitu6s.mp4",
   title: {
     pt: "AI Pharmaceuticals",
     en: "AI Pharmaceuticals",
@@ -282,7 +282,7 @@ export const works = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985829/remedios_all_mhfqcq.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778985829/remedios_all_mhfqcq.mp4",
       caption: {
         pt: "AI Pharmaceuticals — Animação Conceitual",
         en: "AI Pharmaceuticals — Concept Animation",
@@ -299,7 +299,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778986473/remedios_makingof_szjwcz.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778986473/remedios_makingof_szjwcz.mp4",
       caption: {
         pt: "AI Pharmaceuticals — Animação Conceitual",
         en: "AI Pharmaceuticals — Concept Animation",
@@ -316,7 +316,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047215/remed_gpt_hppmo3.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1779047215/remed_gpt_hppmo3.mp4",
       caption: {
         pt: "Pilulas ChatGPT - da série AI Pharmaceuticals",
         en: "ChatGPT Pills - from the AI Pharmaceuticals series",
@@ -325,7 +325,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
       caption: {
         pt: "Bandaid Photoshop Generative Fill - da série AI Pharmaceuticals",
         en: "Photoshop Generative Fill Bandaids - from the AI Pharmaceuticals series",
@@ -334,7 +334,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1779047216/remed_midjourney_boyj88.mp4",
       caption: {
         pt: "Pilulas Midjourney - da série AI Pharmaceuticals",
         en: "Midjourney Pills - from the AI Pharmaceuticals series",
@@ -349,7 +349,7 @@ export const works = {
   year: 2025,
   categories: ["3d", "animation", "art-direction"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778987561/carnaval_cover_qksaav.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987438/carnaval_anim_cover_pgav0n.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778987438/carnaval_anim_cover_pgav0n.mp4",
   title: {
     pt: "Carnaval - A Vida Presta",
     en: "Carnival - A Vida Presta",
@@ -364,7 +364,7 @@ export const works = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779046876/carnaval_makingof_nosound_p8dv0v.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1779046876/carnaval_makingof_nosound_p8dv0v.mp4",
       caption: {
         pt: "Carnaval para Fernanda Torres — Making Of",
         en: "Carnival for Fernanda Torres — Making Of",
@@ -381,7 +381,7 @@ export const works = {
     },
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987284/Carnaval_low_rrvvbv.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778987284/Carnaval_low_rrvvbv.mp4",
       caption: { "pt": null, "en": null, "fr": null }
     },
     {
@@ -401,7 +401,7 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778989616/cover_trident_zbhhh9.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778989656/trident_anim_cover_zrryso.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778989656/trident_anim_cover_zrryso.mp4",
         "title": {
             "pt": "Filtro AR Trident X",
             "en": "Trident AR Filter X",
@@ -415,7 +415,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778989090/trident_video_g1x73j.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778989090/trident_video_g1x73j.mp4",
                 "caption": {
                     "pt": "Vídeo de lançamento",
                     "en": "Launch video",
@@ -432,7 +432,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778988718/analu_trident_nhfar6.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778988718/analu_trident_nhfar6.mp4",
                 "caption": {
                     "pt": null,
                     "en": null,
@@ -446,7 +446,7 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778990648/bisao_cover_vyjbvq.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778990649/bisao_anim_cover_mtc3m5.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778990649/bisao_anim_cover_mtc3m5.mp4",
         "title": {
             "pt": "Filtro AR Bisão",
             "en": "Bisão AR Filter",
@@ -460,7 +460,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778990655/bisao_promo_y8ef1u.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778990655/bisao_promo_y8ef1u.mp4",
                 "caption": {
                     "pt": "Vídeo de lançamento",
                     "en": "Launch video",
@@ -482,7 +482,7 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778992289/cover_spoleto_hkttvb.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778991863/spoleto_phones_crtsmk.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778991863/spoleto_phones_crtsmk.mp4",
         "title": {
             "pt": "Filtro AR Spoleto",
             "en": "Spoleto AR Filter",
@@ -496,7 +496,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778991863/spoleto_phones_crtsmk.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778991863/spoleto_phones_crtsmk.mp4",
                 "caption": {
                     "pt": "Vídeo principal",
                     "en": "Main video",
@@ -513,7 +513,7 @@ export const works = {
             },
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778991867/spoleto_makingof_djasb1.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778991867/spoleto_makingof_djasb1.mp4",
                 "caption": {
                     "pt": "Making-of Filtro AR Spoleto",
                     "en": "Making-of AR Filter Spoleto",
@@ -527,7 +527,7 @@ export const works = {
         "year": "2023",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778993020/molico_cover_azoleq.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778993022/molico_anim_cover_dbwkg1.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778993022/molico_anim_cover_dbwkg1.mp4",
         "title": {
             "pt": "Filtro Molico Gold",
             "en": "Molico Gold Filter",
@@ -541,7 +541,7 @@ export const works = {
         "content": [
             {
                 "type": "video",
-                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778993047/molico_demo_d8txsg.mp4",
+                "url": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778993047/molico_demo_d8txsg.mp4",
                 "caption": {
                     "pt": "Vídeo principal",
                     "en": "Main video",
@@ -574,7 +574,7 @@ export const digitalArt = {
     year: 2021,
     categories: ["Statue Series"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778995069/cover_soulgardening_aip0dh.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778456955/Soul_Gardening_t0rvl4.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778456955/Soul_Gardening_t0rvl4.mp4",
     title: {
       pt: "Soul Gardening",
       en: "Soul Gardening",
@@ -590,7 +590,7 @@ export const digitalArt = {
     content: [
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778456955/Soul_Gardening_t0rvl4.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778456955/Soul_Gardening_t0rvl4.mp4",
         caption: {
           pt: "Soul Gardening (76 editions, 1350x1080, 10 seconds, 2021)",
           en: "Soul Gardening (76 editions, 1350x1080, 10 seconds, 2021)",
@@ -604,7 +604,7 @@ export const digitalArt = {
     year: 2022,
     categories: ["Statue Series"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994973/cover_fairestgoddess_au0o2f.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
     title: {
       pt: "To the Fairest Goddess",
       en: "To the Fairest Goddess",
@@ -620,7 +620,7 @@ export const digitalArt = {
     content: [
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
         caption: {
           pt: "To the Fairest Goddess (50 editions, 1350 x 1080, 12 seconds, 2022)",
           en: "To the Fairest Goddess (50 editions, 1350 x 1080, 12 seconds, 2022)",
@@ -634,7 +634,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994975/cover_seas_g3dygd.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/Seas_of_Torment_caqb64.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995161/Seas_of_Torment_caqb64.mp4",
   title: {
     pt: "Seas of Torment",
     en: "Seas of Torment",
@@ -650,7 +650,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/Seas_of_Torment_caqb64.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995161/Seas_of_Torment_caqb64.mp4",
       caption: {
         pt: "Seas of Torment (50 editions, 1350 x 1080, 9 seconds, 2022)",
         en: "Seas of Torment (50 editions, 1350 x 1080, 9 seconds, 2022)",
@@ -664,7 +664,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994972/cover_angels_jcflwl.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995168/The_Nature_of_Angels_womfx8.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995168/The_Nature_of_Angels_womfx8.mp4",
   title: {
     pt: "The Nature of Angels",
     en: "The Nature of Angels",
@@ -680,7 +680,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995168/The_Nature_of_Angels_womfx8.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995168/The_Nature_of_Angels_womfx8.mp4",
       caption: {
         pt: "The Nature of Angels (25 editions, 1350 x 1080, 10 seconds, 2022)",
         en: "The Nature of Angels (25 editions, 1350 x 1080, 10 seconds, 2022)",
@@ -694,7 +694,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994974/cover_praeferratus_iaruc5.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995166/Praeferratus_cceg1l.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995166/Praeferratus_cceg1l.mp4",
   title: {
     pt: "Praeferratus",
     en: "Praeferratus",
@@ -710,7 +710,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995166/Praeferratus_cceg1l.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995166/Praeferratus_cceg1l.mp4",
       caption: {
         pt: "Praeferratus (25 editions, 1350 x 1080, 10 seconds, 2022)",
         en: "Praeferratus (25 editions, 1350 x 1080, 10 seconds, 2022)",
@@ -726,7 +726,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_organizedmess_g1g0zl.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Organized_Mess_cbnuor.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995902/Organized_Mess_cbnuor.mp4",
   title: {
     pt: "Organized Mess",
     en: "Organized Mess",
@@ -742,7 +742,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Organized_Mess_cbnuor.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995902/Organized_Mess_cbnuor.mp4",
       caption: {
         pt: "Organized Mess (50 editions, 1080 x 1350, 12 seconds, 2022)",
         en: "Organized Mess (50 editions, 1080 x 1350, 12 seconds, 2022)",
@@ -756,7 +756,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_programfiles_ulbf6g.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995874/Program_Files_uftfld.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995874/Program_Files_uftfld.mp4",
   title: {
     pt: "Program Files",
     en: "Program Files",
@@ -772,7 +772,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995874/Program_Files_uftfld.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995874/Program_Files_uftfld.mp4",
       caption: {
         pt: "Program Files (50 editions, 1080 x 1350, 7 seconds, 2022)",
         en: "Program Files (50 editions, 1080 x 1350, 7 seconds, 2022)",
@@ -786,7 +786,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_backupdead_nzdzwa.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
   title: {
     pt: "Back(up) From The Dead",
     en: "Back(up) From The Dead",
@@ -802,7 +802,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
       caption: {
         pt: "Back(up) From The Dead (10 editions, 1080 x 1350, 10 seconds, 2022)",
         en: "Back(up) From The Dead (10 editions, 1080 x 1350, 10 seconds, 2022)",
@@ -816,7 +816,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996667/cover_swapped_nbha1u.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778996716/Swapped_tbywxn.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778996716/Swapped_tbywxn.mp4",
   title: {
     pt: "Swapped",
     en: "Swapped",
@@ -832,7 +832,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778996716/Swapped_tbywxn.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778996716/Swapped_tbywxn.mp4",
       caption: {
         pt: "Swapped (100 editions, 1080 x 1350, 5 seconds, 2022)",
         en: "Swapped (100 editions, 1080 x 1350, 5 seconds, 2022)",
@@ -846,7 +846,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_exitstrategy_y2cu2h.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995999/Exit_Strategy_blpcsb.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995999/Exit_Strategy_blpcsb.mp4",
   title: {
     pt: "Exit Strategy",
     en: "Exit Strategy",
@@ -862,7 +862,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995999/Exit_Strategy_blpcsb.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995999/Exit_Strategy_blpcsb.mp4",
       caption: {
         pt: "Exit Strategy (25 editions, 1080 x 1350, 6 seconds, 2023)",
         en: "Exit Strategy (25 editions, 1080 x 1350, 6 seconds, 2023)",
@@ -876,7 +876,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996081/cover_stranded_tkcu8e.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995880/Stranded_f6etd7.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995880/Stranded_f6etd7.mp4",
   title: {
     pt: "Stranded",
     en: "Stranded",
@@ -892,7 +892,7 @@ export const digitalArt = {
   content: [
     {
       type: "PC Series",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto,q_auto/v1234567890/stranded.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/f_auto,q_auto/f_auto/v1234567890/stranded.mp4",
       caption: {
         pt: "Stranded (25 editions, 1080 x 1350, 6 seconds, 2023)",
         en: "Stranded (25 editions, 1080 x 1350, 6 seconds, 2023)",
@@ -906,7 +906,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996090/cover_siliconage_obm7fn.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995885/Silicon_Age_esr2xd.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995885/Silicon_Age_esr2xd.mp4",
   title: {
     pt: "Silicon Age",
     en: "Silicon Age",
@@ -922,7 +922,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995885/Silicon_Age_esr2xd.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995885/Silicon_Age_esr2xd.mp4",
       caption: {
         pt: "Silicon Age (25 editions, 1080 x 1350, 12 seconds, 2023)",
         en: "Silicon Age (25 editions, 1080 x 1350, 12 seconds, 2023)",
@@ -936,7 +936,7 @@ export const digitalArt = {
   year: 2024,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996080/cover_reportedunsafe_llschr.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
   title: {
     pt: "Reported as Unsafe",
     en: "Reported as Unsafe",
@@ -952,7 +952,7 @@ export const digitalArt = {
   content: [
     {
       type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
       caption: {
         pt: "Reported as Unsafe (10 editions, 1080 x 1350, 10 seconds, 2024)",
         en: "Reported as Unsafe (10 editions, 1080 x 1350, 10 seconds, 2024)",
