@@ -1,5 +1,7 @@
 // formato de exemplo para colocar os projetos
 // videos com url do cloudnary devem ter tag "q_auto/f_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/f_auto/v1778981865/)
+// https://cloudinary.com/documentation/video_optimization <- mais infos sobre optimizacao automatica de video e audio com cloudinary
+
 export const works = {
 
   "paulistao-casas-bahia-2026": {
