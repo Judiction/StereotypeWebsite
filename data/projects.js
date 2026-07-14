@@ -2,6 +2,93 @@
 // videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
+
+
+"think-with-google-2025": {
+    year: 2025,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1783999358/Cover_kbqh3r.jpg",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783999360/AnimatedThumb_ruqvut.mp4",
+    title: {
+      pt: "Think With Google 2025",
+      en: "Think With Google 2025",
+      fr: "Think With Google 2025"
+    },
+    credits: {
+      agency: "HOOD",
+      client: "Google",
+      "art-direction": "Pedro Alamorim, Camilla Mattos",
+      "motion-design": "Fernando Villela",
+      "3D animation": "Judd Buchanan"
+    },
+    content: [
+{
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997157/GoogleCover_wjtgnz.mp4",
+        caption: {
+          pt: "Tela Widescreen do Evento",
+          en: "Event Screen Backdrop",
+          fr: "Grand écran de l'événement"
+        }
+      },
+
+      {
+        type: "text",
+        text: {
+          pt: "Motion design desenvolvido para o Thinking with Google 2025, evento presencial com múltiplos formatos e telas. O projeto consistiu na tradução dos layouts criados pelo estúdio HOOD para animações 2D e 3D.",
+          en: "Motion design developed for Thinking with Google 2025, an in-person event with multiple formats and screens. The project involved translating layouts created by studio HOOD into 2D and 3D animations.",
+          fr: "Motion design développé pour le Thinking with Google 2025, un événement en présentiel avec de multiples formats et écrans. Le projet a consisté à traduire les layouts créés par le studio HOOD en animations 2D et 3D."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Como responsável pela animação 3D do projeto, desenvolvi as peças tridimensionais a partir do sistema de motion criado pela equipe, trabalhando movimento, profundidade e composição para integrar os elementos 3D da marca à linguagem visual do evento.",
+          en: "As the 3D animator on this project, I developed the three-dimensional pieces based on the motion system created by the team, working through movement, depth, and composition to integrate the brand's 3D elements into the event's visual language.",
+          fr: "En tant qu'animateur 3D sur ce projet, j'ai développé les pièces tridimensionnelles à partir du système de motion créé par l'équipe, en travaillant le mouvement, la profondeur et la composition pour intégrer les éléments 3D de la marque au langage visuel de l'événement."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997610/Ultrawide_2KVs_vbaehn.mp4",
+        caption: {
+          pt: "Pecas animadas desenvolvidas para o evento",
+          en: "Motion Design Identity developed for the event",
+          fr: "Identité de motion design développée pour l'événement"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Busquei traduzir os conceitos de “Searching, Scrolling e Streaming” que orientaram a identidade do evento, explorando profundidade, perspectiva e ritmo para dar volume e presença aos elementos que compunham o sistema de navegação e telas do projeto.",
+          en: "I aimed to translate the concepts of \"Searching, Scrolling, and Streaming\" that guided the event's identity, exploring depth, perspective, and rhythm to give volume and presence to the elements composing the project's navigation and screen system.",
+          fr: "J'ai cherché à traduire les concepts de « Searching, Scrolling et Streaming » qui ont guidé l'identité de l'événement, en explorant la profondeur, la perspective et le rythme pour donner du volume et de la présence aux éléments composant le système de navigation et d'écrans du projet."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997151/Making_OF_rejce3.mp4",
+        caption: {
+          pt: "Making of Think With Google 2025",
+          en: "Making of Think With Google 2025",
+          fr: "Making of Think With Google 2025"
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997155/Todos_Grafismos_pgutsg.mp4",
+        caption: {
+          pt: "Grafismos desenvolvidos para a identidade visual do evento",
+          en: "Graphics developed for the event's visual identity",
+          fr: "Graphismes développés pour l'identité visuelle de l'événement"
+        }
+      }
+    ]
+  },
+
+
+
+
   "paulistao-casas-bahia-2026": {
     year: 2024,
     categories: ["3d", "animation"],
@@ -277,7 +364,7 @@ export const works = {
     concept: "Judd Buchanan",
     direction: "Marcio Sal",
     "3D animation": "Judd Buchanan",
-    design: "NOO Works"
+    design: "Louise Favilla"
   },
   content: [
     {
