@@ -24,7 +24,7 @@ export const works = {
     content: [
 {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997157/GoogleCover_wjtgnz.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997157/GoogleCover_wjtgnz.mp4",
         caption: {
           pt: "Tela Widescreen do Evento",
           en: "Event Screen Backdrop",
@@ -50,7 +50,7 @@ export const works = {
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997610/Ultrawide_2KVs_vbaehn.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997610/Ultrawide_2KVs_vbaehn.mp4",
         caption: {
           pt: "Pecas animadas desenvolvidas para o evento",
           en: "Motion Design Identity developed for the event",
@@ -67,7 +67,7 @@ export const works = {
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997151/Making_OF_rejce3.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997151/Making_OF_rejce3.mp4",
         caption: {
           pt: "Making of Think With Google 2025",
           en: "Making of Think With Google 2025",
@@ -76,7 +76,7 @@ export const works = {
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783997155/Todos_Grafismos_pgutsg.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997155/Todos_Grafismos_pgutsg.mp4",
         caption: {
           pt: "Grafismos desenvolvidos para a identidade visual do evento",
           en: "Graphics developed for the event's visual identity",
