@@ -2,7 +2,153 @@
 // videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
-
+"lembrete": {
+    year: 2023,
+    categories: ["3d", "animation", "art-direction"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784147510/Cover_engrzl.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784147825/ThumbCover_zybq8x.mp4",
+    title: {
+      pt: "Lembrete - Curta-metragem",
+      en: "Reminder - Short Film",
+      fr: "Rappel - Court métrage"
+    },
+    credits: {
+      agency: "NOO",
+      "creative-direction": "Judd Buchanan, Miguel Duarte",
+      "script, storyboard and character-design": "Miguel Duarte",
+      "3D modelling and character animation": "Judd Buchanan"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784147887/Lembrete_Short_Film_v59tmu.mp4",
+        caption: {
+          pt: "Lembrete, curta-metragem autoral",
+          en: "Lembrete, a self-authored short film",
+          fr: "Lembrete, court-métrage personnel"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Um simples momento de atraso ou esquecimento pode alterar a trajetória de uma vida inteira. Oportunidades perdidas podem nunca mais se repetir, deixando-nos apenas com a expectativa de seu eventual retorno.",
+          en: "A mere moment of delay or forgetfulness can alter the trajectory of an entire lifetime. Opportunities lost may never resurface, leaving us with nothing but anticipation for their eventual return.",
+          fr: "Un simple instant de retard ou d'oubli peut changer la trajectoire de toute une vie. Les occasions perdues peuvent ne jamais se représenter, ne nous laissant que l'attente de leur éventuel retour."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Lembrete é um curta-metragem promocional para um aplicativo fictício de celular que nos ajuda a lembrar das coisas que não podemos esquecer no dia a dia.",
+          en: "Reminder is a promotional short film for a fictional phone App that helps us remember the things that we cannot forget in our daily lives.",
+          fr: "Lembrete est un court-métrage promotionnel pour une application de téléphone fictive qui nous aide à nous souvenir des choses que nous ne pouvons pas oublier au quotidien."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784147510/Cover_engrzl.png",
+        caption: {
+          pt: "Logo do aplicativo e identidade visual",
+          en: "App Logo and Visual Branding",
+          fr: "Logo de l'application et identité visuelle"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "A animação nasceu do desejo de contar uma história utilizando a linguagem visual do stop motion. Nosso desafio foi emular essa estética através do uso de animação 3D. Criamos o aplicativo fictício Lembrete como base para o desenvolvimento do projeto.",
+          en: "The animation arose from the desire to tell a story using the visual style of stop motion animations. Our challenge was to emulate this aesthetic through the use of 3D animation. We invented the fictional App Reminder as a basis to develop this project.",
+          fr: "L'animation est née du désir de raconter une histoire en utilisant le langage visuel du stop motion. Notre défi était de reproduire cette esthétique à travers l'animation 3D. Nous avons inventé l'application fictive Lembrete comme base pour développer ce projet."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784146139/AllScenesCloseUps_w3lvkg.png",
+        caption: {
+          pt: " ",
+          en: " ",
+          fr: " "
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784145863/AllScenes_txzxjs.png",
+        caption: {
+          pt: " ",
+          en: " ",
+          fr: " "
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Inspirados por uma estética minimalista, buscamos reduzir ao máximo o número de elementos e movimentos utilizados, focando apenas no que era essencial para contar a história. O storyboard nos ajudou a definir enquadramentos, ângulos de câmera e cenas-chave, permitindo narrar a história com a maior simplicidade possível.",
+          en: "Inspired by a minimalist aesthetic, we aimed to minimize the number of elements and movements employed, focusing solely on the elements that tell the story. The storyboard facilitated our selection of shots, camera angles, and pivotal scenes, enabling us to narrate the story with utmost simplicity.",
+          fr: "Inspirés par une esthétique minimaliste, nous avons cherché à réduire au maximum le nombre d'éléments et de mouvements utilisés, en nous concentrant uniquement sur ce qui était essentiel pour raconter l'histoire. Le storyboard nous a aidés à définir les cadrages, les angles de caméra et les scènes clés, nous permettant de raconter l'histoire avec la plus grande simplicité."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784145498/Storyboard_swe0qq.webp",
+        caption: {
+          pt: "Storyboard desenvolvido para o curta",
+          en: "Storyboard developed for the short film",
+          fr: "Storyboard développé pour le court-métrage"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Cada personagem foi pensado com uma simplicidade infantil. Para alcançar o efeito \"massinha\", implementamos uma base porosa, evitando detalhes intrincados e características muito individuais. A paleta de cores vibrante remete às cores do próprio material. Ao longo do processo de design, o desafio foi transmitir sentimentos de solidão, tristeza e abandono sem sobrecarregar a caracterização com complexidade desnecessária.",
+          en: "Each character was crafted with a childlike simplicity in mind. To achieve the \"Play-Doh\" effect, we implemented a porous base material, eschewing intricate details and individual characteristics. The vibrant color palette echoes the hues of the material itself. Throughout the character design process, we faced the challenge of conveying feelings of loneliness, sadness, and abandonment without overwhelming the characterization with unnecessary complexity.",
+          fr: "Chaque personnage a été pensé avec une simplicité enfantine. Pour obtenir l'effet « pâte à modeler », nous avons utilisé une base poreuse, évitant les détails complexes et les caractéristiques trop individuelles. La palette de couleurs vives rappelle les teintes du matériau lui-même. Tout au long du processus de conception, le défi a été de transmettre des sentiments de solitude, de tristesse et d'abandon sans surcharger les personnages d'une complexité inutile."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784145489/Illustrations_cwsvzl.webp",
+        caption: {
+          pt: "Estudos e desenhos de personagem",
+          en: "Character studies and sketches",
+          fr: "Études et croquis de personnages"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Durante o processo, criamos formas arredondadas e simplificadas com o objetivo de dar a impressão de que tudo havia sido feito à mão.",
+          en: "During the process, we created round, simplified shapes with the purpose of making it look like everything had been made with our hands.",
+          fr: "Au cours du processus, nous avons créé des formes arrondies et simplifiées afin de donner l'impression que tout avait été façonné à la main."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784145484/AllCharacters_zy67y0.png",
+        caption: {
+          pt: "Modelagem 3D em clay render",
+          en: "3D models in clay render",
+          fr: "Modèles 3D en rendu argile"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Buscamos transmitir uma narrativa direta. Nossa cenografia e os assets foram propositalmente mantidos minimalistas, focando apenas nos elementos essenciais. Definimos com cuidado os componentes necessários para caracterizar os ambientes em que as cenas se desenrolam.",
+          en: "We aimed to convey a straightforward narrative. Our scenography and assets were deliberately kept minimal, focusing only on essential elements. We meticulously outlined the necessary components that define the environments in which our scenes unfold.",
+          fr: "Nous avons cherché à transmettre un récit direct. Notre scénographie et nos assets ont été volontairement gardés minimalistes, en nous concentrant uniquement sur les éléments essentiels. Nous avons soigneusement défini les composants nécessaires pour caractériser les environnements dans lesquels nos scènes se déroulent."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784146777/Objects_dvdrke.webp",
+        caption: {
+          pt: "Props modelados para o curta",
+          en: "Props modeled for the short",
+          fr: "Accessoires modélisés pour le court-métrage"
+        }
+      }
+    ]
+  },
 
 "think-with-google-2025": {
     year: 2025,
