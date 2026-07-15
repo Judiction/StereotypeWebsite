@@ -2,6 +2,75 @@
 // videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
+"hairspray": {
+    year: 2023,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784149427/HairSprayCover_sqjn3e.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784151247/LogoHairspray_cxr3wo.mp4",
+    title: {
+      pt: "Hairspray",
+      en: "Hairspray",
+      fr: "Hairspray"
+    },
+    credits: {
+      client: "Hairspray Musical",
+      "3D modelling, texturing and animation": "Judd Buchanan"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784151247/LogoHairspray_cxr3wo.mp4",
+        caption: {
+          pt: "Logo animado de Hairspray",
+          en: "Hairspray animated logo",
+          fr: "Logo animé de Hairspray"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Hairspray, grande sucesso da Broadway, chegaria ao Brasil, e nós desenvolvemos materiais para compor a comunicação da peça. Fiz a modelagem 3D, texturização e animação do logo, explorando também variações de cor a partir da paleta e dos elementos visuais já definidos pela identidade da marca.",
+          en: "Hairspray, a huge Broadway hit, was coming to Brazil, and we developed materials for the play's communication. I handled the 3D modelling, texturing, and animation of the logo, also exploring color variations based on the palette and visual elements already defined by the brand's identity.",
+          fr: "Hairspray, immense succès de Broadway, arrivait au Brésil, et nous avons développé des supports pour la communication de la pièce. J'ai réalisé la modélisation 3D, la texturisation et l'animation du logo, en explorant aussi des variations de couleur à partir de la palette et des éléments visuels déjà définis par l'identité de la marque."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "A animação foi pensada para ser dinâmica e vibrante, seguindo as diretrizes de marca já compartilhadas pelo cliente, buscando transmitir o brilho e a alegria características do musical.",
+          en: "The animation was designed to be dynamic and vibrant, following the brand guidelines already shared by the client, aiming to convey the sparkle and joy that characterize the musical.",
+          fr: "L'animation a été pensée pour être dynamique et vibrante, en suivant les directives de marque déjà partagées par le client, afin de transmettre l'éclat et la joie qui caractérisent la comédie musicale."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784150759/HairsprayColorVariations_d8piyo.mp4",
+        caption: {
+          pt: "Variações de cor do logo animado para redes sociais",
+          en: "Social Media Logo Color Variations",
+          fr: "Logos animés avec variations de couleur pour les réseaux sociaux"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Para a texturização, criamos um shader de glitter realista personalizado, capaz de reproduzir a textura brilhante e cintilante do material, dando vida e riqueza de detalhes ao logo em 3D.",
+          en: "For the texturing, we created a custom realistic glitter shader, able to reproduce the shiny, sparkling texture of the material, giving the 3D logo life and richness of detail.",
+          fr: "Pour la texturisation, nous avons créé un shader de paillettes réaliste personnalisé, capable de reproduire la texture brillante et scintillante du matériau, donnant vie et richesse de détails au logo en 3D."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784151253/HairsprayLogoColors_lhhwqg.mp4",
+        caption: {
+          pt: "Variações de cor do logo animado",
+          en: "Color variations of the animated logo",
+          fr: "Variations de couleur du logo animé"
+        }
+      }
+    ]
+  },
+
 "lembrete": {
     year: 2023,
     categories: ["3d", "animation", "art-direction"],
