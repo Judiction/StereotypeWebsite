@@ -26,7 +26,80 @@
         </section>
     </main>
 
-    <script type="module" src="/js/app.js"></script>
+    <script>
+
+        // Para testar o redirecionamento no ambiente de desenvolvimento, utilize o servidor gh_pages_sever.py
+
+        
+        // vamos imaginar dois sites:
+
+        // A. um site com dominio "miglito.com"
+
+        // B. um Github Pages de um repositorio chamado "miglito"
+        // para acessa-lo eu preciso ir para "username.github.io/miglito/"
+
+        // imagine que nos dois eu acesso uma pagina chamada "histerica":
+        // "miglito.com/histerica/"
+        // "username.github.io/miglito/histerica/"
+
+        //                                                                                                         ________
+        // o numero de segmentos fixos, após a origem, é indicado com numFixedSegments e é utilizado para montar o basepath (que não será manipulado para redirecionamento):
+
+        // A.
+        // _____________
+        // "miglito.com/histerica/"
+        // ^origem      ^segmento
+        
+        // B.
+        // ____________________________
+        // "username.github.io/miglito/histerica/"
+        // ^origem             ^segmento
+
+        //                                                                            ________
+        // no caso A, o numero de seguimetos que precisamos manter para reconstruir o basepath é 0,
+        // no caso B, precisamos manter o primeiro seguimento no basepath, logo o numero de seguimentos fixos é 1.
+
+        // OBS.: quando estamos desenvolvendo no localhost, vamos utilizar numFixedSegments 0.
+
+        // REDIRECIONAMOS PARA O HOME COM A RODA ENCODADA
+
+        var numFixedSegments = 0;
+
+        var loc = window.location;
+        const originalPath = loc.pathname;
+
+        var pathArray = originalPath.split('/');
+
+        var baseArray = pathArray.slice(0, numFixedSegments + 1); // adicionamos 1 pois o segundo parametro de slice() é exclusivo (não inclui item 'end' do array).
+        var routeArray = pathArray.slice(numFixedSegments + 1); // como não especificamos end, pegamos o testo t =odo do array
+
+        // juntamos os pegacos em strings // Ex.(["miglito", "histerica"] vira "miglito/histerica")
+        var basePath = baseArray.join('/');
+        var route = routeArray.join('/');
+
+        var encodedRoute = route.replace(/&/g, "~and~"); // substituimos todos os & por ~and~ na rota. (sera revertido no decode do index.html)
+
+        var existingSearchQuery = '';
+        if (loc.search){
+            var encodedQuery = loc.search.slice('/').replace(/&/g, "~and~"); // (sera revertido no decode do index.html)
+            existingSearchQuery = '&' + encodedQuery; // usaremos o & inicial para decode no index.html
+        }
+
+        // montando origin //
+                     //http:               // "miglito.com" ou "username.github.io" ou "localhost"
+        var origin = loc.protocol + '//' + loc.hostname
+        if (loc.port) {
+            origin = origin + ':' + loc.port;  // adicionamos a :port caso estajamos usando "localhost" -> "http://localhost:8080"
+        }
+
+        // montando o path final do redirecionamento //
+        var redirectUrl = origin + basePath + '/?/' + encodedRoute + existingSearchQuery + loc.hash;
+
+        // redirecionar (sem deixar no historico)
+        loc.replace(redirectUrl);
+    </script>
+
+    <!-- <script type="module" src="/js/app.js"></script> -->
 
 </body>
 </html>
