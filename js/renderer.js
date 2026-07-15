@@ -3,6 +3,10 @@
 import { dictionary } from '../data/dictionary.js'; // You'll need the data too!
 import { buildFilterMenu, currentFilter, getUniqueCategories } from './filter.js';
 
+function optimizeThumbnail(url, width = 600) {
+    return url.replace('/upload/', `/upload/w_${width},q_auto,f_auto/`);
+}
+
 /**
  * Creates the individual content blocks based on its type
  */
@@ -63,12 +67,11 @@ export function createProjectCard(data, slug, lang, basePath) {
                     <img src="${data.thumbnail}" alt="${data.title[lang]}" loading="lazy">
                     ${videoSrc ? `
                         <video 
-                            src="${videoSrc}" 
+                            data-src="${videoSrc}"
                             loop 
                             muted 
                             playsinline 
-                            autoplay 
-                            preload="auto">
+                            preload="none">
                         </video>` : ''}
                 </div>
                 <div class="project-info">
@@ -114,7 +117,33 @@ export function renderGrid(container, list, filter, lang) {
         target.innerHTML = filteredEntries
             .map(([slug, data]) => createProjectCard(data, slug, lang, basePath))
             .join('');
+            enableCardVideosPlayOnHover(target);
     }
+}
+
+function enableCardVideosPlayOnHover(target) {
+    const cards = target.querySelectorAll('.project-card');
+
+    cards.forEach(card => {
+        const video = card.querySelector('video[data-src]');
+        if (!video) return;
+
+        const loadAndPlay = () => {
+            if (!video.src) video.src = video.dataset.src;
+            video.play().catch(() => {});
+        };
+
+        const stop = () => {
+            video.pause();
+        };
+
+        // Desktop: play on hover
+        card.addEventListener('mouseenter', loadAndPlay);
+        card.addEventListener('mouseleave', stop);
+
+        // Mobile: no hover, so play only once tapped/focused
+        // card.addEventListener('touchstart', loadAndPlay, { passive: true });
+    });
 }
 
 export function renderFilterableGrid(container, list, lang) {
