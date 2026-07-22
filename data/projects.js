@@ -2,6 +2,169 @@
 // videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
+"genial-investimentos": {
+    year: 2024,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784691023/Cover_Genial_ibqijd.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784691026/Animated_cover_Genial_y0bx75.mp4",
+    title: {
+      pt: "Genial Investimentos",
+      en: "Genial Investimentos",
+      fr: "Genial Investimentos"
+    },
+    credits: {
+      agency: "NOO Works",
+      client: "Genial Investimentos",
+      "client-services": "Antonio Carvalho",
+      "executive-production": "Kathlyn Giaccomini",
+      "art-direction": "Louise Favilla e Beatriz de Andrade",
+      "graphic-design": "Louise Favilla",
+      "3D": "Judd Buchanan",
+      "motion-design": "Judd Buchanan, Fernando Villela e Miguel Duarte"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784691036/3D_Demo_Genial_srpqmw.mp4",
+        caption: {
+          pt: "Montagem de assets 3D desenvolvidos para a marca Genial Investimentos",
+          en: "Montage of 3D assets developed for the Genial Investimentos brand",
+          fr: "Montage d'assets 3D développés pour la marque Genial Investimentos"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Genial é uma empresa de investimentos que há mais de 10 anos oferece maior acesso a serviços financeiros de qualidade, com simplicidade e eficiência. O rebranding da marca nas redes sociais foi desenvolvido pela NOO Works, e fiz parte da equipe de 3D responsável por criar os assets originais utilizados no projeto, trazendo mais independência visual para os posts do Instagram e para as demais aplicações digitais.",
+          en: "Genial is an investment company that for over 10 years has offered greater access to quality financial services, with simplicity and efficiency. The brand's social media rebranding was developed by NOO Works, and I was part of the 3D team responsible for creating the original assets used in the project, bringing more visual independence to their Instagram posts and other digital applications.",
+          fr: "Genial est une entreprise d'investissement qui, depuis plus de 10 ans, offre un meilleur accès à des services financiers de qualité, avec simplicité et efficacité. Le rebranding de la marque sur les réseaux sociaux a été développé par NOO Works, et j'ai fait partie de l'équipe 3D responsable de la création des assets originaux utilisés dans le projet, apportant plus d'indépendance visuelle aux publications Instagram et aux autres applications digitales."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "A nova identidade buscava traduzir características como modernidade, parceria e uma sensação de segurança tecnológica. A partir dessa direção, desenvolvi materiais e formas em 3D — texturas metálicas, neon e elementos que se abrem e se fecham como janelas e portais — reforçando essa linguagem tecnológica nas diferentes aplicações da marca.",
+          en: "The new identity aimed to translate characteristics such as modernity, partnership and a sense of technological security. Based on that direction, I developed 3D materials and shapes — metallic textures, neon and elements that open and close like windows and portals — reinforcing that technological language across the brand's different applications.",
+          fr: "La nouvelle identité cherchait à traduire des caractéristiques telles que la modernité, le partenariat et un sentiment de sécurité technologique. À partir de cette direction, j'ai développé des matériaux et des formes en 3D — textures métalliques, néon et éléments qui s'ouvrent et se ferment comme des fenêtres et des portails — renforçant ce langage technologique dans les différentes applications de la marque."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784691023/3D_Assets_Genial_d73r9z.png",
+        caption: {
+          pt: "Exemplos de assets 3D desenvolvidos para a Genial Investimentos",
+          en: "Examples of 3D assets developed for Genial Investimentos",
+          fr: "Exemples d'assets 3D développés pour Genial Investimentos"
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784691213/Material_Sheet_tfgzva.webp",
+        caption: {
+          pt: "Materiais 3D desenvolvidos no Blender para a identidade da marca",
+          en: "3D materials designed in Blender for the brand's identity",
+          fr: "Matériaux 3D conçus dans Blender pour l'identité de la marque"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Também participei do desenvolvimento de peças 3D para campanhas específicas, como reels animados, o making-of de uma experiência em realidade aumentada e os anúncios do Cartão Black, ampliando o uso desses assets tridimensionais nas redes sociais da Genial.",
+          en: "I also took part in developing 3D pieces for specific campaigns, such as animated reels, the making-of of an augmented-reality experience and the ads for the Black Card, expanding the use of these three-dimensional assets across Genial's social media.",
+          fr: "J'ai également participé au développement de pièces 3D pour des campagnes spécifiques, telles que des reels animés, le making-of d'une expérience en réalité augmentée et les publicités de la Carte Black, élargissant l'usage de ces assets tridimensionnels sur les réseaux sociaux de Genial."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784692859/Post_Examples_1_Genial_eymxzx.mp4",
+        caption: {
+          pt: "Exemplos de reels animados em 3D e making-of de uma experiência em realidade aumentada",
+          en: "Examples of 3D animated reels and a making-of for an augmented-reality experience",
+          fr: "Exemples de reels animés en 3D et making-of d'une expérience en réalité augmentée"
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784691061/Cartao_Black_Genial_tahkzh.mp4",
+        caption: {
+          pt: "Anúncios para redes sociais desenvolvidos para o Cartão Black da Genial",
+          en: "Social media ads developed for Genial's Black Card",
+          fr: "Publicités pour les réseaux sociaux développées pour la Carte Black de Genial"
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784691045/Card_Fan_Genial_ubpocr.mp4",
+        caption: {
+          pt: "",
+          en: "",
+          fr: ""
+        }
+      }
+    ]
+  },
+
+"marcelo-d2-tia-darci": {
+    year: 2026,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784686642/MD2_Cover_frdv9a.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
+    title: {
+      pt: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci",
+      en: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci",
+      fr: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci"
+    },
+    credits: {
+      agency: "Pupila Dilatada",
+      client: "Elemess",
+      "motion-design": "Judd Buchanan, Miguel Duarte"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
+        caption: {
+          pt: "",
+          en: "",
+          fr: ""
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Em parceria com o Motion Designer Miguel Duarte, desenvolvi as introduções animadas para 4 videoclipes do novo álbum de Marcelo D2, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". O projeto foi realizado pela Pupila Dilatada e Elemess.",
+          en: "In partnership with Motion Designer Miguel Duarte, I developed the animated introductions for 4 music videos of Marcelo D2's new album, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". The project was produced by Pupila Dilatada and Elemess.",
+          fr: "En partenariat avec le Motion Designer Miguel Duarte, j'ai développé les introductions animées de 4 clips du nouvel album de Marcelo D2, « Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci ». Le projet a été produit par Pupila Dilatada et Elemess."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "A ideia central partiu de observar objetos tradicionais e históricos do samba sob um olhar técnico e matemático. Cada videoclipe se inicia com o close de um item bastante comum no universo do samba brasileiro: malas de instrumentos, um cavalo de carrossel, um carrinho de isopor, uma cadeira de plástico.",
+          en: "The core idea came from looking at traditional, historic samba objects through a technical and mathematical lens. Each music video opens on a close-up of an item deeply familiar to Brazilian samba culture: instrument cases, a carousel horse, a cooler cart, a plastic chair.",
+          fr: "L'idée de départ était d'observer des objets traditionnels et historiques du samba à travers un regard technique et mathématique. Chaque clip s'ouvre sur un gros plan d'un objet emblématique de l'univers du samba brésilien : des malles d'instruments, un cheval de carrousel, un chariot de glacière, une chaise en plastique."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Os vídeos foram trackeados em 3D para adicionar uma nova camada de percepção a esses objetos: curvas de fibonacci, medições precisas e marcações técnicas sobrepostas em tempo real, como se uma máquina estivesse analisando cada peça e revelando a matemática escondida por trás da cultura popular.",
+          en: "The footage was tracked in 3D to add a new layer of perception to these objects: fibonacci curves, precise measurements and technical annotations laid over the footage in real time, as if a machine were scanning each object and revealing the hidden mathematics behind popular culture.",
+          fr: "Les vidéos ont été trackées en 3D pour ajouter une nouvelle couche de perception à ces objets : courbes de fibonacci, mesures précises et annotations techniques superposées en temps réel, comme si une machine analysait chaque objet et révélait les mathématiques cachées derrière la culture populaire."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686660/MD2_All4_rgpvz7.mp4",
+        caption: {
+          pt: "As 4 introduções animadas dos videoclipes do album",
+          en: "The 4 animated intros from the album's videoclips",
+          fr: "Les 4 introductions animées des vidéoclips de l'album"
+        }
+      }
+    ]
+  },
+
 "hairspray": {
     year: 2023,
     categories: ["3d", "animation"],
