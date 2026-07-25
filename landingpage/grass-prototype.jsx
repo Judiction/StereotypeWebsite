@@ -411,9 +411,14 @@ const vertexShader = `
   uniform float uRadius;
   uniform float uStrength;
   uniform float uRiseDuration;
-  uniform float uPressAmount;
   uniform vec2 uTrailPos[${MAX_TRAIL}];
   uniform float uTrailTime[${MAX_TRAIL}];
+  // Per-point press strength, baked in when each trail point is laid down.
+  // Because the press amount lives per-point instead of as one global
+  // multiplier, releasing the button doesn't scale every point down at
+  // once — each point just rides out its own uRiseDuration timer, so the
+  // trail rises back gradually from its oldest point to its newest.
+  uniform float uTrailStrength[${MAX_TRAIL}];
 
   // Static "text is pressing on the grass" mask
   uniform sampler2D uTextMask;
@@ -447,7 +452,7 @@ const vertexShader = `
       float dist = distance(instanceWorldPos.xz, uTrailPos[i]);
       float spatial = 1.0 - smoothstep(0.0, uRadius, dist);
 
-      float weight = spatial * temporal;
+      float weight = spatial * temporal * uTrailStrength[i];
       totalPush = max(totalPush, weight);
 
       if (weight > bestWeight) {
@@ -458,10 +463,10 @@ const vertexShader = `
       }
     }
 
-    // Scaled by uPressAmount so the push ramps in smoothly as the hand
-    // cursor lowers (same easing as its own Y drop), instead of the grass
-    // snapping to fully-pushed the instant the button goes down.
-    float bend = totalPush * uStrength * uPressAmount * pos.y;
+    // totalPush already carries each point's baked-in press strength (see
+    // uTrailStrength above), so the smooth press-in ramp is preserved without
+    // a global multiplier that would also flatten the gradual release.
+    float bend = totalPush * uStrength * pos.y;
     pos.x += pushDir.x * bend;
     pos.z += pushDir.y * bend;
     pos.y -= bend * 0.55;
@@ -485,7 +490,7 @@ const vertexShader = `
     }
 
     // Sway is damped where the grass is flattened (by the mouse or the text)
-    float swayDamp = 1.0 - clamp(max(totalPush * uPressAmount, textMask), 0.0, 1.0);
+    float swayDamp = 1.0 - clamp(max(totalPush, textMask), 0.0, 1.0);
     float sway = sin(uTime * 1.4 + instanceWorldPos.x * 1.3 + instanceWorldPos.z * 1.3 + vVariation * 6.28) * 0.035 * pos.y * swayDamp;
     pos.x += sway;
 
@@ -680,6 +685,11 @@ export default function GrassPrototype() {
       () => new THREE.Vector2(9999, 9999)
     );
     const trailTimes = new Array(MAX_TRAIL).fill(-1000);
+    // How hard each trail point was pressing when it was recorded. Stored
+    // per-point (rather than applied globally) so releasing the button lets
+    // each point rise back on its own uRiseDuration timer — see uTrailStrength
+    // in the vertex shader.
+    const trailStrengths = new Array(MAX_TRAIL).fill(0);
 
     const textLines = IS_TOUCH ? TEXT_LINES_MOBILE : [TEXT_STRING];
 
@@ -700,9 +710,9 @@ export default function GrassPrototype() {
       uRadius: { value: MOUSE_PUSH_RADIUS },
       uStrength: { value: 1.3 },
       uRiseDuration: { value: 1.0 },
-      uPressAmount: { value: 0 },
       uTrailPos: { value: trailPositions },
       uTrailTime: { value: trailTimes },
+      uTrailStrength: { value: trailStrengths },
       uTextMask: { value: textMaskTexture },
       uTextMin: { value: textMin },
       uTextSize: { value: textSize },
@@ -1248,9 +1258,10 @@ export default function GrassPrototype() {
         }
       }
 
-      // Smoothly track the press state (0 = released, 1 = fully pressed)
+      // Smoothly track the press state (0 = released, 1 = fully pressed).
+      // Still drives the hand cursor's own drop/tilt, and is baked into each
+      // new trail point below so the press-in ramp is preserved per-point.
       pressAmount += ((isPressed ? 1 : 0) - pressAmount) * CURSOR_PRESS_LERP;
-      uniforms.uPressAmount.value = pressAmount;
 
       // Whether the letters should be reacting at all this frame — set for
       // real below, once we know where (if anywhere) the mouse hits the
@@ -1281,6 +1292,10 @@ export default function GrassPrototype() {
             if (movedEnough || timeElapsed) {
               trailPositions[trailIndex].set(intersection.x, intersection.z);
               trailTimes[trailIndex] = t;
+              // Bake the current (ramping) press amount into this point, so a
+              // fresh press still eases in, but releasing later never scales
+              // this point down — it rises back purely on its own timer.
+              trailStrengths[trailIndex] = pressAmount;
               trailIndex = (trailIndex + 1) % MAX_TRAIL;
               lastAddedPos.set(intersection.x, intersection.z);
               lastAddedTime = t;
