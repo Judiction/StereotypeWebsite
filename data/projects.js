@@ -2,242 +2,216 @@
 // videos com url do cloudnary devem ter tag "q_auto" entre /upload e /id (ex: upload/v1778981865/ -> upload/q_auto/v1778981865/)
 export const works = {
 
-"carbona-plau": {
-    year: 2022,
+    "paulistao-casas-bahia-2026": {
+    year: 2026,
     categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784780108/CarbonaCover_c0b43e.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780119/Carbona_AnimatedThumb_u2dmqc.mp4",
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778981995/PaulistaoCover_b5ib7j.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
     title: {
-      pt: "Carbona - Plau Design",
-      en: "Carbona - Plau Design",
-      fr: "Carbona - Plau Design"
+      pt: "Paulistão Casas Bahia 2026",
+      en: "Paulistão Casas Bahia 2026",
+      fr: "Paulistão Casas Bahia 2026"
     },
     credits: {
-      agency: "NOO Works",
-      client: "Plau",
-      "client-services": "Antonio Carvalho",
-      "executive-production": "Kathlyn Giaccomini",
-      "art-direction": "Beatriz de Andrade",
-      "direction": "Marcio Sal",
-      "copywriting": "Gabriel Pardal e Giovanna Ferrari",
-      "animation": "Fernando Villela, Judd Buchanan e Miguel Duarte",
-      "soundtrack-and-sound-design": "Fernando Villela, Judd Buchanan e Miguel Duarte"
-    },
+  agency: "NOO",
+  client: "LiveMode",
+  direction: "Marcio Sal",
+  "project-lead": "Duda Bom Queiroz",
+  "operations-director": "Kathlyn Giaccomini",
+  "head-of-client-services": "Ana Luisa Rodrigues",
+  "project-management": "Fábio Neves",
+  "head-of-design": "Deco Moreira",
+  "head-of-animation": "Marcio Sal",
+  "3D animation": "Judd Buchanan",
+  editing: "Felipe Portugal",
+  research: "Fernando Vilella, Mayara Gomes, Victoria Regis"
+},
     content: [
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780123/Carbona_video_Hero_Final_puyd8t.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
         caption: {
-          pt: "Vídeo de lançamento Carbona",
-          en: "Carbona launch video",
-          fr: "Vidéo de lancement Carbona"
+          pt: "Abertura de transmissão do Paulistão Casas Bahia 2026",
+          en: "Paulistão Casas Bahia 2026 Broadcast Opener",
+          fr: "Générique d’ouverture du Paulistão Casas Bahia 2026"
         }
       },
       {
         type: "text",
         text: {
-          pt: "Carbona é uma fonte tipográfica criada pela Plau que dialoga com a tecnologia e o futuro. Seu design é geométrico, reto e robusto. É otimizada para programação e possui recursos avançados para interfaces virtuais. Criamos o vídeo de lançamento da Carbona e os posts para redes sociais.",
-          en: "Carbona is a typeface created by Plau that dialogues with technology and the future. Its design is geometric, straight and robust. It is optimized for programming and has advanced features for virtual interfaces. We created Carbona's launch video and social media posts.",
-          fr: "Carbona est une police de caractères créée par Plau qui dialogue avec la technologie et le futur. Son design est géométrique, droit et robuste. Elle est optimisée pour la programmation et possède des fonctionnalités avancées pour les interfaces virtuelles. Nous avons créé la vidéo de lancement de Carbona ainsi que les publications pour les réseaux sociaux."
+          pt: "A abertura de transmissão do Paulistão Casas Bahia 2026, criada para a LiveMode, reuniu narrativa dinâmica e excelência visual para celebrar a energia e o impacto cultural do campeonato de futebol de São Paulo.",
+          en: "The Paulistão Casas Bahia 2026 Broadcast Opener created for LiveMode brought together dynamic storytelling and high-end visual craft to celebrate the energy and cultural impact of São Paulo’s football championship.",
+          fr: "Le générique d’ouverture du Paulistão Casas Bahia 2026, créé pour LiveMode, a combiné une narration dynamique et un savoir-faire visuel haut de gamme afin de célébrer l’énergie et l’impact culturel du championnat de football de São Paulo."
         }
       },
       {
         type: "text",
         text: {
-          pt: "Para o vídeo de lançamento, incorporamos os aspectos modernos, mecânicos e futuristas de sua estética e imaginamos um futuro não tão distante, onde ficção científica, metaverso, redes sociais e tecnologias sofisticadas transformaram nossas vidas.",
-          en: "For the launch video, we incorporated the modern, mechanical and futuristic aspects of its aesthetic and imagined a not-so-distant future where science fiction, metaverse, social networks and sophisticated technologies have transformed our lives.",
-          fr: "Pour la vidéo de lancement, nous avons intégré les aspects modernes, mécaniques et futuristes de son esthétique et imaginé un futur pas si lointain où la science-fiction, le métavers, les réseaux sociaux et des technologies sophistiquées ont transformé nos vies."
+          pt: "Como animador 3D na NOO Works, contribuí para o desenvolvimento da narrativa visual, criando sequências-chave de animação e refinando o visual geral do projeto. Meu papel foi focado em desenvolver movimentos fluidos e expressivos, além de trabalhar na criação de shading e iluminação fotorrealistas para elevar o nível de realismo e profundidade.",
+          en: "As a 3D animator at NOO Works, I contributed to shaping the visual storytelling while executing key animation sequences and refining the overall look. My role focused on crafting fluid, expressive motion and developing photorealistic shading and lighting to elevate realism and depth.",
+          fr: "En tant qu’animateur 3D chez NOO Works, j’ai contribué à la construction de la narration visuelle en réalisant des séquences d’animation clés et en affinant l’aspect global du projet. Mon rôle s’est concentré sur la création de mouvements fluides et expressifs, ainsi que sur le développement d’un shading et d’un éclairage photoréalistes afin d’accroître le réalisme et la profondeur."
         }
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780110/MakingOf_Carbona_1_a2tirz.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981478/MakingOf_Paulistao_website_qqouel.mp4",
         caption: {
-          pt: "Making of do vídeo de lançamento",
-          en: "Making of the launch video",
-          fr: "Making of de la vidéo de lancement"
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Carbona foi projetada para lidar com as situações do mundo digital. Ela contém símbolos de criptomoedas, caracteres especiais, uma versão monoespaçada para códigos e muito mais. Criamos uma série de peças para explicar suas características únicas, desdobrando o conceito em diversos posts para redes sociais.",
-          en: "Carbona was designed to deal with the situations of the digital world. It contains cryptocurrency symbols, special characters, a monospaced version for codes and more. We created a series of pieces to explain its unique characteristics, unfolding the concept into several posts for social media.",
-          fr: "Carbona a été conçue pour répondre aux situations du monde numérique. Elle contient des symboles de cryptomonnaies, des caractères spéciaux, une version monospace pour le code et bien plus encore. Nous avons créé une série de pièces pour expliquer ses caractéristiques uniques, en déployant le concept à travers plusieurs publications pour les réseaux sociaux."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780128/SocialMedia_Carbona_uvqhy8.mp4",
-        caption: {
-          pt: "Posts para redes sociais",
-          en: "Social media posts",
-          fr: "Publications pour les réseaux sociaux"
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Como parte da equipe de animação da NOO Works, fui responsável pelo desenvolvimento de assets 3D e pela animação da campanha de lançamento da Carbona, ao lado de Fernando Villela e Miguel Duarte. Trabalhamos a estética geométrica, reta e robusta da fonte para construir elementos tridimensionais que reforçassem sua identidade mecânica e futurista, unindo referências de ficção científica, metaverso e tecnologias emergentes ao universo visual da marca.",
-          en: "As part of NOO Works' animation team, I was responsible for developing the 3D assets and animating Carbona's launch campaign, alongside Fernando Villela and Miguel Duarte. We worked with the typeface's geometric, straight and robust aesthetic to build three-dimensional elements that reinforced its mechanical and futuristic identity, blending references from science fiction, the metaverse and emerging technologies into the brand's visual universe.",
-          fr: "Au sein de l'équipe d'animation de NOO Works, j'ai été responsable du développement des assets 3D et de l'animation de la campagne de lancement de Carbona, aux côtés de Fernando Villela et Miguel Duarte. Nous avons travaillé l'esthétique géométrique, droite et robuste de la police pour construire des éléments tridimensionnels renforçant son identité mécanique et futuriste, en mêlant des références à la science-fiction, au métavers et aux technologies émergentes à l'univers visuel de la marque."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "O maior desafio foi manter a coerência visual entre o vídeo de lançamento e a série de posts que explicavam separadamente cada característica da fonte, garantindo que a linguagem 3D se mantivesse consistente do começo ao fim da campanha — do vídeo hero até a cena final de encerramento.",
-          en: "The biggest challenge was keeping visual coherence between the launch video and the series of posts that separately explained each of the typeface's characteristics, making sure the 3D language stayed consistent from start to finish of the campaign — from the hero video to the closing shot.",
-          fr: "Le plus grand défi a été de maintenir une cohérence visuelle entre la vidéo de lancement et la série de publications expliquant séparément chaque caractéristique de la police, en veillant à ce que le langage 3D reste cohérent du début à la fin de la campagne — de la vidéo hero jusqu'au plan de clôture."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780362/Carbona_Capa1_fyhyf2.mp4",
-        caption: {
-          pt: "Cena final",
-          en: "Closing shot",
-          fr: "Plan de clôture"
+          pt: "Making-of da Abertura de transmissão do Paulistão Casas Bahia 2026",
+          en: "Making of Paulistão Casas Bahia 2026 Broadcast Opener",
+          fr: "Making of du Générique d’ouverture du Paulistão Casas Bahia 2026"
         }
       }
     ]
   },
 
-"recruta-stone-2023": {
-    year: 2023,
+  "think-with-google-2025": {
+    year: 2025,
     categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784776706/StoneCover_nm6srg.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784777158/RecrutaAnimatedThumb_g6ouhy.mp4",
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1783999358/Cover_kbqh3r.jpg",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1783999360/AnimatedThumb_ruqvut.mp4",
     title: {
-      pt: "Recruta Stone 2023",
-      en: "Recruta Stone 2023",
-      fr: "Recruta Stone 2023"
+      pt: "Think With Google 2025",
+      en: "Think With Google 2025",
+      fr: "Think With Google 2025"
     },
     credits: {
-      agency: "NOO Works",
-      client: "Stone",
-      "client-services": "Antonio Carvalho",
-      "executive-production": "Kathlyn Giaccomini",
-      "creative-direction": "Beatriz de Andrade",
-      "post-production-direction": "Marcio Sal",
-      "copywriting": "Gabriel Pardal",
-      "design": "Louise Favilla, Fernando Villela e Beatriz de Andrade",
-      "2D-animation": "Fernando Villela e Miguel Duarte",
-      "3D-animation": "Judd Buchanan"
+      agency: "HOOD",
+      client: "Google",
+      "art-direction": "Pedro Alamorim, Camilla Mattos",
+      "motion-design": "Fernando Villela",
+      "3D animation": "Judd Buchanan"
     },
     content: [
+{
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997157/GoogleCover_wjtgnz.mp4",
+        caption: {
+          pt: "Tela Widescreen do Evento",
+          en: "Event Screen Backdrop",
+          fr: "Grand écran de l'événement"
+        }
+      },
+
+      {
+        type: "text",
+        text: {
+          pt: "Motion design desenvolvido para o Thinking with Google 2025, evento presencial com múltiplos formatos e telas. O projeto consistiu na tradução dos layouts criados pelo estúdio HOOD para animações 2D e 3D.",
+          en: "Motion design developed for Thinking with Google 2025, an in-person event with multiple formats and screens. The project involved translating layouts created by studio HOOD into 2D and 3D animations.",
+          fr: "Motion design développé pour le Thinking with Google 2025, un événement en présentiel avec de multiples formats et écrans. Le projet a consisté à traduire les layouts créés par le studio HOOD en animations 2D et 3D."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Como responsável pela animação 3D do projeto, desenvolvi as peças tridimensionais a partir do sistema de motion criado pela equipe, trabalhando movimento, profundidade e composição para integrar os elementos 3D da marca à linguagem visual do evento.",
+          en: "As the 3D animator on this project, I developed the three-dimensional pieces based on the motion system created by the team, working through movement, depth, and composition to integrate the brand's 3D elements into the event's visual language.",
+          fr: "En tant qu'animateur 3D sur ce projet, j'ai développé les pièces tridimensionnelles à partir du système de motion créé par l'équipe, en travaillant le mouvement, la profondeur et la composition pour intégrer les éléments 3D de la marque au langage visuel de l'événement."
+        }
+      },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784776701/RecrutaStone_Full_us0why.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997610/Ultrawide_2KVs_vbaehn.mp4",
         caption: {
-          pt: "Campanha Recruta Stone 2023",
-          en: "Recruta Stone 2023 Campaign",
-          fr: "Campagne Recruta Stone 2023"
+          pt: "Pecas animadas desenvolvidas para o evento",
+          en: "Motion Design Identity developed for the event",
+          fr: "Identité de motion design développée pour l'événement"
         }
       },
       {
         type: "text",
         text: {
-          pt: "Recruta é o programa anual de seleção da Stone, com o objetivo de encontrar e formar novos talentos para a empresa. A NOO Works foi convidada para desenvolver a campanha digital da edição de 2023, com base nos pilares do programa, focando na experiência de transformação do candidato e na construção de líderes para o futuro. A campanha foi construída em torno do mote \"Quem você deseja se tornar?\".",
-          en: "Recruta is Stone's annual selection program, aimed at finding and training new talent for the company. NOO Works was invited to develop the digital campaign for the 2023 edition, based on the program's pillars and focused on the candidate's transformation experience and on building leaders for the future. The campaign was built around the tagline \"Who do you want to become?\".",
-          fr: "Recruta est le programme de sélection annuel de Stone, destiné à trouver et à former de nouveaux talents pour l'entreprise. NOO Works a été invitée à développer la campagne digitale de l'édition 2023, en s'appuyant sur les piliers du programme et en se concentrant sur l'expérience de transformation du candidat et sur la construction des leaders de demain. La campagne s'est construite autour de l'accroche « Qui voulez-vous devenir ? »."
+          pt: "Busquei traduzir os conceitos de “Searching, Scrolling e Streaming” que orientaram a identidade do evento, explorando profundidade, perspectiva e ritmo para dar volume e presença aos elementos que compunham o sistema de navegação e telas do projeto.",
+          en: "I aimed to translate the concepts of \"Searching, Scrolling, and Streaming\" that guided the event's identity, exploring depth, perspective, and rhythm to give volume and presence to the elements composing the project's navigation and screen system.",
+          fr: "J'ai cherché à traduire les concepts de « Searching, Scrolling et Streaming » qui ont guidé l'identité de l'événement, en explorant la profondeur, la perspective et le rythme pour donner du volume et de la présence aux éléments composant le système de navigation et d'écrans du projet."
         }
       },
       {
-        type: "text",
-        text: {
-          pt: "Em vez de um vídeo apenas visualmente chamativo, o objetivo foi representar o foco no candidato e sua jornada de transformação ao longo do processo seletivo. Para construir uma representação mais inclusiva e lúdica, optamos por uma forma abstrata capaz de se movimentar, transformar, mudar de cor e direção, ancorada nas propriedades dos minerais e mineraloides — cristalização, cor, transparência, brilho, dureza e magnetismo. Essa forma se divide, multiplica, agrega e evolui, ilustrando o processo de autoconhecimento percorrido pelos candidatos.",
-          en: "Rather than a video that was only visually striking, the goal was to represent the candidate's focus and their transformation journey throughout the selection process. To build a more inclusive and playful representation, we chose an abstract form capable of moving, transforming, and changing color and direction, anchored in the properties of minerals and mineraloids — crystallization, color, transparency, brightness, hardness and magnetism. This form divides, multiplies, aggregates and evolves, illustrating the self-knowledge process the candidates go through.",
-          fr: "Plutôt qu'une vidéo simplement percutante visuellement, l'objectif était de représenter le focus sur le candidat et son parcours de transformation tout au long du processus de sélection. Pour construire une représentation plus inclusive et ludique, nous avons opté pour une forme abstraite capable de se déplacer, de se transformer, de changer de couleur et de direction, ancrée dans les propriétés des minéraux et mineraloïdes — cristallisation, couleur, transparence, éclat, dureté et magnétisme. Cette forme se divise, se multiplie, s'agrège et évolue, illustrant le processus de connaissance de soi vécu par les candidats."
-        }
-      },
-      {
-        type: "image",
-        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784776817/Sphere_Evolution_njqdq2.png",
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997151/Making_OF_rejce3.mp4",
         caption: {
-          pt: "Evolução da forma 3D ao longo da campanha",
-          en: "Evolution of the 3D form throughout the campaign",
-          fr: "Évolution de la forme 3D tout au long de la campagne"
+          pt: "Making of Think With Google 2025",
+          en: "Making of Think With Google 2025",
+          fr: "Making of Think With Google 2025"
         }
       },
       {
-        type: "text",
-        text: {
-          pt: "Como parte da equipe de 3D da NOO Works, fui responsável pelo desenvolvimento de todos os assets e animações em 3D da campanha. Modelei e animei a forma abstrata que representa a jornada dos candidatos, trabalhando sua evolução visual — da cristalização inicial até formas mais complexas e multiplicadas — além de desenvolver os materiais e shading que traduzem as propriedades minerais propostas pela direção de arte.",
-          en: "As part of NOO Works' 3D team, I was responsible for developing all the 3D assets and animation for the campaign. I modeled and animated the abstract form that represents the candidates' journey, working on its visual evolution — from the initial crystallization to more complex, multiplied shapes — and also developed the materials and shading that translate the mineral properties proposed by the art direction.",
-          fr: "Au sein de l'équipe 3D de NOO Works, j'ai été responsable du développement de l'ensemble des assets et de l'animation 3D de la campagne. J'ai modélisé et animé la forme abstraite représentant le parcours des candidats, en travaillant son évolution visuelle — de la cristallisation initiale jusqu'à des formes plus complexes et multipliées — et j'ai également développé les matériaux et le shading traduisant les propriétés minérales proposées par la direction artistique."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "O maior desafio técnico foi criar um sistema de animação flexível o suficiente para permitir que a forma se dividisse, se multiplicasse e mudasse de cor e direção de maneira fluida, mantendo a leitura clara da metáfora de transformação em cada etapa. O resultado final foi utilizado como peça central da campanha, presente em vídeos, posts e demais materiais digitais do Recruta 2023.",
-          en: "The biggest technical challenge was building an animation system flexible enough to let the form split, multiply, and change color and direction fluidly, while keeping the transformation metaphor clearly readable at every stage. The final result was used as the campaign's centerpiece, present across videos, posts and other digital materials for Recruta 2023.",
-          fr: "Le principal défi technique a été de créer un système d'animation suffisamment flexible pour permettre à la forme de se diviser, de se multiplier et de changer de couleur et de direction de façon fluide, tout en gardant la métaphore de transformation clairement lisible à chaque étape. Le résultat final a été utilisé comme pièce centrale de la campagne, présent dans les vidéos, les posts et les autres supports digitaux de Recruta 2023."
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997155/Todos_Grafismos_pgutsg.mp4",
+        caption: {
+          pt: "Grafismos desenvolvidos para a identidade visual do evento",
+          en: "Graphics developed for the event's visual identity",
+          fr: "Graphismes développés pour l'identité visuelle de l'événement"
         }
       }
     ]
   },
 
-"pausa-cafe": {
-    year: 2024,
+  "marcelo-d2-tia-darci": {
+    year: 2026,
     categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784773510/PausaCafe_Cover_adaalr.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784774586/PausaCafe_animatedThumb_mmd1bq.mp4",
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784686642/MD2_Cover_frdv9a.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
     title: {
-      pt: "Pausa Café - Shading 3D Estilizado",
-      en: "Pausa Café - Stylized 3D Shading",
-      fr: "Pausa Café - Shading 3D Stylisé"
+      pt: "Marcelo D2 - Vol. 2: Tia Darci",
+      en: "Marcelo D2 - Vol. 2: Tia Darci",
+      fr: "Marcelo D2 - Vol. 2: Tia Darci"
     },
     credits: {
-      agency: "NOO Works",
-      "3D modeling, shading, rigging and animation": "Judd Buchanan",
-      "character modelling": "Natalha Maffra",
-      "2D design": "Louise Davilla"
+      agency: "Pupila Dilatada",
+      client: "Elemess",
+      "motion-design": "Judd Buchanan, Miguel Duarte"
     },
     content: [
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784773518/Pausa_Cafe_Website_zsaj2x.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
         caption: {
-          pt: "Loop animado completo da cena \"Pausa Café\"",
-          en: "Full animated loop of the \"Pausa Café\" scene",
-          fr: "Boucle animée complète de la scène « Pausa Café »"
+          pt: "",
+          en: "",
+          fr: ""
         }
       },
       {
         type: "text",
         text: {
-          pt: "Essa cena curta foi desenvolvida na NOO Works durante um período de estudos e experimentações. Fui responsável pela modelagem 3D, shading, rigging e animação do personagem da cena em Blender 3D. O modelo do personagem foi criado por Natalha Maffra.",
-          en: "This short scene was developed at NOO Works during a period of studies and experimentation. I was responsible for the 3D modeling, shading, character rigging and animation of the scene in Blender 3D. The character model was created by Natalha Maffra.",
-          fr: "Cette courte scène a été développée chez NOO Works pendant une période d'études et d'expérimentations. J'ai été responsable de la modélisation 3D, du shading, du rigging et de l'animation du personnage de la scène dans Blender 3D. Le modèle du personnage a été créé par Natalha Maffra."
+          pt: "Em parceria com o Motion Designer Miguel Duarte, desenvolvi as introduções animadas para 4 videoclipes do novo álbum de Marcelo D2, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". O projeto foi realizado pela Pupila Dilatada e Elemess.",
+          en: "In partnership with Motion Designer Miguel Duarte, I developed the animated introductions for 4 music videos of Marcelo D2's new album, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". The project was produced by Pupila Dilatada and Elemess.",
+          fr: "En partenariat avec le Motion Designer Miguel Duarte, j'ai développé les introductions animées de 4 clips du nouvel album de Marcelo D2, « Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci ». Le projet a été produit par Pupila Dilatada et Elemess."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "A ideia central partiu de observar objetos tradicionais e históricos do samba sob um olhar técnico e matemático. Cada videoclipe se inicia com o close de um item bastante comum no universo do samba brasileiro: malas de instrumentos, um cavalo de carrossel, um carrinho de isopor, uma cadeira de plástico.",
+          en: "The core idea came from looking at traditional, historic samba objects through a technical and mathematical lens. Each music video opens on a close-up of an item deeply familiar to Brazilian samba culture: instrument cases, a carousel horse, a cooler cart, a plastic chair.",
+          fr: "L'idée de départ était d'observer des objets traditionnels et historiques du samba à travers un regard technique et mathématique. Chaque clip s'ouvre sur un gros plan d'un objet emblématique de l'univers du samba brésilien : des malles d'instruments, un cheval de carrousel, un chariot de glacière, une chaise en plastique."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Os vídeos foram trackeados em 3D para adicionar uma nova camada de percepção a esses objetos: curvas de fibonacci, medições precisas e marcações técnicas sobrepostas em tempo real, como se uma máquina estivesse analisando cada peça e revelando a matemática escondida por trás da cultura popular.",
+          en: "The footage was tracked in 3D to add a new layer of perception to these objects: fibonacci curves, precise measurements and technical annotations laid over the footage in real time, as if a machine were scanning each object and revealing the hidden mathematics behind popular culture.",
+          fr: "Les vidéos ont été trackées en 3D pour ajouter une nouvelle couche de perception à ces objets : courbes de fibonacci, mesures précises et annotations techniques superposées en temps réel, comme si une machine analysait chaque objet et révélait les mathématiques cachées derrière la culture populaire."
         }
       },
       {
         type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784773517/PausaCafe_Making-of_ja6sjl.mp4",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686660/MD2_All4_rgpvz7.mp4",
         caption: {
-          pt: "Visualizacao 3D no Blender",
-          en: "3D visualization in Blender",
-          fr: "Visualisation 3D sur Blender"
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Nessa cena, eu queria criar um visual estilizado com uma espécie de shading cartoon. Acabei desenvolvendo materiais procedurais para toda a cena — incluindo os tijolos, o piso de cimento, a madeira e o personagem — para criar uma linguagem visual coerente. Também usei efeitos de Line Art para dar um toque ilustrativo extra.",
-          en: "For this scene, I wanted to create a stylized look with a sort of cartoon shading. I ended up building procedural materials for the whole scene — including the bricks, the cement floor, wood, and the character — to create a coherent visual language. I also used Line Art effects to add an extra illustrative touch.",
-          fr: "Pour cette scène, je voulais créer un rendu stylisé avec une sorte de shading cartoon. J'ai fini par développer des matériaux procéduraux pour toute la scène — incluant les briques, le sol en ciment, le bois et le personnage — afin de créer un langage visuel cohérent. J'ai aussi utilisé des effets de Line Art pour ajouter une touche illustrative supplémentaire."
+          pt: "As 4 introduções animadas dos videoclipes do album",
+          en: "The 4 animated intros from the album's videoclips",
+          fr: "Les 4 introductions animées des vidéoclips de l'album"
         }
       }
     ]
   },
 
-"genial-investimentos": {
-    year: 2024,
+  "genial-investimentos": {
+    year: 2025,
     categories: ["3d", "animation"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784691023/Cover_Genial_ibqijd.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784691026/Animated_cover_Genial_y0bx75.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784691026/Animated_cover_Genial_y0bx75.mp4",
     title: {
       pt: "Genial Investimentos",
       en: "Genial Investimentos",
@@ -335,72 +309,11 @@ export const works = {
     ]
   },
 
-"marcelo-d2-tia-darci": {
-    year: 2026,
-    categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784686642/MD2_Cover_frdv9a.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
-    title: {
-      pt: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci",
-      en: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci",
-      fr: "Marcelo D2 - Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci"
-    },
-    credits: {
-      agency: "Pupila Dilatada",
-      client: "Elemess",
-      "motion-design": "Judd Buchanan, Miguel Duarte"
-    },
-    content: [
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
-        caption: {
-          pt: "",
-          en: "",
-          fr: ""
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Em parceria com o Motion Designer Miguel Duarte, desenvolvi as introduções animadas para 4 videoclipes do novo álbum de Marcelo D2, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". O projeto foi realizado pela Pupila Dilatada e Elemess.",
-          en: "In partnership with Motion Designer Miguel Duarte, I developed the animated introductions for 4 music videos of Marcelo D2's new album, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". The project was produced by Pupila Dilatada and Elemess.",
-          fr: "En partenariat avec le Motion Designer Miguel Duarte, j'ai développé les introductions animées de 4 clips du nouvel album de Marcelo D2, « Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci ». Le projet a été produit par Pupila Dilatada et Elemess."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "A ideia central partiu de observar objetos tradicionais e históricos do samba sob um olhar técnico e matemático. Cada videoclipe se inicia com o close de um item bastante comum no universo do samba brasileiro: malas de instrumentos, um cavalo de carrossel, um carrinho de isopor, uma cadeira de plástico.",
-          en: "The core idea came from looking at traditional, historic samba objects through a technical and mathematical lens. Each music video opens on a close-up of an item deeply familiar to Brazilian samba culture: instrument cases, a carousel horse, a cooler cart, a plastic chair.",
-          fr: "L'idée de départ était d'observer des objets traditionnels et historiques du samba à travers un regard technique et mathématique. Chaque clip s'ouvre sur un gros plan d'un objet emblématique de l'univers du samba brésilien : des malles d'instruments, un cheval de carrousel, un chariot de glacière, une chaise en plastique."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Os vídeos foram trackeados em 3D para adicionar uma nova camada de percepção a esses objetos: curvas de fibonacci, medições precisas e marcações técnicas sobrepostas em tempo real, como se uma máquina estivesse analisando cada peça e revelando a matemática escondida por trás da cultura popular.",
-          en: "The footage was tracked in 3D to add a new layer of perception to these objects: fibonacci curves, precise measurements and technical annotations laid over the footage in real time, as if a machine were scanning each object and revealing the hidden mathematics behind popular culture.",
-          fr: "Les vidéos ont été trackées en 3D pour ajouter une nouvelle couche de perception à ces objets : courbes de fibonacci, mesures précises et annotations techniques superposées en temps réel, comme si une machine analysait chaque objet et révélait les mathématiques cachées derrière la culture populaire."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784686660/MD2_All4_rgpvz7.mp4",
-        caption: {
-          pt: "As 4 introduções animadas dos videoclipes do album",
-          en: "The 4 animated intros from the album's videoclips",
-          fr: "Les 4 introductions animées des vidéoclips de l'album"
-        }
-      }
-    ]
-  },
-
 "hairspray": {
     year: 2025,
     categories: ["3d", "animation"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784149427/HairSprayCover_sqjn3e.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784151247/LogoHairspray_cxr3wo.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784151247/LogoHairspray_cxr3wo.mp4",
     title: {
       pt: "Hairspray",
       en: "Hairspray",
@@ -465,11 +378,281 @@ export const works = {
     ]
   },
 
+    "carnaval-oscars": {
+  year: 2025,
+  categories: ["3d", "animation", "art-direction"],
+  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778987561/carnaval_cover_qksaav.png",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778987438/carnaval_anim_cover_pgav0n.mp4",
+  title: {
+    pt: "Carnaval - A Vida Presta",
+    en: "Carnival - A Vida Presta",
+    fr: "Carnaval - A Vida Presta"
+  },
+  credits: {
+    agency: "NOO Works",
+    "3D animation": "Judd Buchanan, Fernando Villela, Miguel Duarte",
+    copywriting: "Gabriel Pardal, Mayara da Silva Gomes",
+    "head-of-animation": "Marcio Sal"
+  },
+  content: [
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779046876/carnaval_makingof_nosound_p8dv0v.mp4",
+      caption: {
+        pt: "Carnaval para Fernanda Torres — Making Of",
+        en: "Carnival for Fernanda Torres — Making Of",
+        fr: "Carnaval pour Fernanda Torres — Making Of"
+      }
+    },
+    {
+      type: "text",
+      text: {
+        pt: "Com o Brasil inteiro na torcida por Ainda Estou Aqui e por Fernanda Torres na temporada do Oscar 2025, desenvolvemos na NOO Works uma animação autoral em 3D inspirada na energia contagiante do carnaval brasileiro.",
+        en: "As Brazil rallied behind Ainda Estou Aqui and Fernanda Torres during the 2025 Oscars season, we created an original 3D animation at NOO Works inspired by the vibrant energy of Brazilian carnival.",
+        fr: "Alors que le Brésil soutenait Ainda Estou Aqui et Fernanda Torres pendant la saison des Oscars 2025, nous avons créé chez NOO Works une animation 3D originale inspirée de l’énergie vibrante du carnaval brésilien."
+      }
+    },
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987284/Carnaval_low_rrvvbv.mp4",
+      caption: { "pt": null, "en": null, "fr": null }
+    },
+    {
+      type: "text",
+      text: {
+        pt: "O projeto mistura elementos clássicos do carnaval — como confete, fantasia, estandartes e pandeiros — com o universo do cinema e a icônica estatueta do Oscar. O estudo explora direção de arte, design e animação em uma celebração visual da cultura brasileira.",
+        en: "The project combines classic carnival elements — including confetti, costumes, banners, and tambourines — with the world of cinema and the iconic Oscar statuette. The piece explores art direction, design, and animation in a visual celebration of Brazilian culture.",
+        fr: "Le projet mélange des éléments emblématiques du carnaval — confettis, costumes, étendards et tambourins — avec l’univers du cinéma et la célèbre statuette des Oscars. Cette étude explore la direction artistique, le design et l’animation dans une célébration visuelle de la culture brésilienne."
+      }
+    }
+  ]
+},
+
+    "ai-pharmaceuticals": {
+  year: 2024,
+  categories: ["3d", "animation", "art-direction"],
+  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778986688/cover_remedios_vtzhfr.png",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778985471/remedios_anim_cover_vitu6s.mp4",
+  title: {
+    pt: "AI Pharmaceuticals",
+    en: "AI Pharmaceuticals",
+    fr: "AI Pharmaceuticals"
+  },
+  credits: {
+    agency: "NOO Works",
+    concept: "Judd Buchanan",
+    direction: "Marcio Sal",
+    "3D animation": "Judd Buchanan",
+    design: "Louise Favilla"
+  },
+  content: [
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985829/remedios_all_mhfqcq.mp4",
+      caption: {
+        pt: "AI Pharmaceuticals — Animação Conceitual",
+        en: "AI Pharmaceuticals — Concept Animation",
+        fr: "AI Pharmaceuticals — Animation Conceptuelle"
+      }
+    },
+    {
+      type: "text",
+      text: {
+        pt: "AI Pharmaceuticals é uma série de animações conceituais que reimagina ferramentas populares de inteligência artificial como produtos farmacêuticos fictícios. O projeto explora de forma crítica e bem-humorada como ferramentas de IA passaram a fazer parte do cotidiano criativo e digital.",
+        en: "AI Pharmaceuticals is a series of conceptual animations that reimagines popular artificial intelligence tools as fictional pharmaceutical products. The project playfully and critically explores how AI tools became part of everyday creative and digital life.",
+        fr: "AI Pharmaceuticals est une série d’animations conceptuelles qui réinvente des outils populaires d’intelligence artificielle sous forme de produits pharmaceutiques fictifs. Le projet explore de manière à la fois critique et ludique la place grandissante des outils d’IA dans la vie créative et numérique quotidienne."
+      }
+    },
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778986473/remedios_makingof_szjwcz.mp4",
+      caption: {
+        pt: "AI Pharmaceuticals — Animação Conceitual",
+        en: "AI Pharmaceuticals — Concept Animation",
+        fr: "AI Pharmaceuticals — Animation Conceptuelle"
+      }
+    },
+    {
+      type: "text",
+      text: {
+        pt: "Inspirado pelo design farmacêutico suíço modernista e pelas obras da Geigy, o projeto foi inteiramente desenvolvido em 3D na NOO Works. A série apresenta embalagens e produtos fictícios como pílulas do ChatGPT, vitaminas Midjourney e curativos Photoshop Generative Fill.",
+        en: "Inspired by modernist Swiss pharmaceutical design and the work of Geigy, the project was entirely created in 3D at NOO Works. The series features fictional products such as ChatGPT pills, Midjourney vitamins, and Photoshop Generative Fill band-aids.",
+        fr: "Inspiré par le design pharmaceutique suisse moderniste et les créations de Geigy, le projet a été entièrement réalisé en 3D chez NOO Works. La série met en scène des produits fictifs tels que des pilules ChatGPT, des vitamines Midjourney et des pansements Photoshop Generative Fill."
+      }
+    },
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047215/remed_gpt_hppmo3.mp4",
+      caption: {
+        pt: "Pilulas ChatGPT - da série AI Pharmaceuticals",
+        en: "ChatGPT Pills - from the AI Pharmaceuticals series",
+        fr: "Pillules ChatGPT - de la série AI Pharmaceuticals"
+      }
+    },
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
+      caption: {
+        pt: "Bandaid Photoshop Generative Fill - da série AI Pharmaceuticals",
+        en: "Photoshop Generative Fill Bandaids - from the AI Pharmaceuticals series",
+        fr: "Pansements Photoshop Generative Fill - de la série AI Pharmaceuticals"
+      }
+    },
+    {
+      type: "video",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
+      caption: {
+        pt: "Pilulas Midjourney - da série AI Pharmaceuticals",
+        en: "Midjourney Pills - from the AI Pharmaceuticals series",
+        fr: "Pillules Midjourney - de la série AI Pharmaceuticals"
+      }
+    }
+  ]
+},
+
+
+
+
+
+"pausa-cafe": {
+    year: 2024,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784773510/PausaCafe_Cover_adaalr.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784774586/PausaCafe_animatedThumb_mmd1bq.mp4",
+    title: {
+      pt: "Pausa Café - Shading 3D Estilizado",
+      en: "Pausa Café - Stylized 3D Shading",
+      fr: "Pausa Café - Shading 3D Stylisé"
+    },
+    credits: {
+      agency: "NOO Works",
+      "3D modeling, shading, rigging and animation": "Judd Buchanan",
+      "character modelling": "Natalha Maffra",
+      "2D design": "Louise Davilla"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784773518/Pausa_Cafe_Website_zsaj2x.mp4",
+        caption: {
+          pt: "Loop animado completo da cena \"Pausa Café\"",
+          en: "Full animated loop of the \"Pausa Café\" scene",
+          fr: "Boucle animée complète de la scène « Pausa Café »"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Essa cena curta foi desenvolvida na NOO Works durante um período de estudos e experimentações. Fui responsável pela modelagem 3D, shading, rigging e animação do personagem da cena em Blender 3D. O modelo do personagem foi criado por Natalha Maffra.",
+          en: "This short scene was developed at NOO Works during a period of studies and experimentation. I was responsible for the 3D modeling, shading, character rigging and animation of the scene in Blender 3D. The character model was created by Natalha Maffra.",
+          fr: "Cette courte scène a été développée chez NOO Works pendant une période d'études et d'expérimentations. J'ai été responsable de la modélisation 3D, du shading, du rigging et de l'animation du personnage de la scène dans Blender 3D. Le modèle du personnage a été créé par Natalha Maffra."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784773517/PausaCafe_Making-of_ja6sjl.mp4",
+        caption: {
+          pt: "Visualizacao 3D no Blender",
+          en: "3D visualization in Blender",
+          fr: "Visualisation 3D sur Blender"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Nessa cena, eu queria criar um visual estilizado com uma espécie de shading cartoon. Acabei desenvolvendo materiais procedurais para toda a cena — incluindo os tijolos, o piso de cimento, a madeira e o personagem — para criar uma linguagem visual coerente. Também usei efeitos de Line Art para dar um toque ilustrativo extra.",
+          en: "For this scene, I wanted to create a stylized look with a sort of cartoon shading. I ended up building procedural materials for the whole scene — including the bricks, the cement floor, wood, and the character — to create a coherent visual language. I also used Line Art effects to add an extra illustrative touch.",
+          fr: "Pour cette scène, je voulais créer un rendu stylisé avec une sorte de shading cartoon. J'ai fini par développer des matériaux procéduraux pour toute la scène — incluant les briques, le sol en ciment, le bois et le personnage — afin de créer un langage visuel cohérent. J'ai aussi utilisé des effets de Line Art pour ajouter une touche illustrative supplémentaire."
+        }
+      }
+    ]
+  },
+
+
+"recruta-stone-2023": {
+    year: 2023,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784776706/StoneCover_nm6srg.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784777158/RecrutaAnimatedThumb_g6ouhy.mp4",
+    title: {
+      pt: "Recruta Stone 2023",
+      en: "Recruta Stone 2023",
+      fr: "Recruta Stone 2023"
+    },
+    credits: {
+      agency: "NOO Works",
+      client: "Stone",
+      "client-services": "Antonio Carvalho",
+      "executive-production": "Kathlyn Giaccomini",
+      "creative-direction": "Beatriz de Andrade",
+      "post-production-direction": "Marcio Sal",
+      "copywriting": "Gabriel Pardal",
+      "design": "Louise Favilla, Fernando Villela e Beatriz de Andrade",
+      "2D-animation": "Fernando Villela e Miguel Duarte",
+      "3D-animation": "Judd Buchanan"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784776701/RecrutaStone_Full_us0why.mp4",
+        caption: {
+          pt: "Campanha Recruta Stone 2023",
+          en: "Recruta Stone 2023 Campaign",
+          fr: "Campagne Recruta Stone 2023"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Recruta é o programa anual de seleção da Stone, com o objetivo de encontrar e formar novos talentos para a empresa. A NOO Works foi convidada para desenvolver a campanha digital da edição de 2023, com base nos pilares do programa, focando na experiência de transformação do candidato e na construção de líderes para o futuro. A campanha foi construída em torno do mote \"Quem você deseja se tornar?\".",
+          en: "Recruta is Stone's annual selection program, aimed at finding and training new talent for the company. NOO Works was invited to develop the digital campaign for the 2023 edition, based on the program's pillars and focused on the candidate's transformation experience and on building leaders for the future. The campaign was built around the tagline \"Who do you want to become?\".",
+          fr: "Recruta est le programme de sélection annuel de Stone, destiné à trouver et à former de nouveaux talents pour l'entreprise. NOO Works a été invitée à développer la campagne digitale de l'édition 2023, en s'appuyant sur les piliers du programme et en se concentrant sur l'expérience de transformation du candidat et sur la construction des leaders de demain. La campagne s'est construite autour de l'accroche « Qui voulez-vous devenir ? »."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Em vez de um vídeo apenas visualmente chamativo, o objetivo foi representar o foco no candidato e sua jornada de transformação ao longo do processo seletivo. Para construir uma representação mais inclusiva e lúdica, optamos por uma forma abstrata capaz de se movimentar, transformar, mudar de cor e direção, ancorada nas propriedades dos minerais e mineraloides — cristalização, cor, transparência, brilho, dureza e magnetismo. Essa forma se divide, multiplica, agrega e evolui, ilustrando o processo de autoconhecimento percorrido pelos candidatos.",
+          en: "Rather than a video that was only visually striking, the goal was to represent the candidate's focus and their transformation journey throughout the selection process. To build a more inclusive and playful representation, we chose an abstract form capable of moving, transforming, and changing color and direction, anchored in the properties of minerals and mineraloids — crystallization, color, transparency, brightness, hardness and magnetism. This form divides, multiplies, aggregates and evolves, illustrating the self-knowledge process the candidates go through.",
+          fr: "Plutôt qu'une vidéo simplement percutante visuellement, l'objectif était de représenter le focus sur le candidat et son parcours de transformation tout au long du processus de sélection. Pour construire une représentation plus inclusive et ludique, nous avons opté pour une forme abstraite capable de se déplacer, de se transformer, de changer de couleur et de direction, ancrée dans les propriétés des minéraux et mineraloïdes — cristallisation, couleur, transparence, éclat, dureté et magnétisme. Cette forme se divise, se multiplie, s'agrège et évolue, illustrant le processus de connaissance de soi vécu par les candidats."
+        }
+      },
+      {
+        type: "image",
+        url: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784776817/Sphere_Evolution_njqdq2.png",
+        caption: {
+          pt: "Evolução da forma 3D ao longo da campanha",
+          en: "Evolution of the 3D form throughout the campaign",
+          fr: "Évolution de la forme 3D tout au long de la campagne"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Como parte da equipe de 3D da NOO Works, fui responsável pelo desenvolvimento de todos os assets e animações em 3D da campanha. Modelei e animei a forma abstrata que representa a jornada dos candidatos, trabalhando sua evolução visual — da cristalização inicial até formas mais complexas e multiplicadas — além de desenvolver os materiais e shading que traduzem as propriedades minerais propostas pela direção de arte.",
+          en: "As part of NOO Works' 3D team, I was responsible for developing all the 3D assets and animation for the campaign. I modeled and animated the abstract form that represents the candidates' journey, working on its visual evolution — from the initial crystallization to more complex, multiplied shapes — and also developed the materials and shading that translate the mineral properties proposed by the art direction.",
+          fr: "Au sein de l'équipe 3D de NOO Works, j'ai été responsable du développement de l'ensemble des assets et de l'animation 3D de la campagne. J'ai modélisé et animé la forme abstraite représentant le parcours des candidats, en travaillant son évolution visuelle — de la cristallisation initiale jusqu'à des formes plus complexes et multipliées — et j'ai également développé les matériaux et le shading traduisant les propriétés minérales proposées par la direction artistique."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "O maior desafio técnico foi criar um sistema de animação flexível o suficiente para permitir que a forma se dividisse, se multiplicasse e mudasse de cor e direção de maneira fluida, mantendo a leitura clara da metáfora de transformação em cada etapa. O resultado final foi utilizado como peça central da campanha, presente em vídeos, posts e demais materiais digitais do Recruta 2023.",
+          en: "The biggest technical challenge was building an animation system flexible enough to let the form split, multiply, and change color and direction fluidly, while keeping the transformation metaphor clearly readable at every stage. The final result was used as the campaign's centerpiece, present across videos, posts and other digital materials for Recruta 2023.",
+          fr: "Le principal défi technique a été de créer un système d'animation suffisamment flexible pour permettre à la forme de se diviser, de se multiplier et de changer de couleur et de direction de façon fluide, tout en gardant la métaphore de transformation clairement lisible à chaque étape. Le résultat final a été utilisé comme pièce centrale de la campagne, présent dans les vidéos, les posts et les autres supports digitaux de Recruta 2023."
+        }
+      }
+    ]
+  },
+
+
+
+
 "lembrete": {
     year: 2023,
     categories: ["3d", "animation", "art-direction"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784147510/Cover_engrzl.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1784147825/ThumbCover_zybq8x.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784147825/ThumbCover_zybq8x.mp4",
     title: {
       pt: "Lembrete - Curta-metragem",
       en: "Reminder - Short Film",
@@ -613,160 +796,11 @@ export const works = {
     ]
   },
 
-"think-with-google-2025": {
-    year: 2025,
-    categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1783999358/Cover_kbqh3r.jpg",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/v1783999360/AnimatedThumb_ruqvut.mp4",
-    title: {
-      pt: "Think With Google 2025",
-      en: "Think With Google 2025",
-      fr: "Think With Google 2025"
-    },
-    credits: {
-      agency: "HOOD",
-      client: "Google",
-      "art-direction": "Pedro Alamorim, Camilla Mattos",
-      "motion-design": "Fernando Villela",
-      "3D animation": "Judd Buchanan"
-    },
-    content: [
-{
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997157/GoogleCover_wjtgnz.mp4",
-        caption: {
-          pt: "Tela Widescreen do Evento",
-          en: "Event Screen Backdrop",
-          fr: "Grand écran de l'événement"
-        }
-      },
-
-      {
-        type: "text",
-        text: {
-          pt: "Motion design desenvolvido para o Thinking with Google 2025, evento presencial com múltiplos formatos e telas. O projeto consistiu na tradução dos layouts criados pelo estúdio HOOD para animações 2D e 3D.",
-          en: "Motion design developed for Thinking with Google 2025, an in-person event with multiple formats and screens. The project involved translating layouts created by studio HOOD into 2D and 3D animations.",
-          fr: "Motion design développé pour le Thinking with Google 2025, un événement en présentiel avec de multiples formats et écrans. Le projet a consisté à traduire les layouts créés par le studio HOOD en animations 2D et 3D."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Como responsável pela animação 3D do projeto, desenvolvi as peças tridimensionais a partir do sistema de motion criado pela equipe, trabalhando movimento, profundidade e composição para integrar os elementos 3D da marca à linguagem visual do evento.",
-          en: "As the 3D animator on this project, I developed the three-dimensional pieces based on the motion system created by the team, working through movement, depth, and composition to integrate the brand's 3D elements into the event's visual language.",
-          fr: "En tant qu'animateur 3D sur ce projet, j'ai développé les pièces tridimensionnelles à partir du système de motion créé par l'équipe, en travaillant le mouvement, la profondeur et la composition pour intégrer les éléments 3D de la marque au langage visuel de l'événement."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997610/Ultrawide_2KVs_vbaehn.mp4",
-        caption: {
-          pt: "Pecas animadas desenvolvidas para o evento",
-          en: "Motion Design Identity developed for the event",
-          fr: "Identité de motion design développée pour l'événement"
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Busquei traduzir os conceitos de “Searching, Scrolling e Streaming” que orientaram a identidade do evento, explorando profundidade, perspectiva e ritmo para dar volume e presença aos elementos que compunham o sistema de navegação e telas do projeto.",
-          en: "I aimed to translate the concepts of \"Searching, Scrolling, and Streaming\" that guided the event's identity, exploring depth, perspective, and rhythm to give volume and presence to the elements composing the project's navigation and screen system.",
-          fr: "J'ai cherché à traduire les concepts de « Searching, Scrolling et Streaming » qui ont guidé l'identité de l'événement, en explorant la profondeur, la perspective et le rythme pour donner du volume et de la présence aux éléments composant le système de navigation et d'écrans du projet."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997151/Making_OF_rejce3.mp4",
-        caption: {
-          pt: "Making of Think With Google 2025",
-          en: "Making of Think With Google 2025",
-          fr: "Making of Think With Google 2025"
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1783997155/Todos_Grafismos_pgutsg.mp4",
-        caption: {
-          pt: "Grafismos desenvolvidos para a identidade visual do evento",
-          en: "Graphics developed for the event's visual identity",
-          fr: "Graphismes développés pour l'identité visuelle de l'événement"
-        }
-      }
-    ]
-  },
-
-
-
-
-  "paulistao-casas-bahia-2026": {
-    year: 2026,
-    categories: ["3d", "animation"],
-    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778981995/PaulistaoCover_b5ib7j.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
-    title: {
-      pt: "Paulistão Casas Bahia 2026",
-      en: "Paulistão Casas Bahia 2026",
-      fr: "Paulistão Casas Bahia 2026"
-    },
-    credits: {
-  agency: "NOO",
-  client: "LiveMode",
-  direction: "Marcio Sal",
-  "project-lead": "Duda Bom Queiroz",
-  "operations-director": "Kathlyn Giaccomini",
-  "head-of-client-services": "Ana Luisa Rodrigues",
-  "project-management": "Fábio Neves",
-  "head-of-design": "Deco Moreira",
-  "head-of-animation": "Marcio Sal",
-  "3D animation": "Judd Buchanan",
-  editing: "Felipe Portugal",
-  research: "Fernando Vilella, Mayara Gomes, Victoria Regis"
-},
-    content: [
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981865/Paulistao2026_website_low_bpw4vy.mp4",
-        caption: {
-          pt: "Abertura de transmissão do Paulistão Casas Bahia 2026",
-          en: "Paulistão Casas Bahia 2026 Broadcast Opener",
-          fr: "Générique d’ouverture du Paulistão Casas Bahia 2026"
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "A abertura de transmissão do Paulistão Casas Bahia 2026, criada para a LiveMode, reuniu narrativa dinâmica e excelência visual para celebrar a energia e o impacto cultural do campeonato de futebol de São Paulo.",
-          en: "The Paulistão Casas Bahia 2026 Broadcast Opener created for LiveMode brought together dynamic storytelling and high-end visual craft to celebrate the energy and cultural impact of São Paulo’s football championship.",
-          fr: "Le générique d’ouverture du Paulistão Casas Bahia 2026, créé pour LiveMode, a combiné une narration dynamique et un savoir-faire visuel haut de gamme afin de célébrer l’énergie et l’impact culturel du championnat de football de São Paulo."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "Como animador 3D na NOO Works, contribuí para o desenvolvimento da narrativa visual, criando sequências-chave de animação e refinando o visual geral do projeto. Meu papel foi focado em desenvolver movimentos fluidos e expressivos, além de trabalhar na criação de shading e iluminação fotorrealistas para elevar o nível de realismo e profundidade.",
-          en: "As a 3D animator at NOO Works, I contributed to shaping the visual storytelling while executing key animation sequences and refining the overall look. My role focused on crafting fluid, expressive motion and developing photorealistic shading and lighting to elevate realism and depth.",
-          fr: "En tant qu’animateur 3D chez NOO Works, j’ai contribué à la construction de la narration visuelle en réalisant des séquences d’animation clés et en affinant l’aspect global du projet. Mon rôle s’est concentré sur la création de mouvements fluides et expressifs, ainsi que sur le développement d’un shading et d’un éclairage photoréalistes afin d’accroître le réalisme et la profondeur."
-        }
-      },
-      {
-        type: "video",
-        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778981478/MakingOf_Paulistao_website_qqouel.mp4",
-        caption: {
-          pt: "Making-of da Abertura de transmissão do Paulistão Casas Bahia 2026",
-          en: "Making of Paulistão Casas Bahia 2026 Broadcast Opener",
-          fr: "Making of du Générique d’ouverture du Paulistão Casas Bahia 2026"
-        }
-      }
-    ]
-  },
-
-
-
-    "ivai-gin-launch-film": {
+  "ivai-gin-launch-film": {
         "year": 2023,
             "categories": ["3d", "animation"],
                 "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778982630/IvaiCover_imbsn8.png",
-                    "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778982797/Ivai_full_qockhs.mp4",
+                    "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778982797/Ivai_full_qockhs.mp4",
                         "title": {
             "pt": "Ivai Gin — Vídeo de Lançamento",
                 "en": "Ivai Gin — Launch Film",
@@ -864,11 +898,116 @@ export const works = {
         ]
     },
 
+"carbona-plau": {
+    year: 2022,
+    categories: ["3d", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784780108/CarbonaCover_c0b43e.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784780119/Carbona_AnimatedThumb_u2dmqc.mp4",
+    title: {
+      pt: "Carbona - Plau Design",
+      en: "Carbona - Plau Design",
+      fr: "Carbona - Plau Design"
+    },
+    credits: {
+      agency: "NOO Works",
+      client: "Plau",
+      "client-services": "Antonio Carvalho",
+      "executive-production": "Kathlyn Giaccomini",
+      "art-direction": "Beatriz de Andrade",
+      "direction": "Marcio Sal",
+      "copywriting": "Gabriel Pardal e Giovanna Ferrari",
+      "animation": "Fernando Villela, Judd Buchanan e Miguel Duarte",
+      "soundtrack-and-sound-design": "Fernando Villela, Judd Buchanan e Miguel Duarte"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780123/Carbona_video_Hero_Final_puyd8t.mp4",
+        caption: {
+          pt: "Vídeo de lançamento Carbona",
+          en: "Carbona launch video",
+          fr: "Vidéo de lancement Carbona"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Carbona é uma fonte tipográfica criada pela Plau que dialoga com a tecnologia e o futuro. Seu design é geométrico, reto e robusto. É otimizada para programação e possui recursos avançados para interfaces virtuais. Criamos o vídeo de lançamento da Carbona e os posts para redes sociais.",
+          en: "Carbona is a typeface created by Plau that dialogues with technology and the future. Its design is geometric, straight and robust. It is optimized for programming and has advanced features for virtual interfaces. We created Carbona's launch video and social media posts.",
+          fr: "Carbona est une police de caractères créée par Plau qui dialogue avec la technologie et le futur. Son design est géométrique, droit et robuste. Elle est optimisée pour la programmation et possède des fonctionnalités avancées pour les interfaces virtuelles. Nous avons créé la vidéo de lancement de Carbona ainsi que les publications pour les réseaux sociaux."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Para o vídeo de lançamento, incorporamos os aspectos modernos, mecânicos e futuristas de sua estética e imaginamos um futuro não tão distante, onde ficção científica, metaverso, redes sociais e tecnologias sofisticadas transformaram nossas vidas.",
+          en: "For the launch video, we incorporated the modern, mechanical and futuristic aspects of its aesthetic and imagined a not-so-distant future where science fiction, metaverse, social networks and sophisticated technologies have transformed our lives.",
+          fr: "Pour la vidéo de lancement, nous avons intégré les aspects modernes, mécaniques et futuristes de son esthétique et imaginé un futur pas si lointain où la science-fiction, le métavers, les réseaux sociaux et des technologies sophistiquées ont transformé nos vies."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780110/MakingOf_Carbona_1_a2tirz.mp4",
+        caption: {
+          pt: "Making of do vídeo de lançamento",
+          en: "Making of the launch video",
+          fr: "Making of de la vidéo de lancement"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Carbona foi projetada para lidar com as situações do mundo digital. Ela contém símbolos de criptomoedas, caracteres especiais, uma versão monoespaçada para códigos e muito mais. Criamos uma série de peças para explicar suas características únicas, desdobrando o conceito em diversos posts para redes sociais.",
+          en: "Carbona was designed to deal with the situations of the digital world. It contains cryptocurrency symbols, special characters, a monospaced version for codes and more. We created a series of pieces to explain its unique characteristics, unfolding the concept into several posts for social media.",
+          fr: "Carbona a été conçue pour répondre aux situations du monde numérique. Elle contient des symboles de cryptomonnaies, des caractères spéciaux, une version monospace pour le code et bien plus encore. Nous avons créé une série de pièces pour expliquer ses caractéristiques uniques, en déployant le concept à travers plusieurs publications pour les réseaux sociaux."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780128/SocialMedia_Carbona_uvqhy8.mp4",
+        caption: {
+          pt: "Posts para redes sociais",
+          en: "Social media posts",
+          fr: "Publications pour les réseaux sociaux"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Como parte da equipe de animação da NOO Works, fui responsável pelo desenvolvimento de assets 3D e pela animação da campanha de lançamento da Carbona, ao lado de Fernando Villela e Miguel Duarte. Trabalhamos a estética geométrica, reta e robusta da fonte para construir elementos tridimensionais que reforçassem sua identidade mecânica e futurista, unindo referências de ficção científica, metaverso e tecnologias emergentes ao universo visual da marca.",
+          en: "As part of NOO Works' animation team, I was responsible for developing the 3D assets and animating Carbona's launch campaign, alongside Fernando Villela and Miguel Duarte. We worked with the typeface's geometric, straight and robust aesthetic to build three-dimensional elements that reinforced its mechanical and futuristic identity, blending references from science fiction, the metaverse and emerging technologies into the brand's visual universe.",
+          fr: "Au sein de l'équipe d'animation de NOO Works, j'ai été responsable du développement des assets 3D et de l'animation de la campagne de lancement de Carbona, aux côtés de Fernando Villela et Miguel Duarte. Nous avons travaillé l'esthétique géométrique, droite et robuste de la police pour construire des éléments tridimensionnels renforçant son identité mécanique et futuriste, en mêlant des références à la science-fiction, au métavers et aux technologies émergentes à l'univers visuel de la marque."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "O maior desafio foi manter a coerência visual entre o vídeo de lançamento e a série de posts que explicavam separadamente cada característica da fonte, garantindo que a linguagem 3D se mantivesse consistente do começo ao fim da campanha — do vídeo hero até a cena final de encerramento.",
+          en: "The biggest challenge was keeping visual coherence between the launch video and the series of posts that separately explained each of the typeface's characteristics, making sure the 3D language stayed consistent from start to finish of the campaign — from the hero video to the closing shot.",
+          fr: "Le plus grand défi a été de maintenir une cohérence visuelle entre la vidéo de lancement et la série de publications expliquant séparément chaque caractéristique de la police, en veillant à ce que le langage 3D reste cohérent du début à la fin de la campagne — de la vidéo hero jusqu'au plan de clôture."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1784780362/Carbona_Capa1_fyhyf2.mp4",
+        caption: {
+          pt: "Cena final",
+          en: "Closing shot",
+          fr: "Plan de clôture"
+        }
+      }
+    ]
+  },
+
+
+
+    
+
     "inova-sim-concept-video": {
         "year": 2024,
         "categories": ["3d", "animation"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778984203/inova_cover_ypm8vb.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778984352/inova_anim_cover_ctc8od.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778984352/inova_anim_cover_ctc8od.mp4",
         "title": {
             "pt": "Inova SIM — Vídeo Conceito",
             "en": "Inova SIM — Concept Video",
@@ -958,138 +1097,6 @@ export const works = {
     },
 
 
-  "ai-pharmaceuticals": {
-  year: 2023,
-  categories: ["3d", "animation", "art-direction"],
-  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778986688/cover_remedios_vtzhfr.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985471/remedios_anim_cover_vitu6s.mp4",
-  title: {
-    pt: "AI Pharmaceuticals",
-    en: "AI Pharmaceuticals",
-    fr: "AI Pharmaceuticals"
-  },
-  credits: {
-    agency: "NOO Works",
-    concept: "Judd Buchanan",
-    direction: "Marcio Sal",
-    "3D animation": "Judd Buchanan",
-    design: "Louise Favilla"
-  },
-  content: [
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778985829/remedios_all_mhfqcq.mp4",
-      caption: {
-        pt: "AI Pharmaceuticals — Animação Conceitual",
-        en: "AI Pharmaceuticals — Concept Animation",
-        fr: "AI Pharmaceuticals — Animation Conceptuelle"
-      }
-    },
-    {
-      type: "text",
-      text: {
-        pt: "AI Pharmaceuticals é uma série de animações conceituais que reimagina ferramentas populares de inteligência artificial como produtos farmacêuticos fictícios. O projeto explora de forma crítica e bem-humorada como ferramentas de IA passaram a fazer parte do cotidiano criativo e digital.",
-        en: "AI Pharmaceuticals is a series of conceptual animations that reimagines popular artificial intelligence tools as fictional pharmaceutical products. The project playfully and critically explores how AI tools became part of everyday creative and digital life.",
-        fr: "AI Pharmaceuticals est une série d’animations conceptuelles qui réinvente des outils populaires d’intelligence artificielle sous forme de produits pharmaceutiques fictifs. Le projet explore de manière à la fois critique et ludique la place grandissante des outils d’IA dans la vie créative et numérique quotidienne."
-      }
-    },
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778986473/remedios_makingof_szjwcz.mp4",
-      caption: {
-        pt: "AI Pharmaceuticals — Animação Conceitual",
-        en: "AI Pharmaceuticals — Concept Animation",
-        fr: "AI Pharmaceuticals — Animation Conceptuelle"
-      }
-    },
-    {
-      type: "text",
-      text: {
-        pt: "Inspirado pelo design farmacêutico suíço modernista e pelas obras da Geigy, o projeto foi inteiramente desenvolvido em 3D na NOO Works. A série apresenta embalagens e produtos fictícios como pílulas do ChatGPT, vitaminas Midjourney e curativos Photoshop Generative Fill.",
-        en: "Inspired by modernist Swiss pharmaceutical design and the work of Geigy, the project was entirely created in 3D at NOO Works. The series features fictional products such as ChatGPT pills, Midjourney vitamins, and Photoshop Generative Fill band-aids.",
-        fr: "Inspiré par le design pharmaceutique suisse moderniste et les créations de Geigy, le projet a été entièrement réalisé en 3D chez NOO Works. La série met en scène des produits fictifs tels que des pilules ChatGPT, des vitamines Midjourney et des pansements Photoshop Generative Fill."
-      }
-    },
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047215/remed_gpt_hppmo3.mp4",
-      caption: {
-        pt: "Pilulas ChatGPT - da série AI Pharmaceuticals",
-        en: "ChatGPT Pills - from the AI Pharmaceuticals series",
-        fr: "Pillules ChatGPT - de la série AI Pharmaceuticals"
-      }
-    },
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047199/remed_photoshop_mr6lcz.mp4",
-      caption: {
-        pt: "Bandaid Photoshop Generative Fill - da série AI Pharmaceuticals",
-        en: "Photoshop Generative Fill Bandaids - from the AI Pharmaceuticals series",
-        fr: "Pansements Photoshop Generative Fill - de la série AI Pharmaceuticals"
-      }
-    },
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779047216/remed_midjourney_boyj88.mp4",
-      caption: {
-        pt: "Pilulas Midjourney - da série AI Pharmaceuticals",
-        en: "Midjourney Pills - from the AI Pharmaceuticals series",
-        fr: "Pillules Midjourney - de la série AI Pharmaceuticals"
-      }
-    }
-  ]
-},
-
-
-"carnaval-oscars": {
-  year: 2025,
-  categories: ["3d", "animation", "art-direction"],
-  thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778987561/carnaval_cover_qksaav.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987438/carnaval_anim_cover_pgav0n.mp4",
-  title: {
-    pt: "Carnaval - A Vida Presta",
-    en: "Carnival - A Vida Presta",
-    fr: "Carnaval - A Vida Presta"
-  },
-  credits: {
-    agency: "NOO Works",
-    "3D animation": "Judd Buchanan, Fernando Villela, Miguel Duarte",
-    copywriting: "Gabriel Pardal, Mayara da Silva Gomes",
-    "head-of-animation": "Marcio Sal"
-  },
-  content: [
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1779046876/carnaval_makingof_nosound_p8dv0v.mp4",
-      caption: {
-        pt: "Carnaval para Fernanda Torres — Making Of",
-        en: "Carnival for Fernanda Torres — Making Of",
-        fr: "Carnaval pour Fernanda Torres — Making Of"
-      }
-    },
-    {
-      type: "text",
-      text: {
-        pt: "Com o Brasil inteiro na torcida por Ainda Estou Aqui e por Fernanda Torres na temporada do Oscar 2025, desenvolvemos na NOO Works uma animação autoral em 3D inspirada na energia contagiante do carnaval brasileiro.",
-        en: "As Brazil rallied behind Ainda Estou Aqui and Fernanda Torres during the 2025 Oscars season, we created an original 3D animation at NOO Works inspired by the vibrant energy of Brazilian carnival.",
-        fr: "Alors que le Brésil soutenait Ainda Estou Aqui et Fernanda Torres pendant la saison des Oscars 2025, nous avons créé chez NOO Works une animation 3D originale inspirée de l’énergie vibrante du carnaval brésilien."
-      }
-    },
-    {
-      type: "video",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778987284/Carnaval_low_rrvvbv.mp4",
-      caption: { "pt": null, "en": null, "fr": null }
-    },
-    {
-      type: "text",
-      text: {
-        pt: "O projeto mistura elementos clássicos do carnaval — como confete, fantasia, estandartes e pandeiros — com o universo do cinema e a icônica estatueta do Oscar. O estudo explora direção de arte, design e animação em uma celebração visual da cultura brasileira.",
-        en: "The project combines classic carnival elements — including confetti, costumes, banners, and tambourines — with the world of cinema and the iconic Oscar statuette. The piece explores art direction, design, and animation in a visual celebration of Brazilian culture.",
-        fr: "Le projet mélange des éléments emblématiques du carnaval — confettis, costumes, étendards et tambourins — avec l’univers du cinéma et la célèbre statuette des Oscars. Cette étude explore la direction artistique, le design et l’animation dans une célébration visuelle de la culture brésilienne."
-      }
-    }
-  ]
-},
 
 
 
@@ -1097,10 +1104,10 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778989616/cover_trident_zbhhh9.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778989656/trident_anim_cover_zrryso.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778989656/trident_anim_cover_zrryso.mp4",
         "title": {
             "pt": "Filtro AR Trident X",
-            "en": "Trident AR Filter X",
+            "en": "Trident X AR Filter",
             "fr": "Filtre AR Trident X"
         },
         "credits": {
@@ -1142,7 +1149,7 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778990648/bisao_cover_vyjbvq.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778990649/bisao_anim_cover_mtc3m5.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778990649/bisao_anim_cover_mtc3m5.mp4",
         "title": {
             "pt": "Filtro AR Bisão",
             "en": "Bisão AR Filter",
@@ -1178,7 +1185,7 @@ export const works = {
         "year": "2022",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778992289/cover_spoleto_hkttvb.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778991863/spoleto_phones_crtsmk.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778991863/spoleto_phones_crtsmk.mp4",
         "title": {
             "pt": "Filtro AR Spoleto",
             "en": "Spoleto AR Filter",
@@ -1223,7 +1230,7 @@ export const works = {
         "year": "2023",
         "categories": ["3d", "interactive"],
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778993020/molico_cover_azoleq.png",
-        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778993022/molico_anim_cover_dbwkg1.mp4",
+        "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778993022/molico_anim_cover_dbwkg1.mp4",
         "title": {
             "pt": "Filtro Molico Gold",
             "en": "Molico Gold Filter",
@@ -1270,7 +1277,7 @@ export const digitalArt = {
     year: 2021,
     categories: ["Statue Series"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778995069/cover_soulgardening_aip0dh.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778456955/Soul_Gardening_t0rvl4.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778456955/Soul_Gardening_t0rvl4.mp4",
     title: {
       pt: "Soul Gardening",
       en: "Soul Gardening",
@@ -1300,7 +1307,7 @@ export const digitalArt = {
     year: 2022,
     categories: ["Statue Series"],
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994973/cover_fairestgoddess_au0o2f.png",
-    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995161/To_the_Fairest_Goddess_sejwkw.mp4",
     title: {
       pt: "To the Fairest Goddess",
       en: "To the Fairest Goddess",
@@ -1330,7 +1337,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994975/cover_seas_g3dygd.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995161/Seas_of_Torment_caqb64.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995161/Seas_of_Torment_caqb64.mp4",
   title: {
     pt: "Seas of Torment",
     en: "Seas of Torment",
@@ -1360,7 +1367,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994972/cover_angels_jcflwl.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995168/The_Nature_of_Angels_womfx8.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995168/The_Nature_of_Angels_womfx8.mp4",
   title: {
     pt: "The Nature of Angels",
     en: "The Nature of Angels",
@@ -1390,7 +1397,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["Statue Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778994974/cover_praeferratus_iaruc5.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995166/Praeferratus_cceg1l.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995166/Praeferratus_cceg1l.mp4",
   title: {
     pt: "Praeferratus",
     en: "Praeferratus",
@@ -1422,7 +1429,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_organizedmess_g1g0zl.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Organized_Mess_cbnuor.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995902/Organized_Mess_cbnuor.mp4",
   title: {
     pt: "Organized Mess",
     en: "Organized Mess",
@@ -1452,7 +1459,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_programfiles_ulbf6g.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995874/Program_Files_uftfld.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995874/Program_Files_uftfld.mp4",
   title: {
     pt: "Program Files",
     en: "Program Files",
@@ -1482,7 +1489,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_backupdead_nzdzwa.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995889/Back_up_From_The_Dead_jecjqa.mp4",
   title: {
     pt: "Back(up) From The Dead",
     en: "Back(up) From The Dead",
@@ -1512,7 +1519,7 @@ export const digitalArt = {
   year: 2022,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996667/cover_swapped_nbha1u.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778996716/Swapped_tbywxn.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778996716/Swapped_tbywxn.mp4",
   title: {
     pt: "Swapped",
     en: "Swapped",
@@ -1542,7 +1549,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996079/cover_exitstrategy_y2cu2h.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995999/Exit_Strategy_blpcsb.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995999/Exit_Strategy_blpcsb.mp4",
   title: {
     pt: "Exit Strategy",
     en: "Exit Strategy",
@@ -1572,7 +1579,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996081/cover_stranded_tkcu8e.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995880/Stranded_f6etd7.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995880/Stranded_f6etd7.mp4",
   title: {
     pt: "Stranded",
     en: "Stranded",
@@ -1602,7 +1609,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996090/cover_siliconage_obm7fn.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995885/Silicon_Age_esr2xd.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995885/Silicon_Age_esr2xd.mp4",
   title: {
     pt: "Silicon Age",
     en: "Silicon Age",
@@ -1632,7 +1639,7 @@ export const digitalArt = {
   year: 2024,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996080/cover_reportedunsafe_llschr.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
+  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995902/Reported_as_Unsafe_ixpiac.mp4",
   title: {
     pt: "Reported as Unsafe",
     en: "Reported as Unsafe",

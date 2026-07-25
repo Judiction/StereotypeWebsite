@@ -1,7 +1,7 @@
 // js/app.js
 import { handleRouting, navigate } from './router.js';
 import { renderNav } from './renderer.js';
-import { animateNavbarLogo } from './effects.js';
+import { animateNavbarLogo, initProjectCardGlitch } from './effects.js';
 
 // js/app.js
 
@@ -56,3 +56,4 @@ window.changeLang = (lang) => {
 
 // EFFECTS
 animateNavbarLogo();
+initProjectCardGlitch();

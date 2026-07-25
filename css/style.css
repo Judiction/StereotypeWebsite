@@ -16,8 +16,8 @@
     /* Grid & Spacing */
     --nav-height: 80px;
     --container-padding: 40px;
-    --grid-gap: 40px;
-    --card-info-gap: 12px;
+    --grid-gap: 22px;
+    --card-info-gap: 2px;
     
     /* Motion */
     --transition-speed: 0.35s;
@@ -280,7 +280,8 @@ button { font-family: inherit; }
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: var(--grid-gap);
+    column-gap: var(--grid-gap);
+    row-gap: 20px;
     width: 100%;
 }
 
@@ -328,26 +329,36 @@ button { font-family: inherit; }
 /* .project-card:hover img { opacity: 0.3; } */
 
 /* Editorial Category Tags */
+.project-info .year {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--accent-color);
+    letter-spacing: var(--ls-meta);
+    line-height: 2;
+}
+
 .project-info h3 {
     font-style: italic;
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: -0.01em;
-    margin-bottom: 4px;
+    line-height: 2;
+    margin-bottom: 1px;
 }
 
-.project-info .year {
-    font-size: 0.7rem;
+/* Glitch de titulo ao passar o mouse no card (ver js/effects.js) */
+.project-info h3.is-glitching {
     color: var(--accent-color);
-    letter-spacing: var(--ls-meta);
+    text-shadow: 1px 0 rgba(255, 0, 60, 0.5), -1px 0 rgba(0, 200, 255, 0.5);
 }
 
 .categories {
-    margin-top: 4px;
+    margin-top: 1px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    line-height: 1.2;
 }
 
 .categories span {
