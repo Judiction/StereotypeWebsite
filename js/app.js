@@ -1,7 +1,8 @@
 // js/app.js
-import { handleRouting, navigate } from './router.js';
+import { handleRouting, navigate, parseRoute } from './router.js';
 import { renderNav } from './renderer.js';
 import { animateNavbarLogo, initProjectCardGlitch } from './effects.js';
+import { mountGrass, unmountGrass } from './grass-background.js';
 
 // js/app.js
 
@@ -11,8 +12,16 @@ async function updateApp() {
 
     renderNav(lang);
     handleRouting();
-    
 
+    // The interactive grass background only runs on the landing page.
+    // body.home-active drives the transparent-nav / light-overlay styling.
+    if (parseRoute().type === 'home') {
+        document.body.classList.add('home-active');
+        mountGrass();
+    } else {
+        document.body.classList.remove('home-active');
+        unmountGrass();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

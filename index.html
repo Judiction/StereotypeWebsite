@@ -13,16 +13,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Interactive grass background (three.js) — dependencies.
+         Bare specifiers like "react" and "three" resolve to these CDN URLs
+         both for the site's own module scripts and the runtime-transpiled
+         grass component. Babel Standalone transforms the .jsx at load time,
+         so no build step is needed. See js/grass-background.js. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18",
+          "react-dom/client": "https://esm.sh/react-dom@18/client",
+          "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js",
+          "three/": "https://cdn.jsdelivr.net/npm/three@0.150.1/"
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 </head>
 <body>
+
+    <!-- Fixed WebGL layer behind everything; only visible on the home route
+         (toggled via body.home-active in js/app.js). -->
+    <div id="grass-bg"></div>
 
     <nav id="main-nav"></nav>
 
     <main id="app">
         <section class="home-hero">
             <div class="hero-content">
-                <h1>BEASTEREOTYPE</h1>
-                <p class="tagline">3D Artist & Creative Technologist</p>
+                <p class="tagline">3D Artist &amp; Creative Technologist</p>
                 <p class="intro-phrase">Judd Buchanan</p>
                 <a href="/work" class="home-cta">Work</a>
             </div>

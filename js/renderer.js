@@ -146,12 +146,12 @@ export function renderFilterableGrid(container, list, lang) {
 export function renderHome(container, lang) {
     if (!container) return;
 
-    // We use the exact same structure as index.html 
-    // so the CSS transitions stay smooth.
+    // The wordmark itself is rendered by the interactive 3D grass background
+    // (see js/grass-background.js), so the hero here is just the supporting
+    // copy + Work entry point overlaid on top of it.
     container.innerHTML = `
         <section class="home-hero">
             <div class="hero-content">
-                <h1 class="logo">BE A STEREOTYPE</h1>
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
                 <p class="intro-phrase">Judd Buchanan</p>
                 <a href="/work" class="home-cta">

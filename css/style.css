@@ -779,6 +779,111 @@ button { font-family: inherit; }
     .bio video {width: 100%;}
 }
 
+/* --- 10. LANDING PAGE (interactive grass background) --- */
+
+/* The three.js grass canvas lives here, fixed behind everything. It is only
+   shown while on the home route (body.home-active), so the other pages don't
+   pay the WebGL cost. The background color matches the scene's fog color so
+   there's no flash before the canvas paints. */
+#grass-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    display: none;
+    background: #14260c;
+}
+
+body.home-active {
+    background: #14260c;
+}
+
+body.home-active #grass-bg {
+    display: block;
+}
+
+/* The overlay content sits above the grass, but pointer events fall THROUGH
+   it to the canvas so the grass stays interactive — only the real controls
+   (links / buttons) capture clicks. */
+body.home-active #app {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    padding: 0;
+    pointer-events: none;
+}
+
+body.home-active #app a,
+body.home-active #app button {
+    pointer-events: auto;
+}
+
+/* Nav becomes a transparent overlay with light text over the grass. */
+body.home-active #main-nav {
+    background: transparent;
+    pointer-events: none;
+}
+
+body.home-active #main-nav a,
+body.home-active #main-nav button {
+    pointer-events: auto;
+}
+
+body.home-active #main-nav .logo,
+body.home-active #main-nav .nav-links a {
+    color: #ffffff;
+}
+
+body.home-active #main-nav .lang-toggle button {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.home-active #main-nav .lang-toggle button:hover,
+body.home-active #main-nav .lang-toggle button.active {
+    color: #ffffff;
+}
+
+body.home-active .hamburger span {
+    background: #ffffff;
+}
+
+/* Hero copy is anchored to the bottom so it clears the centered 3D wordmark,
+   and set light for contrast against the grass. */
+body.home-active .home-hero {
+    height: 100vh;
+    justify-content: flex-end;
+    padding: var(--container-padding);
+    padding-bottom: 60px;
+    color: #ffffff;
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.5);
+}
+
+body.home-active .home-hero .tagline {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+}
+
+body.home-active .home-hero .intro-phrase {
+    opacity: 0.75;
+    font-size: 0.85rem;
+    letter-spacing: var(--ls-meta);
+}
+
+body.home-active .home-cta {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: background var(--transition-speed) var(--ease-out-expo),
+                color var(--transition-speed) var(--ease-out-expo);
+}
+
+body.home-active .home-cta:hover {
+    background: #ffffff;
+    color: #14260c;
+}
+
 /* ANIMATION */
 @keyframes fadeInUp {
     from {
