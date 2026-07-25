@@ -174,9 +174,9 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "Em parceria com o Motion Designer Miguel Duarte, desenvolvi as introduções animadas para 4 videoclipes do novo álbum de Marcelo D2, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". O projeto foi realizado pela Pupila Dilatada e Elemess.",
-          en: "In partnership with Motion Designer Miguel Duarte, I developed the animated introductions for 4 music videos of Marcelo D2's new album, \"Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci\". The project was produced by Pupila Dilatada and Elemess.",
-          fr: "En partenariat avec le Motion Designer Miguel Duarte, j'ai développé les introductions animées de 4 clips du nouvel album de Marcelo D2, « Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci ». Le projet a été produit par Pupila Dilatada et Elemess."
+          pt: "Em parceria com o Motion Designer Miguel Duarte, desenvolvi as introduções animadas para 4 videoclipes do novo álbum de Marcelo D2, <i>Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci</i>. O projeto foi realizado pela Pupila Dilatada e Elemess.",
+          en: "In partnership with Motion Designer Miguel Duarte, I developed the animated introductions for 4 music videos of Marcelo D2's new album, <i>Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci</i>. The project was produced by Pupila Dilatada and Elemess.",
+          fr: "En partenariat avec le Motion Designer Miguel Duarte, j'ai développé les introductions animées de 4 clips du nouvel album de Marcelo D2, <i>Manual Prático Do Novo Samba Tradicional, Vol. 2: Tia Darci</i> ». Le projet a été produit par Pupila Dilatada et Elemess."
         }
       },
       {
@@ -248,9 +248,9 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "A nova identidade buscava traduzir características como modernidade, parceria e uma sensação de segurança tecnológica. A partir dessa direção, desenvolvi materiais e formas em 3D — texturas metálicas, neon e elementos que se abrem e se fecham como janelas e portais — reforçando essa linguagem tecnológica nas diferentes aplicações da marca.",
-          en: "The new identity aimed to translate characteristics such as modernity, partnership and a sense of technological security. Based on that direction, I developed 3D materials and shapes — metallic textures, neon and elements that open and close like windows and portals — reinforcing that technological language across the brand's different applications.",
-          fr: "La nouvelle identité cherchait à traduire des caractéristiques telles que la modernité, le partenariat et un sentiment de sécurité technologique. À partir de cette direction, j'ai développé des matériaux et des formes en 3D — textures métalliques, néon et éléments qui s'ouvrent et se ferment comme des fenêtres et des portails — renforçant ce langage technologique dans les différentes applications de la marque."
+          pt: "A nova identidade buscava traduzir características como modernidade, parceria e uma sensação de segurança tecnológica. A partir dessa direção, desenvolvi materiais e assets em 3D com texturas metálicase neon, reforçando essa linguagem tecnológica nas diferentes aplicações da marca.",
+          en: "The new identity aimed to translate characteristics such as modernity, partnership and a sense of technological security. Based on that direction, I developed 3D materials and assets with metallic textures and neon lighting, reinforcing that technological language across the brand's different applications.",
+          fr: "La nouvelle identité cherchait à traduire des caractéristiques telles que la modernité, le partenariat et un sentiment de sécurité technologique. À partir de cette direction, j'ai développé des matériaux et des assets en 3D avec des textures métalliques et néons, renforçant ce langage technologique dans les différentes applications de la marque."
         }
       },
       {
@@ -337,16 +337,16 @@ export const works = {
         type: "text",
         text: {
           pt: "Hairspray, grande sucesso da Broadway, chegaria ao Brasil, e nós desenvolvemos materiais para compor a comunicação da peça. Fiz a modelagem 3D, texturização e animação do logo, explorando também variações de cor a partir da paleta e dos elementos visuais já definidos pela identidade da marca.",
-          en: "Hairspray, a huge Broadway hit, was coming to Brazil, and we developed materials for the play's communication. I handled the 3D modelling, texturing, and animation of the logo, also exploring color variations based on the palette and visual elements already defined by the brand's identity.",
+          en: "Hairspray, a huge Broadway hit, was coming to Brazil, and we developed materials for the play's digital content. I handled the 3D modelling, texturing, and animation of the logo, also exploring color variations based on the palette and visual elements already defined by the brand's identity.",
           fr: "Hairspray, immense succès de Broadway, arrivait au Brésil, et nous avons développé des supports pour la communication de la pièce. J'ai réalisé la modélisation 3D, la texturisation et l'animation du logo, en explorant aussi des variations de couleur à partir de la palette et des éléments visuels déjà définis par l'identité de la marque."
         }
       },
       {
         type: "text",
         text: {
-          pt: "A animação foi pensada para ser dinâmica e vibrante, seguindo as diretrizes de marca já compartilhadas pelo cliente, buscando transmitir o brilho e a alegria características do musical.",
-          en: "The animation was designed to be dynamic and vibrant, following the brand guidelines already shared by the client, aiming to convey the sparkle and joy that characterize the musical.",
-          fr: "L'animation a été pensée pour être dynamique et vibrante, en suivant les directives de marque déjà partagées par le client, afin de transmettre l'éclat et la joie qui caractérisent la comédie musicale."
+          pt: "A animação foi pensada para ser dinâmica e vibrante, seguindo as diretrizes de marca compartilhadas pelo cliente, buscando transmitir o brilho e a alegria características do musical.",
+          en: "The animation was designed to be dynamic and vibrant, following the brand guidelines shared by the client, aiming to convey the sparkle and joy that characterize the musical.",
+          fr: "L'animation a été pensée pour être dynamique et vibrante, en suivant les directives de marque partagées par le client, afin de transmettre l'éclat et la joie qui caractérisent la comédie musicale."
         }
       },
       {
@@ -362,7 +362,7 @@ export const works = {
         type: "text",
         text: {
           pt: "Para a texturização, criamos um shader de glitter realista personalizado, capaz de reproduzir a textura brilhante e cintilante do material, dando vida e riqueza de detalhes ao logo em 3D.",
-          en: "For the texturing, we created a custom realistic glitter shader, able to reproduce the shiny, sparkling texture of the material, giving the 3D logo life and richness of detail.",
+          en: "For the texturing, we created a custom realistic glitter shader, able to reproduce the shiny, sparkling texture of the material, giving the 3D logo life and richness in detail.",
           fr: "Pour la texturisation, nous avons créé un shader de paillettes réaliste personnalisé, capable de reproduire la texture brillante et scintillante du matériau, donnant vie et richesse de détails au logo en 3D."
         }
       },
@@ -407,9 +407,9 @@ export const works = {
     {
       type: "text",
       text: {
-        pt: "Com o Brasil inteiro na torcida por Ainda Estou Aqui e por Fernanda Torres na temporada do Oscar 2025, desenvolvemos na NOO Works uma animação autoral em 3D inspirada na energia contagiante do carnaval brasileiro.",
-        en: "As Brazil rallied behind Ainda Estou Aqui and Fernanda Torres during the 2025 Oscars season, we created an original 3D animation at NOO Works inspired by the vibrant energy of Brazilian carnival.",
-        fr: "Alors que le Brésil soutenait Ainda Estou Aqui et Fernanda Torres pendant la saison des Oscars 2025, nous avons créé chez NOO Works une animation 3D originale inspirée de l’énergie vibrante du carnaval brésilien."
+        pt: "Com o Brasil inteiro na torcida por <i>Ainda Estou Aqui</i> e por Fernanda Torres na temporada do Oscar 2025, desenvolvemos na NOO Works uma animação autoral em 3D inspirada na energia contagiante do carnaval brasileiro.",
+        en: "As Brazil rallied behind <i>Ainda Estou Aqui</i> and Fernanda Torres during the 2025 Oscars season, we created an original 3D animation at NOO Works inspired by the vibrant energy of Brazilian carnival.",
+        fr: "Alors que le Brésil soutenait <i>Ainda Estou Aqui</i> et Fernanda Torres pendant la saison des Oscars 2025, nous avons créé chez NOO Works une animation 3D originale inspirée de l’énergie vibrante du carnaval brésilien."
       }
     },
     {
@@ -420,9 +420,9 @@ export const works = {
     {
       type: "text",
       text: {
-        pt: "O projeto mistura elementos clássicos do carnaval — como confete, fantasia, estandartes e pandeiros — com o universo do cinema e a icônica estatueta do Oscar. O estudo explora direção de arte, design e animação em uma celebração visual da cultura brasileira.",
-        en: "The project combines classic carnival elements — including confetti, costumes, banners, and tambourines — with the world of cinema and the iconic Oscar statuette. The piece explores art direction, design, and animation in a visual celebration of Brazilian culture.",
-        fr: "Le projet mélange des éléments emblématiques du carnaval — confettis, costumes, étendards et tambourins — avec l’univers du cinéma et la célèbre statuette des Oscars. Cette étude explore la direction artistique, le design et l’animation dans une célébration visuelle de la culture brésilienne."
+        pt: "O projeto mistura elementos clássicos do carnaval, como confete, fantasia, estandartes e pandeiros, com o universo do cinema e a icônica estatueta do Oscar. O estudo explora direção de arte, design e animação em uma celebração visual da cultura brasileira.",
+        en: "The project combines classic carnival elements, including confetti, costumes, banners, and tambourines, with the world of cinema and the iconic Oscar statuette. The piece explores art direction, design, and animation in a visual celebration of Brazilian culture.",
+        fr: "Le projet mélange des éléments emblématiques du carnaval, confettis, costumes, étendards et tambourins, avec l’univers du cinéma et la célèbre statuette des Oscars. Cette étude explore la direction artistique, le design et l’animation dans une célébration visuelle de la culture brésilienne."
       }
     }
   ]
@@ -520,9 +520,9 @@ export const works = {
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784773510/PausaCafe_Cover_adaalr.png",
     preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784774586/PausaCafe_animatedThumb_mmd1bq.mp4",
     title: {
-      pt: "Pausa Café - Shading 3D Estilizado",
-      en: "Pausa Café - Stylized 3D Shading",
-      fr: "Pausa Café - Shading 3D Stylisé"
+      pt: "Pausa Café",
+      en: "Pausa Café",
+      fr: "Pausa Café"
     },
     credits: {
       agency: "NOO Works",
@@ -604,17 +604,17 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "Recruta é o programa anual de seleção da Stone, com o objetivo de encontrar e formar novos talentos para a empresa. A NOO Works foi convidada para desenvolver a campanha digital da edição de 2023, com base nos pilares do programa, focando na experiência de transformação do candidato e na construção de líderes para o futuro. A campanha foi construída em torno do mote \"Quem você deseja se tornar?\".",
-          en: "Recruta is Stone's annual selection program, aimed at finding and training new talent for the company. NOO Works was invited to develop the digital campaign for the 2023 edition, based on the program's pillars and focused on the candidate's transformation experience and on building leaders for the future. The campaign was built around the tagline \"Who do you want to become?\".",
-          fr: "Recruta est le programme de sélection annuel de Stone, destiné à trouver et à former de nouveaux talents pour l'entreprise. NOO Works a été invitée à développer la campagne digitale de l'édition 2023, en s'appuyant sur les piliers du programme et en se concentrant sur l'expérience de transformation du candidat et sur la construction des leaders de demain. La campagne s'est construite autour de l'accroche « Qui voulez-vous devenir ? »."
+          pt: "Recruta é o programa anual de seleção da Stone, com o objetivo de encontrar e formar novos talentos para a empresa. A NOO Works foi convidada para desenvolver a campanha digital da edição de 2023, com base nos pilares do programa, focando na experiência de transformação do candidato e na construção de líderes para o futuro. A campanha foi construída em torno do mote <i>\"Quem você deseja se tornar?\"</i>.",
+          en: "Recruta is Stone's annual selection program, aimed at finding and training new talent for the company. NOO Works was invited to develop the digital campaign for the 2023 edition, based on the program's pillars and focused on the candidate's transformation experience and on building leaders for the future. The campaign was built around the tagline <i>\"Who do you want to become?\"</i>.",
+          fr: "Recruta est le programme de sélection annuel de Stone, destiné à trouver et à former de nouveaux talents pour l'entreprise. NOO Works a été invitée à développer la campagne digitale de l'édition 2023, en s'appuyant sur les piliers du programme et en se concentrant sur l'expérience de transformation du candidat et sur la construction des leaders de demain. La campagne s'est construite autour de l'accroche <i>« Qui voulez-vous devenir ? »</i>."
         }
       },
       {
         type: "text",
         text: {
-          pt: "Em vez de um vídeo apenas visualmente chamativo, o objetivo foi representar o foco no candidato e sua jornada de transformação ao longo do processo seletivo. Para construir uma representação mais inclusiva e lúdica, optamos por uma forma abstrata capaz de se movimentar, transformar, mudar de cor e direção, ancorada nas propriedades dos minerais e mineraloides — cristalização, cor, transparência, brilho, dureza e magnetismo. Essa forma se divide, multiplica, agrega e evolui, ilustrando o processo de autoconhecimento percorrido pelos candidatos.",
-          en: "Rather than a video that was only visually striking, the goal was to represent the candidate's focus and their transformation journey throughout the selection process. To build a more inclusive and playful representation, we chose an abstract form capable of moving, transforming, and changing color and direction, anchored in the properties of minerals and mineraloids — crystallization, color, transparency, brightness, hardness and magnetism. This form divides, multiplies, aggregates and evolves, illustrating the self-knowledge process the candidates go through.",
-          fr: "Plutôt qu'une vidéo simplement percutante visuellement, l'objectif était de représenter le focus sur le candidat et son parcours de transformation tout au long du processus de sélection. Pour construire une représentation plus inclusive et ludique, nous avons opté pour une forme abstraite capable de se déplacer, de se transformer, de changer de couleur et de direction, ancrée dans les propriétés des minéraux et mineraloïdes — cristallisation, couleur, transparence, éclat, dureté et magnétisme. Cette forme se divise, se multiplie, s'agrège et évolue, illustrant le processus de connaissance de soi vécu par les candidats."
+          pt: "Em vez de um vídeo apenas visualmente chamativo, o objetivo foi representar o foco no candidato e sua jornada de transformação ao longo do processo seletivo. Para construir uma representação mais inclusiva e lúdica, optamos por uma forma abstrata capaz de se movimentar, transformar, mudar de cor e direção, ancorada nas propriedades dos minerais e mineraloides : cristalização, cor, transparência, brilho, dureza e magnetismo. Essa forma se divide, multiplica, agrega e evolui, ilustrando o processo de autoconhecimento percorrido pelos candidatos.",
+          en: "Rather than a video that was only visually striking, the goal was to represent the candidate's focus and their transformation journey throughout the selection process. To build a more inclusive and playful representation, we chose an abstract form capable of moving, transforming, and changing color and direction, anchored in the properties of minerals and mineraloids : crystallization, color, transparency, brightness, hardness and magnetism. This form divides, multiplies, aggregates and evolves, illustrating the self-knowledge process the candidates go through.",
+          fr: "Plutôt qu'une vidéo simplement percutante visuellement, l'objectif était de représenter le focus sur le candidat et son parcours de transformation tout au long du processus de sélection. Pour construire une représentation plus inclusive et ludique, nous avons opté pour une forme abstraite capable de se déplacer, de se transformer, de changer de couleur et de direction, ancrée dans les propriétés des minéraux et mineraloïdes : cristallisation, couleur, transparence, éclat, dureté et magnétisme. Cette forme se divise, se multiplie, s'agrège et évolue, illustrant le processus de connaissance de soi vécu par les candidats."
         }
       },
       {
@@ -629,17 +629,9 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "Como parte da equipe de 3D da NOO Works, fui responsável pelo desenvolvimento de todos os assets e animações em 3D da campanha. Modelei e animei a forma abstrata que representa a jornada dos candidatos, trabalhando sua evolução visual — da cristalização inicial até formas mais complexas e multiplicadas — além de desenvolver os materiais e shading que traduzem as propriedades minerais propostas pela direção de arte.",
-          en: "As part of NOO Works' 3D team, I was responsible for developing all the 3D assets and animation for the campaign. I modeled and animated the abstract form that represents the candidates' journey, working on its visual evolution — from the initial crystallization to more complex, multiplied shapes — and also developed the materials and shading that translate the mineral properties proposed by the art direction.",
-          fr: "Au sein de l'équipe 3D de NOO Works, j'ai été responsable du développement de l'ensemble des assets et de l'animation 3D de la campagne. J'ai modélisé et animé la forme abstraite représentant le parcours des candidats, en travaillant son évolution visuelle — de la cristallisation initiale jusqu'à des formes plus complexes et multipliées — et j'ai également développé les matériaux et le shading traduisant les propriétés minérales proposées par la direction artistique."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "O maior desafio técnico foi criar um sistema de animação flexível o suficiente para permitir que a forma se dividisse, se multiplicasse e mudasse de cor e direção de maneira fluida, mantendo a leitura clara da metáfora de transformação em cada etapa. O resultado final foi utilizado como peça central da campanha, presente em vídeos, posts e demais materiais digitais do Recruta 2023.",
-          en: "The biggest technical challenge was building an animation system flexible enough to let the form split, multiply, and change color and direction fluidly, while keeping the transformation metaphor clearly readable at every stage. The final result was used as the campaign's centerpiece, present across videos, posts and other digital materials for Recruta 2023.",
-          fr: "Le principal défi technique a été de créer un système d'animation suffisamment flexible pour permettre à la forme de se diviser, de se multiplier et de changer de couleur et de direction de façon fluide, tout en gardant la métaphore de transformation clairement lisible à chaque étape. Le résultat final a été utilisé comme pièce centrale de la campagne, présent dans les vidéos, les posts et les autres supports digitaux de Recruta 2023."
+          pt: "Como parte da equipe de 3D da NOO Works, fui responsável pelo desenvolvimento de todos os assets e animações em 3D da campanha. Modelei e animei a forma abstrata que representa a jornada dos candidatos, trabalhando sua evolução visual, além de desenvolver os materiais e shading que traduzem as propriedades minerais propostas pela direção de arte.",
+          en: "As part of NOO Works' 3D team, I was responsible for developing all the 3D assets and animation for the campaign. I modeled and animated the abstract form that represents the candidates' journey, working on its visual evolution, and also developed the materials and shading that translate the mineral properties proposed by the art direction.",
+          fr: "Au sein de l'équipe 3D de NOO Works, j'ai été responsable du développement de l'ensemble des assets et de l'animation 3D de la campagne. J'ai modélisé et animé la forme abstraite représentant le parcours des candidats, en travaillant son évolution visuelle, et j'ai également développé les matériaux et le shading traduisant les propriétés minérales proposées par la direction artistique."
         }
       }
     ]
@@ -702,9 +694,9 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "A animação nasceu do desejo de contar uma história utilizando a linguagem visual do stop motion. Nosso desafio foi emular essa estética através do uso de animação 3D. Criamos o aplicativo fictício Lembrete como base para o desenvolvimento do projeto.",
-          en: "The animation arose from the desire to tell a story using the visual style of stop motion animations. Our challenge was to emulate this aesthetic through the use of 3D animation. We invented the fictional App Reminder as a basis to develop this project.",
-          fr: "L'animation est née du désir de raconter une histoire en utilisant le langage visuel du stop motion. Notre défi était de reproduire cette esthétique à travers l'animation 3D. Nous avons inventé l'application fictive Lembrete comme base pour développer ce projet."
+          pt: "A animação nasceu do desejo de contar uma história utilizando a linguagem visual do <i>claymation</i>. Nosso desafio foi emular essa estética através do uso de animação 3D. Criamos o aplicativo fictício Lembrete como base para o desenvolvimento do projeto.",
+          en: "The animation arose from the desire to tell a story using the visual style of claymation animations. Our challenge was to emulate this aesthetic through the use of 3D animation. We invented the fictional App Reminder as a basis to develop this project.",
+          fr: "L'animation est née du désir de raconter une histoire en utilisant le langage visuel du stop motion de pâte à modeler. Notre défi était de reproduire cette esthétique à travers l'animation 3D. Nous avons inventé l'application fictive Lembrete comme base pour développer ce projet."
         }
       },
       {
@@ -746,7 +738,7 @@ export const works = {
         type: "text",
         text: {
           pt: "Cada personagem foi pensado com uma simplicidade infantil. Para alcançar o efeito \"massinha\", implementamos uma base porosa, evitando detalhes intrincados e características muito individuais. A paleta de cores vibrante remete às cores do próprio material. Ao longo do processo de design, o desafio foi transmitir sentimentos de solidão, tristeza e abandono sem sobrecarregar a caracterização com complexidade desnecessária.",
-          en: "Each character was crafted with a childlike simplicity in mind. To achieve the \"Play-Doh\" effect, we implemented a porous base material, eschewing intricate details and individual characteristics. The vibrant color palette echoes the hues of the material itself. Throughout the character design process, we faced the challenge of conveying feelings of loneliness, sadness, and abandonment without overwhelming the characterization with unnecessary complexity.",
+          en: "Each character was crafted with a childlike simplicity in mind. To achieve the claymation effect, we implemented a porous base material, eschewing intricate details and individual characteristics. The vibrant color palette echoes the hues of the material itself. Throughout the character design process, we faced the challenge of conveying feelings of loneliness, sadness, and abandonment without overwhelming the characterization with unnecessary complexity.",
           fr: "Chaque personnage a été pensé avec une simplicité enfantine. Pour obtenir l'effet « pâte à modeler », nous avons utilisé une base poreuse, évitant les détails complexes et les caractéristiques trop individuelles. La palette de couleurs vives rappelle les teintes du matériau lui-même. Tout au long du processus de conception, le défi a été de transmettre des sentiments de solitude, de tristesse et d'abandon sans surcharger les personnages d'une complexité inutile."
         }
       },
@@ -957,9 +949,9 @@ export const works = {
       {
         type: "text",
         text: {
-          pt: "Carbona foi projetada para lidar com as situações do mundo digital. Ela contém símbolos de criptomoedas, caracteres especiais, uma versão monoespaçada para códigos e muito mais. Criamos uma série de peças para explicar suas características únicas, desdobrando o conceito em diversos posts para redes sociais.",
-          en: "Carbona was designed to deal with the situations of the digital world. It contains cryptocurrency symbols, special characters, a monospaced version for codes and more. We created a series of pieces to explain its unique characteristics, unfolding the concept into several posts for social media.",
-          fr: "Carbona a été conçue pour répondre aux situations du monde numérique. Elle contient des symboles de cryptomonnaies, des caractères spéciaux, une version monospace pour le code et bien plus encore. Nous avons créé une série de pièces pour expliquer ses caractéristiques uniques, en déployant le concept à travers plusieurs publications pour les réseaux sociaux."
+          pt: "A fonte Carbona foi projetada para lidar com as situações do mundo digital. Ela contém símbolos de criptomoedas, caracteres especiais, uma versão monoespaçada para códigos e muito mais. Criamos uma série de peças para explicar suas características únicas, desdobrando o conceito em diversos posts para redes sociais.",
+          en: "The Carbona font was designed to deal with the situations of the digital world. It contains cryptocurrency symbols, special characters, a monospaced version for codes and more. We created a series of pieces to explain its unique characteristics, unfolding the concept into several posts for social media.",
+          fr: "La typeface Carbona a été conçue pour répondre aux situations du monde numérique. Elle contient des symboles de cryptomonnaies, des caractères spéciaux, une version monospace pour le code et bien plus encore. Nous avons créé une série de pièces pour expliquer ses caractéristiques uniques, en déployant le concept à travers plusieurs publications pour les réseaux sociaux."
         }
       },
       {
@@ -977,14 +969,6 @@ export const works = {
           pt: "Como parte da equipe de animação da NOO Works, fui responsável pelo desenvolvimento de assets 3D e pela animação da campanha de lançamento da Carbona, ao lado de Fernando Villela e Miguel Duarte. Trabalhamos a estética geométrica, reta e robusta da fonte para construir elementos tridimensionais que reforçassem sua identidade mecânica e futurista, unindo referências de ficção científica, metaverso e tecnologias emergentes ao universo visual da marca.",
           en: "As part of NOO Works' animation team, I was responsible for developing the 3D assets and animating Carbona's launch campaign, alongside Fernando Villela and Miguel Duarte. We worked with the typeface's geometric, straight and robust aesthetic to build three-dimensional elements that reinforced its mechanical and futuristic identity, blending references from science fiction, the metaverse and emerging technologies into the brand's visual universe.",
           fr: "Au sein de l'équipe d'animation de NOO Works, j'ai été responsable du développement des assets 3D et de l'animation de la campagne de lancement de Carbona, aux côtés de Fernando Villela et Miguel Duarte. Nous avons travaillé l'esthétique géométrique, droite et robuste de la police pour construire des éléments tridimensionnels renforçant son identité mécanique et futuriste, en mêlant des références à la science-fiction, au métavers et aux technologies émergentes à l'univers visuel de la marque."
-        }
-      },
-      {
-        type: "text",
-        text: {
-          pt: "O maior desafio foi manter a coerência visual entre o vídeo de lançamento e a série de posts que explicavam separadamente cada característica da fonte, garantindo que a linguagem 3D se mantivesse consistente do começo ao fim da campanha — do vídeo hero até a cena final de encerramento.",
-          en: "The biggest challenge was keeping visual coherence between the launch video and the series of posts that separately explained each of the typeface's characteristics, making sure the 3D language stayed consistent from start to finish of the campaign — from the hero video to the closing shot.",
-          fr: "Le plus grand défi a été de maintenir une cohérence visuelle entre la vidéo de lancement et la série de publications expliquant séparément chaque caractéristique de la police, en veillant à ce que le langage 3D reste cohérent du début à la fin de la campagne — de la vidéo hero jusqu'au plan de clôture."
         }
       },
       {

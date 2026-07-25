@@ -378,8 +378,14 @@ button { font-family: inherit; }
 }
 
 /* --- 6. FILTER SYSTEM --- */
+/* Pull the whole list up closer to the nav (trims the gap left by #app's
+   top padding). Only affects the Work / Digital-Art list pages. */
+.filterable-page {
+    margin-top: -16px;
+}
+
 .filter-container {
-    margin-bottom: 60px;
+    margin-bottom: 24px; /* gap between the tags row and the project grid */
     display: flex;
     gap: 12px;
 }
@@ -598,12 +604,25 @@ button { font-family: inherit; }
     will-change: transform, opacity;
 }
 
+/* Row that holds the hero CTA buttons (Work / Digital Art) side by side */
+.home-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
 .home-cta {
     display: inline-block;
     border: solid 1px var(--text-color);
     line-height: 1;
     margin-top: 20px;
     padding: 10px;
+}
+
+/* Inside the row, spacing comes from the container's gap/margin instead */
+.home-actions .home-cta {
+    margin-top: 0;
 }
 
 .home-cta:hover {
@@ -858,21 +877,30 @@ body.home-active .home-hero {
 }
 
 body.home-active .home-hero .tagline {
-    font-size: 1rem;
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: var(--ls-meta);
+    letter-spacing: var(--ls-tight);
+    line-height: 1.05;
 }
 
 body.home-active .home-hero .intro-phrase {
-    opacity: 0.75;
-    font-size: 0.85rem;
+    opacity: 0.9;
+    font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+    font-weight: 500;
     letter-spacing: var(--ls-meta);
+    margin-top: 4px;
 }
 
 body.home-active .home-cta {
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.9);
     background: rgba(0, 0, 0, 0.18);
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: var(--ls-meta);
+    padding: 16px 28px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     transition: background var(--transition-speed) var(--ease-out-expo),

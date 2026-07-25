@@ -32,6 +32,7 @@ function createVideoBlock(item, lang) {
         <div class="project-block video-block">
             <video src="${item.url}"
                 autoplay
+                muted
                 loop
                 controls
                 playsinline></video>
@@ -154,9 +155,14 @@ export function renderHome(container, lang) {
             <div class="hero-content">
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
                 <p class="intro-phrase">Judd Buchanan</p>
-                <a href="/work" class="home-cta">
-                    ${dictionary.ui.work[lang]} →
-                </a>
+                <div class="home-actions">
+                    <a href="/work" class="home-cta">
+                        ${dictionary.ui.work[lang]} →
+                    </a>
+                    <a href="/digital-art" class="home-cta">
+                        ${dictionary.ui["digital-art"][lang]} →
+                    </a>
+                </div>
             </div>
         </section>
     `;
