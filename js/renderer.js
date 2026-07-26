@@ -184,6 +184,10 @@ export function renderAbout(container, lang) {
                     <p class="bio">
                         ${dictionary.ui.bio[lang]}
                     </p>
+                    <a href="/Curriculum%20Vitae%20Judd.pdf" target="_blank" rel="noopener" class="btn-primary">
+                        ${dictionary.ui.cv[lang]}
+                        <span class="arrow">→</span>
+                    </a>
                 </article>
 
                 <div class="about-contact">

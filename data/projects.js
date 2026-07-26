@@ -152,9 +152,9 @@ export const works = {
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784686642/MD2_Cover_frdv9a.png",
     preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784686653/MD2_Animatedthumb_kqjmmn.mp4",
     title: {
-      pt: "Marcelo D2 - Vol. 2: Tia Darci",
-      en: "Marcelo D2 - Vol. 2: Tia Darci",
-      fr: "Marcelo D2 - Vol. 2: Tia Darci"
+      pt: "Marcelo D2 — Vol. 2: Tia Darci",
+      en: "Marcelo D2 — Vol. 2: Tia Darci",
+      fr: "Marcelo D2 — Vol. 2: Tia Darci"
     },
     credits: {
       agency: "Pupila Dilatada",
@@ -202,6 +202,86 @@ export const works = {
           pt: "As 4 introduções animadas dos videoclipes do album",
           en: "The 4 animated intros from the album's videoclips",
           fr: "Les 4 introductions animées des vidéoclips de l'album"
+        }
+      }
+    ]
+  },
+
+  "opportunity-imobiliario-ai-architectural-animation": {
+    year: 2026,
+    categories: ["ai", "animation"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1785024358/Cover_OppIA_dipjri.png",
+    preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1785025093/AnimatedThumb_OppIA_n0hxt7.mp4",
+    title: {
+      pt: "Opportunity Imobiliário — Animação Arquitetônica com IA",
+      en: "Opportunity Imobiliário — AI Architectural Animation",
+      fr: "Opportunity Imobiliário — Animation Architecturale par IA"
+    },
+    credits: {
+      agency: "NOO",
+      client: "Opportunity Imobiliário",
+      direction: "Marcio Sal",
+      "project-lead": "Duda Bom Queiroz",
+      "operations-director": "Kathlyn Giaccomini",
+      "head-of-client-services": "Ana Luisa Rodrigues",
+      "project-management": "Fábio Neves",
+      "head-of-design": "Deco Moreira",
+      "head-of-animation": "Marcio Sal",
+      "AI Animation": "Judd Buchanan, Fernando Vilella, Miguel Duarte",
+      "Content and Strategy": "Mayara Gomes",
+      "Social Media": "Victoria Regis",
+      Writer: "Camila Inacio"
+    },
+    content: [
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/v1785025093/AnimatedThumb_OppIA_n0hxt7.mp4",
+        caption: {
+          pt: "",
+          en: "",
+          fr: ""
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Neste projeto, apresento algumas das diferentes animações com inteligência artificial desenvolvidas para a Opportunity Imobiliário. Usamos IA para explorar múltiplas possibilidades dentro do mercado imobiliário, já que essa tecnologia amplia as possibilidades de visualização e permite criar imagens mais imersivas para apresentar interiores, vistas aéreas, plantas baixas e croquis.",
+          en: "In this project, I showcase a few different AI animations developed for Opportunity Imobiliário. We used AI to explore multiple possibilities within the real estate industry, since this technology expands the possibilities of visualization and can create more immersive visuals to showcase interiors, aerial views, floor plans, and sketches.",
+          fr: "Dans ce projet, je présente quelques-unes des différentes animations en intelligence artificielle développées pour Opportunity Imobiliário. Nous avons utilisé l'IA pour explorer de multiples possibilités dans le secteur immobilier, cette technologie élargissant les possibilités de visualisation et permettant de créer des visuels plus immersifs pour présenter les intérieurs, les vues aériennes, les plans architecturaux, et les croquis."
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Essa tecnologia ainda permite visualizar cenas a partir de ângulos diferentes ou inserir pessoas nos ambientes, reforçando realismo, imersão e identificação. Ela é usada para alterar a iluminação e o clima das cenas, adequando-as ao briefing do cliente ou ao branding do empreendimento, e possibilita o desenvolvimento de narrativas, com personagens e histórias construídas em torno dos imóveis.",
+          en: "This technology further allows us to visualize scenes from different angles or insert people into the environments, reinforcing realism, immersion, and identification. It is used to shift the lighting and mood of a scene to match a client's brief or a property's branding, and it opens the door to narrative storytelling, building characters and storylines around the real estate itself.",
+          fr: "Cette technologie permet en outre de visualiser des scènes sous différents angles ou d'intégrer des personnes dans les environnements, renforçant le réalisme, l'immersion et l'identification. Elle sert à modifier l'éclairage et l'ambiance d'une scène pour correspondre au brief du client ou à l'identité de marque de l'entrepreneuriat, et ouvre la voie à une narration construite autour de personnages et d'histoires liées aux biens immobiliers."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1785023951/3x_carrousel_OppIA_bluygl.mp4",
+        caption: {
+          pt: "Exemplo de diferentes usos de IA desenvolvidos para as redes sociais da Opportunity",
+          en: "Example of different uses of AI developed for Opportunity's social media",
+          fr: "Exemple de différents usages de l'IA développés pour les réseaux sociaux d'Opportunity"
+        }
+      },
+      {
+        type: "text",
+        text: {
+          pt: "Os conteúdos apresentados foram desenvolvidos para diversas páginas de redes sociais de empreendimentos da Opportunity, como Arete Búzios, Green Park Barra e a coleção Be.in.Rio, explorando tanto usos práticos de visualização quanto narrativas autorais construídas com IA.",
+          en: "These contents were developed for multiple of their real estate social media pages, such as Arete Buzios, Green Park Barra, and the Be.in.Rio collection, exploring both practical visualization uses and original storytelling built with AI.",
+          fr: "Ces contenus ont été développés pour plusieurs pages de réseaux sociaux de leurs biens immobiliers, telles qu'Arete Búzios, Green Park Barra et la collection Be.in.Rio, explorant à la fois des usages pratiques de visualisation et des récits originaux construits avec l'IA."
+        }
+      },
+      {
+        type: "video",
+        url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1785023957/3x_Reels_OppIA_vkzeva.mp4",
+        caption: {
+          pt: "Exemplos de narrativas desenvolvidas para as redes sociais da Opportunity",
+          en: "Examples of narrative storytelling videos developed for Opportunity's social media",
+          fr: "Exemples de vidéos narratives développées pour les réseaux sociaux d'Opportunity"
         }
       }
     ]
@@ -384,9 +464,9 @@ export const works = {
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778987561/carnaval_cover_qksaav.png",
   preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778987438/carnaval_anim_cover_pgav0n.mp4",
   title: {
-    pt: "Carnaval - A Vida Presta",
-    en: "Carnival - A Vida Presta",
-    fr: "Carnaval - A Vida Presta"
+    pt: "Carnaval — A Vida Presta",
+    en: "Carnival — A Vida Presta",
+    fr: "Carnaval — A Vida Presta"
   },
   credits: {
     agency: "NOO Works",
@@ -646,9 +726,9 @@ export const works = {
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784147510/Cover_engrzl.png",
     preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784147825/ThumbCover_zybq8x.mp4",
     title: {
-      pt: "Lembrete - Curta-metragem",
-      en: "Reminder - Short Film",
-      fr: "Rappel - Court métrage"
+      pt: "Lembrete — Curta-metragem",
+      en: "Reminder — Short Film",
+      fr: "Rappel — Court métrage"
     },
     credits: {
       agency: "NOO",
@@ -796,7 +876,7 @@ export const works = {
                         "title": {
             "pt": "Ivai Gin — Vídeo de Lançamento",
                 "en": "Ivai Gin — Launch Film",
-                    "fr": "Ivai Gin — Film de lancement"
+                    "fr": "Gin Ivai — Film de lancement"
         },
         "credits": {
             "agency": "NOO",
@@ -896,9 +976,9 @@ export const works = {
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1784780108/CarbonaCover_c0b43e.png",
     preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1784780119/Carbona_AnimatedThumb_u2dmqc.mp4",
     title: {
-      pt: "Carbona - Plau Design",
-      en: "Carbona - Plau Design",
-      fr: "Carbona - Plau Design"
+      pt: "Plau Design — Carbona",
+      en: "Plau Design — Carbona",
+      fr: "Plau Design — Carbona"
     },
     credits: {
       agency: "NOO Works",
@@ -1090,9 +1170,9 @@ export const works = {
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778989616/cover_trident_zbhhh9.png",
         "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778989656/trident_anim_cover_zrryso.mp4",
         "title": {
-            "pt": "Filtro AR Trident X",
-            "en": "Trident X AR Filter",
-            "fr": "Filtre AR Trident X"
+            "pt": "Trident X — Filtro AR",
+            "en": "Trident X — AR Filter",
+            "fr": "Trident X — Filtre AR"
         },
         "credits": {
             "agency": "NOO",
@@ -1135,9 +1215,9 @@ export const works = {
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778990648/bisao_cover_vyjbvq.png",
         "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778990649/bisao_anim_cover_mtc3m5.mp4",
         "title": {
-            "pt": "Filtro AR Bisão",
-            "en": "Bisão AR Filter",
-            "fr": "Filtre AR Bisão"
+            "pt": "Lacta Bisão — Filtro AR",
+            "en": "Lacta Bisão — AR Filter",
+            "fr": "Lacta Bisão — Filtre AR"
         },
         "credits": {
             "agency": "NOO",
@@ -1171,9 +1251,9 @@ export const works = {
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778992289/cover_spoleto_hkttvb.png",
         "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778991863/spoleto_phones_crtsmk.mp4",
         "title": {
-            "pt": "Filtro AR Spoleto",
-            "en": "Spoleto AR Filter",
-            "fr": "Filtre AR Spoleto"
+            "pt": "Spoleto — Filtro AR",
+            "en": "Spoleto — AR Filter",
+            "fr": "Spoleto — Filtre AR"
         },
         "credits": {
             "agency": "NOO",
@@ -1216,9 +1296,9 @@ export const works = {
         "thumbnail": "https://res.cloudinary.com/diizbqlsj/image/upload/v1778993020/molico_cover_azoleq.png",
         "preview": "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778993022/molico_anim_cover_dbwkg1.mp4",
         "title": {
-            "pt": "Filtro Molico Gold",
-            "en": "Molico Gold Filter",
-            "fr": "Filtre Molico Gold"
+            "pt": "Nestlé Molico Gold — Filtro AR",
+            "en": "Nestlé Molico Gold — AR Filter",
+            "fr": "Nestlé Molico Gold — Filtre AR "
         },
         "credits": {
             "agency": "NOO",

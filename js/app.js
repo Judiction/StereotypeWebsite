@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const link = e.target.closest('a');
         if (link) {
             const href = link.getAttribute('href');
-            // Intercepts any internal link starting with /
-            if (href && href.startsWith('/')) {
+            // Intercepts any internal link starting with /, but leaves links meant
+            // to open in a new tab (e.g. the CV download) alone.
+            if (href && href.startsWith('/') && link.target !== '_blank') {
                 if (window.location.pathname === href) {
                     console.log("Already on this page. Blocking re-render to prevent flicker.");
                     e.preventDefault(); // Stop the link from doing anything
