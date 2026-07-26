@@ -802,18 +802,20 @@ button { font-family: inherit; }
 
 /* The three.js grass canvas lives here, fixed behind everything. It is only
    shown while on the home route (body.home-active), so the other pages don't
-   pay the WebGL cost. The background color matches the scene's fog color so
-   there's no flash before the canvas paints. */
+   pay the WebGL cost. The background is white to match the React component's
+   own white loading screen (see grass-prototype.jsx) — toggling home-active
+   happens synchronously in CSS, but mounting the grass scene is async, so
+   without this the dark green scene fog color would flash here first. */
 #grass-bg {
     position: fixed;
     inset: 0;
     z-index: 0;
     display: none;
-    background: #14260c;
+    background: #ffffff;
 }
 
 body.home-active {
-    background: #14260c;
+    background: #ffffff;
 }
 
 body.home-active #grass-bg {

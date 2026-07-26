@@ -223,6 +223,8 @@ export function renderAbout(container, lang) {
 export function renderProjectPage(container, project, lang) {
     if (!project) return;
 
+    const backPath = window.location.pathname.includes('digital-art') ? '/digital-art' : '/work';
+
     const creditsEntries = Object.entries(project.credits || {});
     const creditsHTML = creditsEntries.length ? `
         <footer class="project-footer">
@@ -237,11 +239,11 @@ export function renderProjectPage(container, project, lang) {
                     </div>
                 `).join('')}
             </div>
-            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+            <a href="${backPath}" class="back-link">← ${dictionary.ui["back"][lang]}</a>
         </footer>
     ` : `
         <footer class="project-footer">
-            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+            <a href="${backPath}" class="back-link">← ${dictionary.ui["back"][lang]}</a>
         </footer>
     `;
 

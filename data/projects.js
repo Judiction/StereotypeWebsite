@@ -213,9 +213,9 @@ export const works = {
     thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1785024358/Cover_OppIA_dipjri.png",
     preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1785025093/AnimatedThumb_OppIA_n0hxt7.mp4",
     title: {
-      pt: "Opportunity Imobiliário — Animação Arquitetônica com IA",
-      en: "Opportunity Imobiliário — AI Architectural Animation",
-      fr: "Opportunity Imobiliário — Animation Architecturale par IA"
+      pt: "Opportunity — Animação IA",
+      en: "Opportunity — AI Animation",
+      fr: "Opportunity — Animation IA"
     },
     credits: {
       agency: "NOO",
@@ -1643,7 +1643,7 @@ export const digitalArt = {
   year: 2023,
   categories: ["PC Series"],
   thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1778996081/cover_stranded_tkcu8e.png",
-  preview: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995880/Stranded_f6etd7.mp4",
+  preview: "https:///res.cloudinary.com/diizbqlsj/video/upload/q_auto:low/v1778995880/Stranded_f6etd7.mp4",
   title: {
     pt: "Stranded",
     en: "Stranded",
@@ -1659,7 +1659,7 @@ export const digitalArt = {
   content: [
     {
       type: "PC Series",
-      url: "https://res.cloudinary.com/diizbqlsj/video/upload/q_auto/f_auto,q_auto/v1234567890/stranded.mp4",
+      url: "https://res.cloudinary.com/diizbqlsj/video/upload/v1778995880/Stranded_f6etd7.mp4",
       caption: {
         pt: "Stranded (25 editions, 1080 x 1350, 6 seconds, 2023)",
         en: "Stranded (25 editions, 1080 x 1350, 6 seconds, 2023)",

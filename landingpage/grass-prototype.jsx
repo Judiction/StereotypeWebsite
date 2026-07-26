@@ -10,6 +10,22 @@ import { BokehPass } from "three/examples/jsm/postprocessing/BokehPass.js";
 const BLADE_COUNT = 40000;
 const PATCH_RADIUS = 10;
 
+// Scene fog/background color for the 3D scene itself (unrelated to the
+// loading screen below, which is white).
+const SCENE_BG_COLOR = 0x14260c;
+
+// ---- Loading screen ----------------------------------------------------
+// Covers the canvas with a white background and "BE A STEREOTYPE" in light
+// grey while the fonts, skybox, and 3D models are still being fetched (this
+// can take a couple seconds), then fills the letters in black from left to
+// right as those assets actually arrive, tracked via a THREE.LoadingManager
+// below. The overlay only fades away once everything is loaded, so the
+// grass scene is already fully ready the moment it's revealed.
+const LOADING_BG_COLOR = "#ffffff";
+const LOADING_TEXT = "BE A STEREOTYPE";
+const LOADING_TEXT_BASE_COLOR = "#b0b0b0";
+const LOADING_TEXT_FILL_COLOR = "#000000";
+
 // ---- Asset base path --------------------------------------------------
 // All the local asset files (skybox, font, .glb models, window images)
 // live next to this .jsx. When the scene is loaded straight from
@@ -512,13 +528,16 @@ const fragmentShader = `
 
 export default function GrassPrototype() {
   const mountRef = useRef(null);
+  const loadingRef = useRef(null);
+  const loadingFillRef = useRef(null);
 
   useEffect(() => {
     const mount = mountRef.current;
+    const loadingEl = loadingRef.current;
+    const loadingFillEl = loadingFillRef.current;
     const scene = new THREE.Scene();
-    const GRASS_FOG_COLOR = 0x14260c;
-    scene.background = new THREE.Color(GRASS_FOG_COLOR);
-    scene.fog = new THREE.Fog(GRASS_FOG_COLOR, 9, 19);
+    scene.background = new THREE.Color(SCENE_BG_COLOR);
+    scene.fog = new THREE.Fog(SCENE_BG_COLOR, 9, 19);
 
     const camera = new THREE.PerspectiveCamera(
       IS_TOUCH ? MOBILE_CAMERA_FOV : 40,
@@ -556,6 +575,33 @@ export default function GrassPrototype() {
       // cost of harder, more pixelated shadow edges
     }
     mount.appendChild(renderer.domElement);
+
+    // ---- Loading screen progress tracking ----
+    // Shared across every loader below (skybox, font incl. its fallback,
+    // hand cursor, window model, speech bubble image) so the overlay's fill
+    // reflects real fetch/decode progress instead of a fake timer. Tracked
+    // as a plain closure variable rather than React state since it's driven
+    // from inside the three.js loop, not from a render.
+    //
+    // itemsTotal can grow mid-load (e.g. the font's fallback only starts
+    // after the primary 404s), which would otherwise make the percentage
+    // jump backward — clamping to the running max keeps the fill
+    // monotonically increasing.
+    let maxLoadPct = 0;
+    const loadingManager = new THREE.LoadingManager();
+    loadingManager.onProgress = (url, itemsLoaded, itemsTotal) => {
+      if (!loadingFillEl) return;
+      const pct = itemsTotal > 0 ? (itemsLoaded / itemsTotal) * 100 : 100;
+      maxLoadPct = Math.max(maxLoadPct, pct);
+      loadingFillEl.style.clipPath = `inset(0 ${100 - maxLoadPct}% 0 0)`;
+    };
+    loadingManager.onLoad = () => {
+      if (loadingFillEl) loadingFillEl.style.clipPath = "inset(0 0% 0 0)";
+      if (loadingEl) {
+        loadingEl.style.opacity = "0";
+        loadingEl.style.visibility = "hidden";
+      }
+    };
 
     // ---- Post-processing (bloom + depth of field) ----
     // Only built at all if at least one effect is switched on above.
@@ -638,7 +684,7 @@ export default function GrassPrototype() {
     pmremGenerator.compileEquirectangularShader();
     let envRenderTarget = null;
 
-    const textureLoader = new THREE.TextureLoader();
+    const textureLoader = new THREE.TextureLoader(loadingManager);
     textureLoader.load(
       SKYBOX_URL,
       (tex) => {
@@ -880,7 +926,7 @@ export default function GrassPrototype() {
       });
     }
 
-    const fontLoader = new FontLoader();
+    const fontLoader = new FontLoader(loadingManager);
     fontLoader.load(
       LOCAL_FONT_URL,
       (font) => buildTextMesh(font),
@@ -898,7 +944,7 @@ export default function GrassPrototype() {
 
     // ---- Hand cursor model (follows the mouse, stays flat on the grass) ----
     let cursorModel = null;
-    const cursorGltfLoader = new GLTFLoader();
+    const cursorGltfLoader = new GLTFLoader(loadingManager);
     cursorGltfLoader.load(
       CURSOR_MODEL_URL,
       (gltf) => {
@@ -939,7 +985,7 @@ export default function GrassPrototype() {
     // trails the cursor. Created hidden; revealed the first time the user
     // clicks the grass (bubbleActivated below).
     const bubbleHeight = BUBBLE_WIDTH / BUBBLE_IMAGE_ASPECT;
-    const bubbleTexture = new THREE.TextureLoader().load(BUBBLE_IMAGE_URL);
+    const bubbleTexture = new THREE.TextureLoader(loadingManager).load(BUBBLE_IMAGE_URL);
     bubbleTexture.encoding = THREE.sRGBEncoding;
     const bubbleMaterial = new THREE.MeshBasicMaterial({
       map: bubbleTexture,
@@ -1059,7 +1105,7 @@ export default function GrassPrototype() {
     // ---- Computer window spawner: click anywhere on the grass to launch one ----
     let windowModelTemplate = null;
     const flyingWindows = []; // [{ object, velocity, spinAxis, spinSpeed, groundY }]
-    const windowGltfLoader = new GLTFLoader();
+    const windowGltfLoader = new GLTFLoader(loadingManager);
     windowGltfLoader.load(
       WINDOW_MODEL_URL,
       (gltf) => {
@@ -1471,6 +1517,47 @@ export default function GrassPrototype() {
         ref={mountRef}
         style={{ width: "100%", height: "100%", touchAction: "none" }}
       />
+      <div
+        ref={loadingRef}
+        style={{
+          position: "absolute",
+          inset: 0,
+          zIndex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0 6vw",
+          backgroundColor: LOADING_BG_COLOR,
+          opacity: 1,
+          visibility: "visible",
+          transition: "opacity 0.6s ease, visibility 0.6s ease",
+        }}
+      >
+        <div
+          style={{
+            position: "relative",
+            fontFamily: "Arial, Helvetica, sans-serif",
+            fontWeight: 700,
+            fontStyle: "italic",
+            fontSize: "clamp(1.1rem, 6vw, 3.2rem)",
+            letterSpacing: "0.02em",
+            whiteSpace: "nowrap",
+          }}
+        >
+          <span style={{ color: LOADING_TEXT_BASE_COLOR }}>{LOADING_TEXT}</span>
+          <span
+            ref={loadingFillRef}
+            style={{
+              position: "absolute",
+              inset: 0,
+              color: LOADING_TEXT_FILL_COLOR,
+              clipPath: "inset(0 100% 0 0)",
+            }}
+          >
+            {LOADING_TEXT}
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
