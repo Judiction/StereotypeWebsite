@@ -486,9 +486,54 @@ button { font-family: inherit; }
     align-items: center;
 }
 
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
 .video-block video {
+    display: block;
     width: 100%;
     height: auto;
+}
+
+.mute-toggle {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    backdrop-filter: blur(2px);
+    transition: background var(--transition-speed) var(--ease-custom), transform var(--transition-speed) var(--ease-custom);
+}
+
+.mute-toggle:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.mute-toggle:active {
+    transform: scale(0.92);
+}
+
+.mute-toggle .icon-unmuted {
+    display: none;
+}
+
+.mute-toggle[aria-pressed="true"] .icon-muted {
+    display: none;
+}
+
+.mute-toggle[aria-pressed="true"] .icon-unmuted {
+    display: block;
 }
 
 @media (min-width: 768px) {
