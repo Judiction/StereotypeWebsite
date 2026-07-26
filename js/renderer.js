@@ -32,6 +32,7 @@ function createVideoBlock(item, lang) {
         <div class="project-block video-block">
             <video src="${item.url}"
                 autoplay
+                muted
                 loop
                 controls
                 playsinline></video>
@@ -146,17 +147,22 @@ export function renderFilterableGrid(container, list, lang) {
 export function renderHome(container, lang) {
     if (!container) return;
 
-    // We use the exact same structure as index.html 
-    // so the CSS transitions stay smooth.
+    // The wordmark itself is rendered by the interactive 3D grass background
+    // (see js/grass-background.js), so the hero here is just the supporting
+    // copy + Work entry point overlaid on top of it.
     container.innerHTML = `
         <section class="home-hero">
             <div class="hero-content">
-                <h1 class="logo">BE A STEREOTYPE</h1>
                 <p class="tagline">${dictionary.ui.tagline[lang]}</p>
                 <p class="intro-phrase">Judd Buchanan</p>
-                <a href="/work" class="home-cta">
-                    ${dictionary.ui.work[lang]} →
-                </a>
+                <div class="home-actions">
+                    <a href="/work" class="home-cta">
+                        ${dictionary.ui.work[lang]} →
+                    </a>
+                    <a href="/digital-art" class="home-cta">
+                        ${dictionary.ui["digital-art"][lang]} →
+                    </a>
+                </div>
             </div>
         </section>
     `;
@@ -178,6 +184,10 @@ export function renderAbout(container, lang) {
                     <p class="bio">
                         ${dictionary.ui.bio[lang]}
                     </p>
+                    <a href="/Curriculum%20Vitae%20Judd.pdf" target="_blank" rel="noopener" class="btn-primary">
+                        ${dictionary.ui.cv[lang]}
+                        <span class="arrow">→</span>
+                    </a>
                 </article>
 
                 <div class="about-contact">
@@ -213,6 +223,8 @@ export function renderAbout(container, lang) {
 export function renderProjectPage(container, project, lang) {
     if (!project) return;
 
+    const backPath = window.location.pathname.includes('digital-art') ? '/digital-art' : '/work';
+
     const creditsEntries = Object.entries(project.credits || {});
     const creditsHTML = creditsEntries.length ? `
         <footer class="project-footer">
@@ -227,11 +239,11 @@ export function renderProjectPage(container, project, lang) {
                     </div>
                 `).join('')}
             </div>
-            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+            <a href="${backPath}" class="back-link">← ${dictionary.ui["back"][lang]}</a>
         </footer>
     ` : `
         <footer class="project-footer">
-            <a href="/work" class="back-link">← ${dictionary.ui["back"][lang]}</a>
+            <a href="${backPath}" class="back-link">← ${dictionary.ui["back"][lang]}</a>
         </footer>
     `;
 

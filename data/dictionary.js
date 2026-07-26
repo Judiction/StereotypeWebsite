@@ -33,6 +33,7 @@ export const dictionary = {
       "pt": "Olá, eu sou Judd. Sou animador 3D e creative technologist baseado no Rio de Janeiro, atualmente trabalhando na NOO Works. Formado em Cinema pela Université de Montréal, meu trabalho combina narrativa cinematográfica com tecnologias emergentes, mídia interativa e estéticas digitais experimentais. Ao longo dos últimos 10 anos, minha prática envolve animação 3D, motion design, arte generativa e creative coding, explorando constantemente novas linguagens visuais e fronteiras tecnológicas. Movido pela curiosidade e inovação, crio experiências imersivas que unem arte, design e tecnologia.",
       "fr": "Salut, je m'appelle Judd. Je suis animateur 3D et creative technologist basé à Rio de Janeiro, et je travaille actuellement chez NOO Works. Diplômé d’un baccalauréat en production cinématographique de l’Université de Montréal, mon travail mélange narration cinématographique, technologies émergentes, médias interactifs et esthétiques numériques expérimentales. Depuis plus de 10 ans, ma pratique couvre l’animation 3D, le motion design, l’art génératif et le creative coding, explorant constamment de nouveaux langages visuels et de nouvelles frontières technologiques. Porté par la curiosité et l’innovation, je crée des expériences immersives qui fusionnent art, design et technologie."
     },
+    "cv": { "en": "Curriculum Vitae", "pt": "Currículo", "fr": "Curriculum Vitae" },
     "contact": { "en": "Contact", "pt": "Contato", "fr": "Contact" },
     "send": { "en": "Send Message", "pt": "Enviar Mensagem", "fr": "Envoyer" },
     "placeholder_name": { "en": "Name", "pt": "Nome", "fr": "Nom" },
@@ -80,5 +81,6 @@ export const dictionary = {
     "interactive": { "en": "Interactive", "pt": "Interativo", "fr": "Interactif" },
     "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art Numérique" },
     "art-direction": { "en": "Art Direction", "pt": "Direção de Arte", "fr": "Direction artistique" },
+    "ai": { "en": "AI", "pt": "IA", "fr": "IA" },
   }
 }
