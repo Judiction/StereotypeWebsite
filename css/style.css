@@ -513,7 +513,21 @@ button { font-family: inherit; }
     justify-content: center;
     cursor: pointer;
     backdrop-filter: blur(2px);
-    transition: background var(--transition-speed) var(--ease-custom), transform var(--transition-speed) var(--ease-custom);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-speed) var(--ease-custom), background var(--transition-speed) var(--ease-custom), transform var(--transition-speed) var(--ease-custom);
+}
+
+@media (hover: hover) {
+    .video-wrapper:hover .mute-toggle {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+.video-wrapper.show-controls .mute-toggle {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .mute-toggle:hover {

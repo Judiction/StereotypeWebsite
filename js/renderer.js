@@ -51,17 +51,30 @@ function createVideoBlock(item, lang) {
  * Must run after the HTML above is injected into the DOM (innerHTML doesn't carry listeners).
  */
 function initMuteButtons(container) {
-    container.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    const wrappers = container.querySelectorAll('.video-wrapper');
+
+    wrappers.forEach(wrapper => {
         const video = wrapper.querySelector('video');
         const btn = wrapper.querySelector('.mute-toggle');
         if (!video || !btn) return;
 
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
             video.muted = !video.muted;
             const isUnmuted = !video.muted;
             btn.setAttribute('aria-pressed', String(isUnmuted));
             btn.setAttribute('aria-label', isUnmuted ? 'Mute video' : 'Unmute video');
         });
+
+        // Touch/mobile: tapping the video reveals the button (CSS :hover
+        // doesn't apply); tapping the video again hides it. Tapping the
+        // button itself is left alone so it doesn't fight with the click above.
+        wrapper.addEventListener('touchstart', (e) => {
+            if (btn.contains(e.target)) return;
+            const isShown = wrapper.classList.contains('show-controls');
+            wrappers.forEach(w => w.classList.remove('show-controls'));
+            if (!isShown) wrapper.classList.add('show-controls');
+        }, { passive: true });
     });
 }
 
