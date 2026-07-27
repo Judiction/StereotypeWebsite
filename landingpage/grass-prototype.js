@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
@@ -114,12 +113,12 @@ const FALLBACK_FONT_URL =
 
 // Equirectangular sky image used both as the reflection source for the
 // metallic text and (optionally) as the scene background. Keep this file
-// next to index.html / grass-prototype.jsx.
+// next to index.html / grass-prototype.js.
 const SKYBOX_URL = ASSET_BASE + "skybox2.png";
 
 // ---- Hand cursor (3D model that follows the mouse) --------------------
 // Exported from Blender as glTF Binary (.glb). Keep it next to
-// index.html / grass-prototype.jsx.
+// index.html / grass-prototype.js.
 const CURSOR_MODEL_URL = ASSET_BASE + "hand-cursor.glb";
 // Uniform scale applied after load. Blender units rarely match this scene's
 // world units 1:1, so this is almost always the first thing you'll tune.
@@ -217,7 +216,7 @@ const WINDOW_SPAWN_INTERVAL = 0.6; // seconds between spawns while held + hoveri
 // ---- Randomized window texture ----------------------------------------
 // Each spawned window gets one of these applied to its "WindowInterior"
 // child, chosen at random. Keep the images next to index.html /
-// grass-prototype.jsx, same as the other asset files.
+// grass-prototype.js, same as the other asset files.
 const WINDOW_IMAGE_URLS = [
   "window_img_1.png",
   "window_img_2.png",
@@ -526,22 +525,98 @@ const fragmentShader = `
   }
 `;
 
-export default function GrassPrototype() {
-  const mountRef = useRef(null);
-  const loadingRef = useRef(null);
-  const loadingFillRef = useRef(null);
+/**
+ * Mounts the grass sketch into `container` (any DOM element — the caller
+ * owns sizing/positioning of that element). Builds its own mount point and
+ * loading-overlay DOM, runs the three.js scene, and returns a plain
+ * `unmount()` function that tears everything down (rAF loop, listeners,
+ * geometries/materials/textures, and the DOM it created).
+ *
+ * This mirrors the React version's useRef+useEffect+cleanup lifecycle
+ * without needing React: mount() ~= mount + effect setup, unmount() ~= the
+ * effect's cleanup function.
+ */
+export function mount(container) {
+  const root = document.createElement("div");
+  Object.assign(root.style, {
+    width: "100%",
+    height: "100%",
+    position: "relative",
+  });
 
-  useEffect(() => {
-    const mount = mountRef.current;
-    const loadingEl = loadingRef.current;
-    const loadingFillEl = loadingFillRef.current;
+  const mountEl = document.createElement("div");
+  mountEl.style.width = "100%";
+  mountEl.style.height = "100%";
+  mountEl.style.touchAction = "none";
+
+  const loadingEl = document.createElement("div");
+  Object.assign(loadingEl.style, {
+    position: "absolute",
+    inset: 0,
+    zIndex: 1,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    padding: "0 6vw",
+    backgroundColor: LOADING_BG_COLOR,
+    opacity: 1,
+    visibility: "visible",
+    transition: "opacity 0.6s ease, visibility 0.6s ease",
+  });
+
+  const textWrap = document.createElement("div");
+  Object.assign(textWrap.style, {
+    position: "relative",
+    fontFamily: "Arial, Helvetica, sans-serif",
+    fontWeight: 700,
+    fontStyle: "italic",
+    fontSize: "clamp(1.1rem, 6vw, 3.2rem)",
+    letterSpacing: "0.02em",
+    whiteSpace: "nowrap",
+  });
+
+  const baseTextEl = document.createElement("span");
+  baseTextEl.style.color = LOADING_TEXT_BASE_COLOR;
+  baseTextEl.textContent = LOADING_TEXT;
+
+  const loadingFillEl = document.createElement("span");
+  Object.assign(loadingFillEl.style, {
+    position: "absolute",
+    inset: 0,
+    color: LOADING_TEXT_FILL_COLOR,
+    clipPath: "inset(0 100% 0 0)",
+  });
+  loadingFillEl.textContent = LOADING_TEXT;
+
+  textWrap.appendChild(baseTextEl);
+  textWrap.appendChild(loadingFillEl);
+  loadingEl.appendChild(textWrap);
+
+  root.appendChild(mountEl);
+  root.appendChild(loadingEl);
+  container.appendChild(root);
+
+  const mount = mountEl;
+
+  // #grass-bg is `position: fixed; inset: 0`, so whenever it's actually
+  // visible its size IS the viewport size. Reading mount.clientWidth/Height
+  // here can occasionally race the display:none -> block toggle that shows
+  // #grass-bg (the class is added synchronously by the caller, but layout
+  // isn't guaranteed to have caught up the instant this module's dynamic
+  // import resolves) — so fall back to the viewport size rather than risk
+  // creating the renderer/render-targets at 0x0. onResize (below) takes
+  // over correcting this on every subsequent real resize.
+  const initialWidth = mount.clientWidth || window.innerWidth;
+  const initialHeight = mount.clientHeight || window.innerHeight;
+
+  {
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(SCENE_BG_COLOR);
     scene.fog = new THREE.Fog(SCENE_BG_COLOR, 9, 19);
 
     const camera = new THREE.PerspectiveCamera(
       IS_TOUCH ? MOBILE_CAMERA_FOV : 40,
-      mount.clientWidth / mount.clientHeight,
+      initialWidth / initialHeight,
       1,
       100
     );
@@ -564,7 +639,7 @@ export default function GrassPrototype() {
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setSize(mount.clientWidth, mount.clientHeight);
+    renderer.setSize(initialWidth, initialHeight);
     renderer.outputEncoding = THREE.sRGBEncoding;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.05;
@@ -614,7 +689,7 @@ export default function GrassPrototype() {
 
       if (ENABLE_BLOOM) {
         bloomPass = new UnrealBloomPass(
-          new THREE.Vector2(mount.clientWidth, mount.clientHeight),
+          new THREE.Vector2(initialWidth, initialHeight),
           BLOOM_STRENGTH,
           BLOOM_RADIUS,
           BLOOM_THRESHOLD
@@ -627,8 +702,8 @@ export default function GrassPrototype() {
           focus: DOF_FOCUS_DISTANCE,
           aperture: DOF_APERTURE,
           maxblur: DOF_MAX_BLUR,
-          width: mount.clientWidth,
-          height: mount.clientHeight,
+          width: initialWidth,
+          height: initialHeight,
         });
         composer.addPass(bokehPass);
       }
@@ -1469,7 +1544,7 @@ export default function GrassPrototype() {
     }
     animate();
 
-    return () => {
+    const cleanup = () => {
       cancelAnimationFrame(rafId);
       window.removeEventListener("resize", onResize);
       cleanupPointer();
@@ -1508,56 +1583,10 @@ export default function GrassPrototype() {
       if (mount.contains(renderer.domElement)) {
         mount.removeChild(renderer.domElement);
       }
+      // DOM this module created on the way in.
+      if (container.contains(root)) container.removeChild(root);
     };
-  }, []);
 
-  return (
-    <div style={{ width: "100%", height: "100%", position: "relative" }}>
-      <div
-        ref={mountRef}
-        style={{ width: "100%", height: "100%", touchAction: "none" }}
-      />
-      <div
-        ref={loadingRef}
-        style={{
-          position: "absolute",
-          inset: 0,
-          zIndex: 1,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "0 6vw",
-          backgroundColor: LOADING_BG_COLOR,
-          opacity: 1,
-          visibility: "visible",
-          transition: "opacity 0.6s ease, visibility 0.6s ease",
-        }}
-      >
-        <div
-          style={{
-            position: "relative",
-            fontFamily: "Arial, Helvetica, sans-serif",
-            fontWeight: 700,
-            fontStyle: "italic",
-            fontSize: "clamp(1.1rem, 6vw, 3.2rem)",
-            letterSpacing: "0.02em",
-            whiteSpace: "nowrap",
-          }}
-        >
-          <span style={{ color: LOADING_TEXT_BASE_COLOR }}>{LOADING_TEXT}</span>
-          <span
-            ref={loadingFillRef}
-            style={{
-              position: "absolute",
-              inset: 0,
-              color: LOADING_TEXT_FILL_COLOR,
-              clipPath: "inset(0 100% 0 0)",
-            }}
-          >
-            {LOADING_TEXT}
-          </span>
-        </div>
-      </div>
-    </div>
-  );
+    return cleanup;
+  }
 }

@@ -2,7 +2,7 @@
 import { handleRouting, navigate, parseRoute } from './router.js';
 import { renderNav } from './renderer.js';
 import { animateNavbarLogo, initProjectCardGlitch } from './effects.js';
-import { mountGrass, unmountGrass } from './grass-background.js';
+import { mountLandingSketch, unmountLandingSketch } from './landing-sketch.js';
 
 // js/app.js
 
@@ -13,14 +13,14 @@ async function updateApp() {
     renderNav(lang);
     handleRouting();
 
-    // The interactive grass background only runs on the landing page.
+    // A randomly-picked interactive sketch only runs on the landing page.
     // body.home-active drives the transparent-nav / light-overlay styling.
     if (parseRoute().type === 'home') {
         document.body.classList.add('home-active');
-        mountGrass();
+        mountLandingSketch();
     } else {
         document.body.classList.remove('home-active');
-        unmountGrass();
+        unmountLandingSketch();
     }
 }
 
