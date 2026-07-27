@@ -15,9 +15,9 @@ import { createSketchController } from './sketch-loader.js';
 
 const SKETCH_MODULES = [
     '../landingpage/grass-prototype.js',
-    '../landingpage/cube-prototype.js',
-    '../landingpage/type-prototype.js',
-    '../landingpage/wave-grid-prototype.js',
+    // '../landingpage/cube-prototype.js',
+    // '../landingpage/type-prototype.js',
+    // '../landingpage/wave-grid-prototype.js',
 ];
 
 // Some sketches (currently just the grass one) have asset filenames
