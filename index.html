@@ -15,24 +15,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Interactive grass background (three.js) — dependencies.
-         Bare specifiers like "react" and "three" resolve to these CDN URLs
-         both for the site's own module scripts and the runtime-transpiled
-         grass component. Babel Standalone transforms the .jsx at load time,
-         so no build step is needed. See js/grass-background.js. -->
+    <!-- Interactive landing-page sketch (three.js) — dependency resolution.
+         Bare specifiers like "three" resolve to this CDN URL, both for the
+         site's own module scripts and for the landingpage/*.js sketches
+         (one is picked at random and loaded lazily via a plain dynamic
+         import — see js/landing-sketch.js / js/sketch-loader.js). Any
+         future sketch module can rely on the same "three" mapping. -->
     <script type="importmap">
       {
         "imports": {
-          "react": "https://esm.sh/react@18",
-          "react-dom/client": "https://esm.sh/react-dom@18/client",
           "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js",
           "three/": "https://cdn.jsdelivr.net/npm/three@0.150.1/"
         }
       }
     </script>
-    <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
 </head>
-<body>
+<body class="home-active">
 
     <!-- Fixed WebGL layer behind everything; only visible on the home route
          (toggled via body.home-active in js/app.js). -->
@@ -53,7 +51,37 @@
         </section>
     </main>
 
-    <script type="module" src="./js/app.js"></script>
+    <script> 
+        // DECODIFICAR A ROTA (404.html redirect)                           __
+        // roda apenas se a rota tiver sido encodada por 404.html (site.com/?/)
+        let loc = window.location;
+ 
+        // verificamos se a rota foi um redirecionamento de 404 (encoded)
+        let hasEncodedRoute = loc.search.length > 1 && loc.search[1] === '/';
+ 
+        if (hasEncodedRoute) {
+            // dispensamos com slice o "?/" (2 caracteres), then split on "&" in case an original
+            // query string got bundled in alongside our route
+            let parts = loc.search.slice(2).split('&');
+ 
+            // Undo the "&" escaping done on the 404 page
+            for (let i = 0; i < parts.length; i++) {
+                parts[i] = parts[i].replace(/~and~/g, '&');
+            }
+ 
+            // junta novamente a rota com o originalSearchQuery "route?originalQuery", caso exista search query. caso nao o join() nao coloca nada (array com um item)
+            let decodedPath = parts.join('?');
+ 
+            let basePath = loc.pathname;
+ 
+            let realUrl = basePath + decodedPath + loc.hash;
+ 
+            // mudamos o url (que ira consequentemente gerar a pagina correta no main.js)
+            window.history.replaceState(null, null, realUrl);
+        }
+
+    </script>
+    <script type="module" src="/js/app.js"></script>
 
 </body>
 </html>

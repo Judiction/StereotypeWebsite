@@ -7,29 +7,98 @@
     <title>BE A STEREOTYPE</title>
     <meta name="title" content="Judd Buchanan | 3D Artist & Creative Technologist">
     <meta name="description" content="Portfolio of Judd Buchanan, a 3D Artist and Creative Technologist specializing in motion design and interactive visual experiences.">
+    <link rel="icon" type="image/x-icon" href="./StereotypeIcon.ico">
 
     <link rel="stylesheet" href="./css/style.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Interactive landing-page sketch (three.js) — dependency resolution.
+         Bare specifiers like "three" resolve to this CDN URL, both for the
+         site's own module scripts and for the landingpage/*.js sketches
+         (one is picked at random and loaded lazily via a plain dynamic
+         import — see js/landing-sketch.js / js/sketch-loader.js). Any
+         future sketch module can rely on the same "three" mapping. -->
+    <!-- <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.module.js",
+          "three/": "https://cdn.jsdelivr.net/npm/three@0.150.1/"
+        }
+      }
+    </script> -->
 </head>
-<body>
+<body class="home-active">
+
+    <!-- Fixed WebGL layer behind everything; only visible on the home route
+         (toggled via body.home-active in js/app.js). -->
+    <div id="grass-bg"></div>
 
     <nav id="main-nav"></nav>
 
     <main id="app">
         <section class="home-hero">
             <div class="hero-content">
-                <h1>BEASTEREOTYPE</h1>
-                <p class="tagline">3D Artist & Creative Technologist</p>
+                <p class="tagline">3D Artist &amp; Creative Technologist</p>
                 <p class="intro-phrase">Judd Buchanan</p>
-                <a href="/work" class="home-cta">Work</a>
+                <div class="home-actions">
+                    <a href="/work" class="home-cta">Work</a>
+                    <a href="/digital-art" class="home-cta">Digital Art</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <script type="module" src="./js/app.js"></script>
+    <script>
+               // GITHUB PAGES SPA REDIRECT
+        //
+        // GitHub Pages has no server-side rewrites, so any deep link (e.g.
+        // /work/some-project) that isn't a real file gets served this 404
+        // page instead. This encodes the requested path into a query string
+        // and redirects to the real index.html, which decodes it back into
+        // the real pathname (see the inline script there) before router.js
+        // ever sees it. This page is never meant to be seen — it redirects
+        // in the same tick, before paint — so it intentionally carries none
+        // of the site's real markup/CSS/fonts.
+        //
+        // numFixedSegments = how many leading path segments are the fixed
+        // repo base that should be preserved as-is (0 here since this site
+        // has a CNAME custom domain and is served from the domain root; a
+        // GitHub *project* page like username.github.io/reponame/ would
+        // need this set to 1 instead).
+        let numFixedSegments = 0;
+ 
+        let loc = window.location;
+        const originalPath = loc.pathname;
+ 
+        let pathArray = originalPath.split('/');
+ 
+        let baseArray = pathArray.slice(0, numFixedSegments + 1);
+        let routeArray = pathArray.slice(numFixedSegments + 1);
+ 
+        let basePath = baseArray.join('/');
+        let route = routeArray.join('/');
+ 
+        let encodedRoute = route.replace(/&/g, "~and~");
+ 
+        let existingSearchQuery = '';
+        if (loc.search) {
+            let encodedQuery = loc.search.slice('/').replace(/&/g, "~and~");
+            existingSearchQuery = '&' + encodedQuery;
+        }
+ 
+        let origin = loc.protocol + '//' + loc.hostname;
+        if (loc.port) {
+            origin = origin + ':' + loc.port;
+        }
+ 
+        let redirectUrl = origin + basePath + '/?/' + encodedRoute + existingSearchQuery + loc.hash;
+ 
+        loc.replace(redirectUrl);
+
+    </script>
 
 </body>
 </html>
