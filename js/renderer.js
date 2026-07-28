@@ -231,7 +231,7 @@ export function renderAbout(container, lang) {
                     <h3>${dictionary.ui.contact[lang]}</h3>
                     
                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                        <input type="hidden" name="access_key" value="901fd2cf-6e6d-4752-8e1d-126cef40fd8b">
+                        <input type="hidden" name="access_key" value="9f229f4a-913d-467b-9ccf-0769f564300a">
 
                         <div class="form-group">
                             <input type="text" name="name" placeholder="${dictionary.ui.placeholder_name[lang]}" required>
