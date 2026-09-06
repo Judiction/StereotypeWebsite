@@ -1945,3 +1945,32 @@ export const digitalArt = {
   
   // preencher com colecoes de digital art
 }
+
+
+// FERRAMENTAS (rota /tools)
+// Cada ferramenta vive numa pasta propria dentro de /tools e abre em uma nova
+// aba (target="_blank"), por isso a chave "url" aponta para a pasta da
+// ferramenta e nao para uma rota interna da SPA.
+// A chave do objeto ("draw-tune") deve ser igual ao nome da pasta.
+export const tools = {
+
+  "draw-tune": {
+    year: 2026,
+    categories: ["interactive", "creative-coding", "sound"],
+    thumbnail: "https://res.cloudinary.com/diizbqlsj/image/upload/v1788728827/cover-tunedraw_zdfyjh.png",
+    preview: null,
+    url: "/tools/draw-tune/",
+    title: {
+      pt: "Draw Tune",
+      en: "Draw Tune",
+      fr: "Draw Tune"
+    },
+    description: {
+      pt: "Desenhe linhas e ouca elas tocarem. Uma linha de tempo varre a tela da esquerda para a direita: a altura vira nota, a cor vira forma de onda.",
+      en: "Draw lines and hear them play. A tempo line sweeps the canvas from left to right: height becomes pitch, colour becomes waveform.",
+      fr: "Dessinez des lignes et écoutez-les jouer. Une ligne de tempo balaye la toile de gauche à droite : la hauteur devient la note, la couleur devient la forme d'onde."
+    }
+  }
+
+  // preencher com novas ferramentas
+}

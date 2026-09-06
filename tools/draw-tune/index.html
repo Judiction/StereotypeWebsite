@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#008080">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>BE A STEREOTYPE - Paint Tune</title>
+<link rel="icon" type="image/x-icon" href="/StereotypeIcon.ico">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+
+<div class="window" id="window">
+
+  <!-- Title bar -->
+  <div class="titlebar">
+    <div class="titlebar-icon" aria-hidden="true">
+      <svg viewBox="0 0 16 16" width="16" height="16">
+        <rect x="0" y="0" width="16" height="16" fill="#c0c0c0"/>
+        <path d="M1 11 Q4 3 7 11 T13 11" stroke="#c00000" fill="none" stroke-width="1.6"/>
+      </svg>
+    </div>
+    <div class="titlebar-text">BE A STEREOTYPE - Paint Tune</div>
+    <div class="titlebar-buttons">
+      <button class="tb-btn" title="Minimize" aria-label="Minimize"><span>_</span></button>
+      <button class="tb-btn" title="Maximize" aria-label="Maximize"><span>&#9633;</span></button>
+      <button class="tb-btn" title="Close" aria-label="Close"><span>&#10005;</span></button>
+    </div>
+  </div>
+
+  <!-- Menu bar -->
+  <div class="menubar" id="menubar">
+    <div class="menu" data-menu="file"><span class="menu-label"><u>F</u>ile</span>
+      <div class="menu-pop">
+        <button data-action="clear">New<span class="acc">Ctrl+N</span></button>
+        <button data-action="clear">Clear Image<span class="acc">Ctrl+Del</span></button>
+        <hr>
+        <button class="disabled">Exit</button>
+      </div>
+    </div>
+    <div class="menu" data-menu="edit"><span class="menu-label"><u>E</u>dit</span>
+      <div class="menu-pop">
+        <button data-action="undo">Undo<span class="acc">Ctrl+Z</span></button>
+        <button data-action="clear">Erase All</button>
+      </div>
+    </div>
+    <div class="menu" data-menu="view"><span class="menu-label"><u>V</u>iew</span>
+      <div class="menu-pop">
+        <button data-action="toggle-grid">Note Grid</button>
+        <button data-action="toggle-bars">Bar Lines</button>
+      </div>
+    </div>
+    <div class="menu" data-menu="help"><span class="menu-label"><u>H</u>elp</span>
+      <div class="menu-pop">
+        <button data-action="about">About Paint Tune</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transport / top bar -->
+  <div class="topbar">
+
+    <div class="group">
+      <span class="group-title">Transport</span>
+      <div class="group-body">
+        <button class="btn btn-wide" id="btnPlay" title="Play / Pause (Space)">&#9658; Play</button>
+        <button class="btn btn-wide" id="btnStop" title="Stop and rewind">&#9632; Stop</button>
+      </div>
+    </div>
+
+    <div class="group">
+      <span class="group-title">Tempo</span>
+      <div class="group-body">
+        <input type="number" id="bpm" class="field num" min="20" max="300" step="1" value="110"
+               inputmode="numeric" autocomplete="off">
+        <span class="unit">BPM</span>
+        <button class="btn" id="btnTap" title="Tap in time, 2 or more taps">TAP</button>
+      </div>
+    </div>
+
+    <div class="group grow">
+      <span class="group-title">Bars</span>
+      <div class="group-body">
+        <input type="range" id="bars" class="hrange" min="1" max="16" step="1" value="4">
+        <output class="lcd" id="barsOut">4</output>
+      </div>
+    </div>
+
+    <div class="group">
+      <span class="group-title">Key &amp; Scale</span>
+      <div class="group-body">
+        <select id="root" class="field">
+          <option value="0">C</option><option value="1">C#</option><option value="2">D</option>
+          <option value="3">D#</option><option value="4">E</option><option value="5">F</option>
+          <option value="6">F#</option><option value="7">G</option><option value="8">G#</option>
+          <option value="9">A</option><option value="10">A#</option><option value="11">B</option>
+        </select>
+        <select id="scale" class="field">
+          <option value="major">Major</option>
+          <option value="minor">Minor</option>
+          <option value="pentatonic" selected>Pentatonic</option>
+          <option value="blues">Blues</option>
+          <option value="dorian">Dorian</option>
+          <option value="chromatic">Chromatic</option>
+        </select>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Workspace -->
+  <div class="workspace">
+
+    <div class="toolbox">
+      <div class="tool-grid" id="toolGrid">
+        <button class="tool" data-tool="sine" title="Sine wave (1)">
+          <svg viewBox="0 0 24 24"><path class="wave" d="M2 12 Q6.5 2 11 12 T20 12" fill="none" stroke="#d01818" stroke-width="2.2"/></svg>
+        </button>
+        <button class="tool" data-tool="square" title="Square wave (2)">
+          <svg viewBox="0 0 24 24"><path class="wave" d="M2 18 V6 H8 V18 H14 V6 H20 V18" fill="none" stroke="#0f9b0f" stroke-width="2.2"/></svg>
+        </button>
+        <button class="tool" data-tool="triangle" title="Triangle wave (3)">
+          <svg viewBox="0 0 24 24"><path class="wave" d="M2 17 L7 7 L12 17 L17 7 L21 15" fill="none" stroke="#2444d8" stroke-width="2.2"/></svg>
+        </button>
+        <button class="tool" data-tool="eraser" title="Eraser (E)">
+          <svg viewBox="0 0 24 24">
+            <path d="M4 16 L12 8 L19 15 L14 20 H8 Z" fill="#f2c8c8" stroke="#000" stroke-width="1.3"/>
+            <path d="M8.5 20 H20" stroke="#000" stroke-width="1.3"/>
+          </svg>
+        </button>
+      </div>
+
+      <button class="btn full" id="btnUndo" title="Undo last stroke (Ctrl+Z)">Undo</button>
+      <button class="btn full" id="btnClear" title="Clear the canvas">Clear</button>
+
+      <div class="palette">
+        <div class="opt-title">Voices</div>
+        <button class="swatch" data-tool="sine" title="Click to change the sine colour">
+          <i style="background:#d01818"></i><span>Sine</span>
+        </button>
+        <button class="swatch" data-tool="square" title="Click to change the square colour">
+          <i style="background:#0f9b0f"></i><span>Square</span>
+        </button>
+        <button class="swatch" data-tool="triangle" title="Click to change the triangle colour">
+          <i style="background:#2444d8"></i><span>Triangle</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="canvas-frame" id="canvasFrame">
+      <canvas id="paint"></canvas>
+    </div>
+
+    <div class="rack">
+      <div class="rack-title">Voice Mix</div>
+
+      <div class="fx mix">
+        <div class="mix-row">
+          <div class="mix-ch">
+            <div class="vslider mini"><input type="range" id="volSine" min="0" max="100" step="1" value="80" title="Sine volume"></div>
+            <i class="mix-dot" data-tool="sine" style="background:#d01818"></i>
+          </div>
+          <div class="mix-ch">
+            <div class="vslider mini"><input type="range" id="volSquare" min="0" max="100" step="1" value="80" title="Square volume"></div>
+            <i class="mix-dot" data-tool="square" style="background:#0f9b0f"></i>
+          </div>
+          <div class="mix-ch">
+            <div class="vslider mini"><input type="range" id="volTriangle" min="0" max="100" step="1" value="80" title="Triangle volume"></div>
+            <i class="mix-dot" data-tool="triangle" style="background:#2444d8"></i>
+          </div>
+        </div>
+        <output class="lcd small" id="mixOut">80</output>
+      </div>
+
+      <div class="rack-title">Master FX</div>
+
+      <div class="fx">
+        <div class="fx-name">Reverb</div>
+        <div class="vslider">
+          <input type="range" id="revAmt" min="0" max="100" step="1" value="80">
+        </div>
+        <output class="lcd small" id="revOut">80</output>
+        <select id="revType" class="field tiny">
+          <option value="hall">Hall</option>
+          <option value="room">Room</option>
+          <option value="plate">Plate</option>
+          <option value="cathedral">Cathedral</option>
+        </select>
+      </div>
+
+      <div class="fx">
+        <div class="fx-name">Delay</div>
+        <div class="vslider">
+          <input type="range" id="dlyAmt" min="0" max="100" step="1" value="40">
+        </div>
+        <output class="lcd small" id="dlyOut">40</output>
+        <select id="dlyType" class="field tiny">
+          <option value="digital">Digital</option>
+          <option value="pingpong">Ping-Pong</option>
+          <option value="tape" selected>Tape</option>
+          <option value="slapback">Slapback</option>
+        </select>
+      </div>
+
+      <div class="fx">
+        <div class="fx-name">Volume</div>
+        <div class="vslider short">
+          <input type="range" id="vol" min="0" max="100" step="1" value="80">
+        </div>
+        <output class="lcd small" id="volOut">80</output>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Status bar -->
+  <div class="statusbar">
+    <div class="status-cell grow" id="statusHint">Pick a wave tool and draw on the canvas.</div>
+    <div class="status-cell" id="statusNote">--</div>
+    <div class="status-cell" id="statusPos">Bar 1 : 1</div>
+    <div class="status-cell" id="statusVoices">0 voices</div>
+  </div>
+
+</div>
+
+<!-- Colour picker popup -->
+<div class="color-pop" id="colorPop" hidden>
+  <div class="color-pop-title" id="colorPopTitle">Colour</div>
+  <div class="color-grid" id="colorGrid"></div>
+  <div class="color-pop-foot">
+    <button class="btn" id="colorOther">Other...</button>
+    <button class="btn" id="colorClose">Close</button>
+  </div>
+  <input type="color" id="colorNative" class="native-color" tabindex="-1" aria-label="Pick a custom colour">
+</div>
+
+<!-- About dialog -->
+<div class="modal-veil" id="aboutVeil" hidden>
+  <div class="window dialog">
+    <div class="titlebar">
+      <div class="titlebar-text">About Paint Tune</div>
+      <div class="titlebar-buttons"><button class="tb-btn" id="aboutX"><span>&#10005;</span></button></div>
+    </div>
+    <div class="dialog-body">
+      <p><b>Paint Tune</b></p>
+      <p>Draw lines on the canvas. A tempo line sweeps left to right; wherever it
+      crosses a line, that line sings. Height is pitch, colour is waveform.</p>
+      <p>Vibe-coded by BE A STEREOTYPE. If you like this, consider following on
+      Instagram and sharing what you created!</p>
+      <p class="dim">Built with the Web Audio API and Tone.js.</p>
+      <div class="dialog-links">
+        <a class="btn btn-wide" href="https://beastereotype.com/" target="_blank" rel="noopener noreferrer">Website</a>
+        <a class="btn btn-wide" href="https://www.instagram.com/be_a_stereotype/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+      <div class="dialog-buttons"><button class="btn btn-wide" id="aboutOk">OK</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Error / notice dialog -->
+<div class="modal-veil" id="errVeil" hidden>
+  <div class="window dialog">
+    <div class="titlebar"><div class="titlebar-text">Paint Tune</div></div>
+    <div class="dialog-body">
+      <p id="errText"></p>
+      <div class="dialog-buttons"><button class="btn btn-wide" id="errOk">OK</button></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/theory.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOOLS | BE A STEREOTYPE</title>
+    <meta name="title" content="Tools | Judd Buchanan">
+    <meta name="description" content="Browser tools built by Judd Buchanan — small interactive experiments you can open and use right away.">
+    <!-- social media preview -->
+    <meta property="og:title" content="Tools | Judd Buchanan">
+    <meta property="og:description" content="Browser tools built by Judd Buchanan — small interactive experiments you can open and use right away.">
+    <meta property="og:image" content="https://beastereotype.com/preview.jpg"> <!-- 1200px x 630px-->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <!---->
+
+    <link rel="icon" type="image/x-icon" href="/StereotypeIcon.ico">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<!--
+    Casca estatica da rota /tools (mesmo padrao de /about/index.html).
+
+    Como /tools/ e uma pasta real (cada ferramenta mora em uma subpasta, ex.
+    /tools/draw-tune/), o Github Pages serve ESTE arquivo quando alguem abre
+    beastereotype.com/tools diretamente, sem passar pelo desvio do 404.html.
+    Assim que js/app.js carrega, o roteador reconhece a rota "tools" e
+    substitui o conteudo de #app pela grade de ferramentas gerada a partir de
+    data/projects.js (export const tools).
+-->
+<body>
+
+    <nav id="main-nav"></nav>
+
+    <main id="app">
+        <section class="filterable-page">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="/tools/draw-tune/" target="_blank" rel="noopener noreferrer">
+                        <div class="media-container tools">
+                            <img src="https://res.cloudinary.com/diizbqlsj/image/upload/v1788728827/cover-tunedraw_zdfyjh.png" alt="Draw Tune">
+                        </div>
+                        <div class="project-info">
+                            <span class="year">2026</span>
+                            <h3>Draw Tune</h3>
+                            <div class="categories">
+                                <span>Interactive</span>
+                                <span>Creative Coding</span>
+                                <span>Sound</span>
+                            </div>
+                            <p class="card-description">Draw lines and hear them play. A tempo line sweeps the canvas from left to right: height becomes pitch, colour becomes waveform.</p>
+                            <span class="card-launch">Open Tool ↗</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/js/app.js"></script>
+
+</body>
+</html>

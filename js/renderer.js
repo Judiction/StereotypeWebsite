@@ -89,24 +89,43 @@ function createImageBlock(item, lang){
 }
 
 /**
+ * Which collection the current URL belongs to ('work' | 'digital-art' | 'tools').
+ * Used both for the card links and for the "back" link on a project page.
+ */
+export function getBasePath(path = window.location.pathname) {
+    if (path.includes('digital-art')) return 'digital-art';
+    if (path.includes('tools')) return 'tools';
+    return 'work';
+}
+
+/**
  * Creates the HTML for a project card (the "Molecule")
+ *
+ * Ferramentas (data.url) sao arquivos reais servidos pelo Github Pages, e nao
+ * rotas da SPA: o link aponta direto para a pasta da ferramenta e abre em uma
+ * nova aba. O handler de cliques em js/app.js ignora links com target="_blank",
+ * entao o roteador nao intercepta esse link.
  */
 export function createProjectCard(data, slug, lang, basePath) {
     // Ensure we are using the correct property for the video source
-    const videoSrc = data.preview; 
+    const videoSrc = data.preview;
+
+    const isExternal = Boolean(data.url);
+    const href = isExternal ? data.url : `/${basePath}/${slug}`;
+    const linkAttrs = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
 
     return `
         <div class="project-card" data-slug="${slug}">
-            <a href="/${basePath}/${slug}">
+            <a href="${href}"${linkAttrs}>
                 <div class="media-container ${basePath}">
                     <img src="${data.thumbnail}" alt="${data.title[lang]}" loading="lazy">
                     ${videoSrc ? `
-                        <video 
-                            src="${videoSrc}" 
-                            loop 
-                            muted 
-                            playsinline 
-                            autoplay 
+                        <video
+                            src="${videoSrc}"
+                            loop
+                            muted
+                            playsinline
+                            autoplay
                             preload="auto">
                         </video>` : ''}
                 </div>
@@ -118,6 +137,8 @@ export function createProjectCard(data, slug, lang, basePath) {
                             <span>${dictionary.categories[cat] ? dictionary.categories[cat][lang] : cat}</span>
                         `).join('')}
                     </div>
+                    ${data.description ? `<p class="card-description">${data.description[lang]}</p>` : ''}
+                    ${isExternal ? `<span class="card-launch">${dictionary.ui["open-tool"][lang]} ↗</span>` : ''}
                 </div>
             </a>
         </div>
@@ -134,7 +155,7 @@ export function renderGrid(container, list, filter, lang) {
 
     if (!target) return;
 
-    const basePath = window.location.pathname.includes('digital-art') ? 'digital-art' : 'work';
+    const basePath = getBasePath();
 
     // 1. Ensure the target element ITSELF has the grid class
     target.className = 'projects-grid'; 
@@ -198,6 +219,9 @@ export function renderHome(container, lang) {
                     </a>
                     <a href="/digital-art" class="home-cta">
                         ${dictionary.ui["digital-art"][lang]} →
+                    </a>
+                    <a href="/tools" class="home-cta">
+                        ${dictionary.ui.tools[lang]} →
                     </a>
                 </div>
             </div>
@@ -330,6 +354,7 @@ export function renderNav(lang) {
                 <div class="nav-links">
                     <a href="/work" data-key="work"></a>
                     <a href="/digital-art" data-key="digital-art"></a>
+                    <a href="/tools" data-key="tools"></a>
                     <a href="/about" data-key="about"></a>
                 </div>
                 <div class="lang-toggle">
@@ -347,6 +372,7 @@ export function renderNav(lang) {
                 <div class="mobile-nav-links">
                     <a href="/work" data-key="work"></a>
                     <a href="/digital-art" data-key="digital-art"></a>
+                    <a href="/tools" data-key="tools"></a>
                     <a href="/about" data-key="about"></a>
                 </div>
                 <div class="mobile-lang-toggle">
@@ -391,7 +417,9 @@ export function renderNav(lang) {
     allNavLinks.forEach(a => {
         const key = a.getAttribute('data-key');
         const href = a.getAttribute('href');
-        const path = window.location.pathname;
+        // Tira a barra final para que /tools/ (URL real de pasta servida pelo
+        // Github Pages) tambem case com o href /tools do menu.
+        const path = window.location.pathname.replace(/\/+$/, '') || '/';
 
         const newText = dictionary.ui[key][lang];
         if (a.textContent !== newText) a.textContent = newText;

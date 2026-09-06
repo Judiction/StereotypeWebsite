@@ -5,6 +5,8 @@ export const dictionary = {
     "work": { "en": "Works", "pt": "Trabalhos", "fr": "Projets" },
     "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art Numérique" },
     "about": { "en": "About", "pt": "Sobre", "fr": "À Propos" },
+    "tools": { "en": "Tools", "pt": "Ferramentas", "fr": "Outils" },
+    "open-tool": { "en": "Open Tool", "pt": "Abrir Ferramenta", "fr": "Ouvrir l'outil" },
 
     "next": { "en": "Next", "pt": "Próximo", "fr": "Suivant" },
     "back": { "en": "Back", "pt": "Voltar", "fr": "Retour" },
@@ -82,5 +84,7 @@ export const dictionary = {
     "digital-art": { "en": "Digital Art", "pt": "Arte Digital", "fr": "Art Numérique" },
     "art-direction": { "en": "Art Direction", "pt": "Direção de Arte", "fr": "Direction artistique" },
     "ai": { "en": "AI", "pt": "IA", "fr": "IA" },
+    "creative-coding": { "en": "Creative Coding", "pt": "Creative Coding", "fr": "Creative Coding" },
+    "sound": { "en": "Sound", "pt": "Som", "fr": "Son" },
   }
 }

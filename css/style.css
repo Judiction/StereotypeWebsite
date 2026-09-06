@@ -314,6 +314,10 @@ button { font-family: inherit; }
     aspect-ratio: 1 / 1;
 }
 
+.media-container.tools {
+    aspect-ratio: 16 / 9;
+}
+
 .media-container img, 
 .media-container video {
     position: absolute;
@@ -375,6 +379,32 @@ button { font-family: inherit; }
     content: "•";
     margin: 0 8px;
     font-size: 0.5rem;
+}
+
+/* Cards de ferramenta (/tools): descricao curta + chamada para abrir.
+   Projetos comuns nao tem "description", entao nada muda no Works/Digital Art. */
+.card-description {
+    margin-top: 6px;
+    max-width: 46ch;
+    font-size: 0.8rem;
+    line-height: 1.45;
+    opacity: 0.75;
+}
+
+.card-launch {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: var(--ls-meta);
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 2px;
+    transition: opacity var(--transition-speed) var(--ease-out-expo);
+}
+
+.project-card:hover .card-launch {
+    opacity: 0.55;
 }
 
 /* --- 6. FILTER SYSTEM --- */

@@ -1,5 +1,5 @@
 import * as Renderer from './renderer.js'; 
-import { works, digitalArt } from '../data/projects.js'; // You'll need the data too!
+import { works, digitalArt, tools } from '../data/projects.js'; // You'll need the data too!
 import { resetFilterState } from './filter.js';
 import { dictionary } from '../data/dictionary.js';
 
@@ -24,6 +24,14 @@ export function parseRoute() {
             ? { type: 'project', slug: segments[1], collection: 'digitalArt' } // Match the export name from projects.js
             : { type: 'art-list' };
     }
+
+    // Handle TOOLS path
+    // Cada ferramenta e uma pasta real (ex: /tools/draw-tune/index.html) servida
+    // direto pelo Github Pages e aberta em uma nova aba, entao a SPA so precisa
+    // renderizar a lista. Se por algum motivo cairmos aqui com um slug
+    // (ferramenta removida/renomeada), voltamos para a lista em vez de deixar a
+    // pagina em branco.
+    if (segments[0] === 'tools') return { type: 'tools-list' };
 
     if (segments[0] === 'about') return { type: 'about' };
 
@@ -75,6 +83,10 @@ export function handleRouting() {
             document.title = dictionary.ui["digital-art"][lang].toUpperCase();
             // resetFilterState();
             Renderer.renderFilterableGrid(appContainer, digitalArt, lang);
+            break;
+        case 'tools-list':
+            document.title = dictionary.ui["tools"][lang].toUpperCase();
+            Renderer.renderFilterableGrid(appContainer, tools, lang);
             break;
         case 'project':
             // 1. Identify which list to look in
