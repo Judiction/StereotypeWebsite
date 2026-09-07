@@ -12,6 +12,64 @@
 
   var MAX_VOICES = 20;
 
+  /* ---------------- iOS audio session ----------------
+
+     Every browser on iOS is WebKit, and Web Audio output there lands in the
+     "ambient" audio session - the one the ring/silent switch mutes. Most
+     iPhones live in silent mode, so the tool was silent for most people who
+     opened it on a phone. Two things move the page to the "playback" session,
+     which ignores that switch:
+
+       1. navigator.audioSession.type = 'playback' - the explicit API, on
+          newer WebKit. Absent everywhere else, hence the feature test.
+       2. An <audio> element playing real (but silent) content. Older iOS only
+          understands this one. It has to start inside the same user gesture
+          as the AudioContext, and it has to stay UNMUTED: a muted element
+          counts as silent media and does not promote the session.
+
+     Both are iOS-only, so nothing here runs on desktop or Android. */
+
+  function isIOS() {
+    var ua = navigator.userAgent || '';
+    // iPadOS 13+ reports itself as a Mac; touch points are what give it away.
+    return /iPad|iPhone|iPod/.test(ua) ||
+           (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  }
+
+  /**
+   * A quarter second of silence as a data URI: mono 16-bit PCM, the WAV
+   * flavour every browser decodes. The bytes after the header are already
+   * zero, which for signed 16-bit PCM is silence, so only the header is
+   * written. About 8 KB, built once and looped forever.
+   */
+  function silentWavUri(seconds) {
+    var rate = 8000;
+    var frames = Math.max(1, Math.round(rate * seconds));
+    var bytes = frames * 2;
+    var size = 44 + bytes;
+    var buf = new Uint8Array(size);
+    var view = new DataView(buf.buffer);
+
+    function tag(off, s) {
+      for (var i = 0; i < s.length; i++) buf[off + i] = s.charCodeAt(i);
+    }
+
+    tag(0, 'RIFF');  view.setUint32(4, size - 8, true);
+    tag(8, 'WAVE');
+    tag(12, 'fmt '); view.setUint32(16, 16, true);   // fmt chunk length
+    view.setUint16(20, 1, true);           // PCM
+    view.setUint16(22, 1, true);           // mono
+    view.setUint32(24, rate, true);        // sample rate
+    view.setUint32(28, rate * 2, true);    // byte rate
+    view.setUint16(32, 2, true);           // block align
+    view.setUint16(34, 16, true);          // bits per sample
+    tag(36, 'data'); view.setUint32(40, bytes, true);
+
+    var bin = '';
+    for (var j = 0; j < size; j++) bin += String.fromCharCode(buf[j]);
+    return 'data:audio/wav;base64,' + btoa(bin);
+  }
+
   // Per-waveform gain trim and tone shaping. Square is by far the loudest
   // and harshest of the three, so it gets pulled down and filtered.
   var TIMBRE = {
@@ -112,12 +170,70 @@
     this.dlyAmount = 0.4;
     this.channels = {};                                         // waveform -> Gain
     this.voiceGain = { sine: 0.8, square: 0.8, triangle: 0.8 };  // fader positions
+    this.sessionClaimed = false;   // iOS: playback session obtained?
+    this._keepAlive = null;        // iOS: the silent looping element
   }
+
+  /* ---- iOS audio session ---- */
+
+  /** Must be called synchronously from inside a user gesture. No-op elsewhere. */
+  AudioEngine.prototype._claimAudioSession = function () {
+    if (!isIOS()) return;
+
+    try {
+      if (navigator.audioSession && 'type' in navigator.audioSession) {
+        navigator.audioSession.type = 'playback';
+        this.sessionClaimed = true;
+      }
+    } catch (err) {
+      // Unsupported value or a locked-down setter: fall through to the element.
+    }
+
+    var self = this;
+    if (!this._keepAlive) {
+      var el = document.createElement('audio');
+      el.src = silentWavUri(0.25);
+      el.loop = true;
+      el.preload = 'auto';
+      el.setAttribute('playsinline', '');   // never take over the screen
+      el.playsInline = true;
+      el.addEventListener('playing', function () { self.sessionClaimed = true; });
+      this._keepAlive = el;
+    }
+    var p = this._keepAlive.play();
+    if (p && p.then) {
+      p.then(function () { self.sessionClaimed = true; })
+       .catch(function () { /* blocked: the tip in app.js is the fallback */ });
+    }
+  };
+
+  /**
+   * Brings audio back after iOS interrupts it - a call, Siri, or switching
+   * apps leaves the context in 'interrupted', which a plain visibility check
+   * for 'suspended' would miss. Safe to call at any time, and cheap when
+   * everything is already running.
+   */
+  AudioEngine.prototype.resume = function () {
+    if (!this.ready) return;
+
+    if (this._keepAlive && this._keepAlive.paused) {
+      var k = this._keepAlive.play();
+      if (k && k.catch) k.catch(function () {});
+    }
+    if (Tone.context.state !== 'running') {
+      var p = Tone.context.resume();
+      if (p && p.catch) p.catch(function () {});
+    }
+  };
 
   AudioEngine.prototype.init = function () {
     var self = this;
     if (this.ready) return Promise.resolve();
     if (this._starting) return this._starting;
+
+    // Runs before Tone.start()'s promise takes us off the user gesture, which
+    // is the only moment iOS accepts either of these.
+    this._claimAudioSession();
 
     this._starting = Tone.start().then(function () {
       self.out = new Tone.Gain(0.8).toDestination();
@@ -334,6 +450,8 @@
   AudioEngine.prototype.voiceCount = function () {
     return this.active.size;
   };
+
+  AudioEngine.isIOS = isIOS;
 
   global.AudioEngine = AudioEngine;
 })(window);

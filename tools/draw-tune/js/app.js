@@ -54,6 +54,45 @@
   $('aboutX').addEventListener('click', hideAbout);
   $('errOk').addEventListener('click', function () { $('errVeil').hidden = true; });
 
+  /* ---------------- Phone-only audio tip ----------------
+
+     The engine claims an iOS playback session (see js/audio.js), but that
+     cannot cover a phone whose volume is simply down, or an iOS old enough to
+     refuse both routes. So the first time audio starts on a phone, a strip
+     says where to look. Desktop gets nothing: audioTipText returns null there
+     and showAudioTip stops before touching the DOM. */
+
+  function audioTipText() {
+    if (AudioEngine.isIOS()) {
+      return 'No sound? Turn the volume up - and if it is still silent, ' +
+             'flip the silent switch on the side of the phone.';
+    }
+    if (/Android/i.test(navigator.userAgent || '')) {
+      return 'No sound? Turn the media volume up.';
+    }
+    return null;
+  }
+
+  var tipShown = false;
+  var tipTimer = 0;
+
+  function hideAudioTip() {
+    clearTimeout(tipTimer);
+    $('audioTip').hidden = true;
+  }
+
+  function showAudioTip() {
+    if (tipShown) return;
+    var msg = audioTipText();
+    if (!msg) return;                  // desktop: never shown
+    tipShown = true;
+    $('audioTipText').textContent = msg;
+    $('audioTip').hidden = false;
+    tipTimer = setTimeout(hideAudioTip, 9000);
+  }
+
+  $('audioTipOk').addEventListener('click', hideAudioTip);
+
   /* ---------------- Menus ---------------- */
 
   var menubar = $('menubar');
@@ -259,9 +298,22 @@
     else if (state.erasing) eraseAndSilence(p, e.pointerType);
   });
 
+  // The transport starts stopped, and nothing sounds while it is - which
+  // reads as "this thing is broken" to someone who has just drawn a line and
+  // has no reason to know the Play button is what makes it sing. So the first
+  // finished stroke starts the sweep. Only the first: after that, Stop means
+  // stop, and drawing must not undo that.
+  var autoStarted = false;
+
   function endPointer(e) {
     if (e.pointerId !== state.pointerId) return;
-    if (state.drawing) sketch.endStroke();
+    if (state.drawing) {
+      var stroke = sketch.endStroke();
+      if (stroke && !autoStarted) {
+        autoStarted = true;
+        if (!state.playing) setPlaying(true);
+      }
+    }
     state.drawing = false;
     state.erasing = false;
     state.pointerId = null;
@@ -341,9 +393,17 @@
 
   function ensureAudio() {
     // Tone.start() has to happen inside a user gesture, so every interaction
-    // that could make sound calls this; it is a no-op once running.
-    if (engine.ready || engine._starting || !window.Tone) return;
-    engine.init().then(syncEngineFromControls).catch(function (err) {
+    // that could make sound calls this; it is cheap once running.
+    if (!window.Tone) return;
+    // Already running: this gesture is also the chance to recover a context
+    // iOS interrupted while we were in the background.
+    if (engine.ready) { engine.resume(); return; }
+    if (engine._starting) return;
+
+    engine.init().then(function () {
+      syncEngineFromControls();
+      showAudioTip();
+    }).catch(function (err) {
       notify('Could not start audio: ' + err.message);
     });
   }
@@ -560,8 +620,12 @@
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) {
         engine.allOff();
-      } else if (engine.ready && Tone.context.state === 'suspended') {
-        Tone.context.resume();
+      } else {
+        // Not just 'suspended': iOS parks the context in 'interrupted' after a
+        // call or an app switch, and the silent keep-alive element gets paused
+        // with it. engine.resume() handles both, and the next tap tries again
+        // via ensureAudio if the browser wants a fresh gesture.
+        engine.resume();
       }
     });
 

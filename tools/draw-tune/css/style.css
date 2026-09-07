@@ -547,6 +547,30 @@ input[type=range]::-moz-range-thumb{
 }
 .status-cell.grow{ flex: 1 1 auto; min-width: 0; }
 
+/* ---------- Phone audio tip ----------
+   Classic Windows tooltip colours. Floats above the status bar rather than
+   sitting in the window's flex column, so showing it does not resize the
+   canvas mid-drawing. Only ever shown on iOS / Android - see js/app.js. */
+.audio-tip{
+  position: fixed;
+  left: 14px;
+  right: 14px;
+  bottom: 42px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  background: #ffffe1;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.35);
+  font-size: 12px;
+  line-height: 1.35;
+}
+.audio-tip[hidden]{ display: none; }
+.audio-tip span{ flex: 1 1 auto; }
+.audio-tip .btn{ flex: 0 0 auto; }
+
 /* ---------- Dialogs ---------- */
 .modal-veil{
   position: fixed;

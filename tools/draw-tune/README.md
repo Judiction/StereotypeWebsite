@@ -18,6 +18,10 @@ says so.
 Browsers block audio until you interact with the page, so the first click or
 Play press is what starts the audio engine.
 
+The transport starts stopped and nothing sounds while it is, so the **first
+finished stroke starts the sweep** on its own. Only the first one: after that,
+Stop means stop and drawing will not restart it.
+
 ## Controls
 
 **Top bar**
@@ -98,8 +102,23 @@ Both side rails scroll on their own if a screen is too short to show everything.
 Rotating the device, or the URL bar sliding away, re-fits the canvas without
 losing the drawing — strokes are stored in normalised coordinates.
 
-One thing outside the page's control: on iPhones the ring/silent switch mutes
-Web Audio. If a tester reports silence, that switch is the first thing to check.
+**The iPhone silent switch.** On iOS every browser is WebKit, and Web Audio
+lands in the *ambient* audio session — the one the ring/silent switch mutes.
+Since most iPhones live in silent mode, the tool used to be silent for most
+people who opened it on a phone. `_claimAudioSession` in `js/audio.js` moves the
+page to the *playback* session instead, two ways: `navigator.audioSession.type`
+where WebKit supports it, and, for older iOS, a looping silent `<audio>` element
+started inside the same user gesture as the AudioContext. That element has to
+stay unmuted — a muted one counts as silent media and does not promote the
+session — and neither route runs anywhere but iOS.
+
+A volume slider that is simply down still produces silence, so the first time
+audio starts on a phone a strip explains where to look: the silent switch on
+iOS, media volume on Android. It never appears on desktop.
+
+iOS also parks the context in `interrupted` after a call, Siri, or an app
+switch — not `suspended` — so `engine.resume()` handles both, and runs on the
+next tap as well as on `visibilitychange`.
 
 ## Keyboard
 
